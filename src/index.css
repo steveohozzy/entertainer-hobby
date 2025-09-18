@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .ribbon {
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      calc(100% - 14px) 50%,
+      100% 100%,
+      0 100%,
+      14px 50%
+    );
+    filter: url(#round);
+  }
+  :root {
+    --swiper-pagination-color: #407ec9;
+    --swiper-pagination-bullet-inactive-color: #407ec9;
+    --swiper-pagination-bullet-inactive-opacity: 0.5;
+    --swiper-pagination-bottom: 0;
+  }
+  .h-auto {
+    height: auto !important;
+  }
+
+  .shadow-text-red {
+      filter: drop-shadow(0 2px #a7170c) drop-shadow(0 -2px #a7170c)
+      drop-shadow(2px 0 #a7170c) drop-shadow(-2px 0 #a7170c);
+  }
+
+  .shadow-text-green {
+      filter: drop-shadow(0 2px #067f3d) drop-shadow(0 -2px #067f3d)
+      drop-shadow(2px 0 #067f3d) drop-shadow(-2px 0 #067f3d);
+      
+  }
+
+  .shadow-text-yellow {
+      filter: drop-shadow(0 2px #FFFF00) drop-shadow(0 -2px #FFFF00)
+      drop-shadow(2px 0 #FFFF00) drop-shadow(-2px 0 #FFFF00);
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .body-noscroll {
+    overflow: hidden;
+  }
+
+  .textStroke {
+    filter: drop-shadow(0 2px #fff) drop-shadow(0 -2px #fff)
+      drop-shadow(2px 0 #fff) drop-shadow(-2px 0 #fff);
+  }
+
+  @media (min-width: 768px) {
+    .textStroke {
+      filter: drop-shadow(0 3px #fff) drop-shadow(0 -3px #fff)
+        drop-shadow(3px 0 #fff) drop-shadow(-3px 0 #fff);
+    }
+  }
+
+  .textStroke--thin {
+    filter: drop-shadow(0 1px #fff) drop-shadow(0 -1px #fff)
+      drop-shadow(1px 0 #fff) drop-shadow(-1px 0 #fff);
+  }
+
+  .fade-out-right {
+    --mask: linear-gradient(to right, 
+      rgba(0,0,0, 1) 0,   rgba(0,0,0, 1) 92%, 
+      rgba(0,0,0, 0) 100%, rgba(0,0,0, 0) 0
+    ) 100% 98% / 100% 100% repeat-x;
+    -webkit-mask: var(--mask); 
+    mask: var(--mask);
+  }
+}
