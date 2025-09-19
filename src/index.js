@@ -13,7 +13,7 @@ root.render(
   <React.StrictMode>
     <Provider store={store}>
       <BrowserRouter>
-        <div className="min-h-screen bg-gradient-to-r from-brandLightBlue via-brandVLightBlue to-brandLightBlue">
+        <div className="min-h-screen bg-[#0a0a0a]">
           <App />
         </div>
       </BrowserRouter>

@@ -137,7 +137,7 @@ const AccountTabs = () => {
                 />
                 <path
                   fill="#394240"
-                  d="M45,46h8c0.553,0,1-0.447,1-1v-6c0-0.553-0.447-1-1-1h-8c-0.553,0-1,0.447-1,1v6C44,45.553,44.447,46,45,46   z M46,40h6v4h-6V40z"
+                  d="M45,46h8c0.553,0,1-0.447,1-1v-6c0-0.553-0.447-1-1-1h-8c-0.553,0-1,0.447-1,1v6C44,45.553,44.447,46,45,46 z M46,40h6v4h-6V40z"
                 />
                 <rect x="46" y="40" fill="#F9EBB2" width="6" height="4" />
               </g>
@@ -151,7 +151,7 @@ const AccountTabs = () => {
             tabSelected === "orders" ? "bg-white font-bold" : "font-semibold"
           }`}
         >
-          <span className="transition-all group-hover:rotate-[25deg] group-hover:scale-110 text-brnadBlue">
+          <span className="transition-all group-hover:rotate-[25deg] group-hover:scale-110 text-brandBlue">
             <svg
               className="w-12 h-12"
               viewBox="0 0 23 21"

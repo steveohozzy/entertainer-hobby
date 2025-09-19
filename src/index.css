@@ -31,8 +31,8 @@
   }
 
   .shadow-text-green {
-      filter: drop-shadow(0 2px #067f3d) drop-shadow(0 -2px #067f3d)
-      drop-shadow(2px 0 #067f3d) drop-shadow(-2px 0 #067f3d);
+    filter: drop-shadow(0 2px 2px rgba(45,255,196,1)) drop-shadow(0 -2px 2px rgba(45,255,196,1))
+      drop-shadow(2px 0 2px rgba(45,255,196,1)) drop-shadow(-2px 0 2px rgba(45,255,196,1));
       
   }
 

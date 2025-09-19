@@ -33,7 +33,8 @@ module.exports = {
         'miniheartleft': 'miniheartleft 0.8s ease-in-out',
         'miniheartright': 'miniheartright 0.8s ease-in-out',
         'wave': 'wave 0.8s 5 ease-in-out',
-        'fadeIn' : 'fadeIn 0.3s ease-out'
+        'fadeIn' : 'fadeIn 0.3s ease-out',
+        'borderGradient' : 'borderGradient 0.5s ease-in-out forwards'
       },
       keyframes: {
         bigheart: {
@@ -88,6 +89,11 @@ module.exports = {
             transform: 'translateY(0)'
           }
         },
+        borderGradient: {
+          'to': {
+            transform: 'rotate(180deg)',
+          }
+         },
       },
     },
   },
