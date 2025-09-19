@@ -90,7 +90,7 @@ const Menu = () => {
       <div className="rounded-xl p-[3px] relative overflow-hidden after:absolute after:block after:top-0 after:left-0 after:w-[110%] after:h-full after:bg-gradient-to-br after:from-blue-500 after:via-black after:to-blue-500 hover:after:animate-borderGradient after:z-0">
         <button
           name="Activate Menu"
-          className="w-full flex flex-col items-center shadow-md justify-center bg-gradient-to-br from-black via-gray-900 to-black rounded-xl cursor-pointer flex flex-wrap transition-all z-[1] relative overflow-hidden p-4"
+          className="w-full flex flex-col items-center shadow-md justify-center bg-gradient-to-br from-black via-gray-900 to-black rounded-xl cursor-pointer flex flex-wrap transition-all z-[1] relative overflow-hidden p-2 md:p-4"
           onClick={toggleMenu}
         >
           <MenuIcon />

@@ -1091,25 +1091,30 @@ const ProductDetails = () => {
                 className="!pb-5 !px-2.5"
                 modules={[Autoplay, Pagination]}
                 spaceBetween={10}
-                slidesPerView={3}
+                slidesPerView={1.5}
+                breakpoints={{
+                  768: {
+                    slidesPerView: 3,
+                  }
+                }}
                 pagination={{ clickable: true }}
                 autoplay={true}
                 loop
               >
                 {products.slice(0, 6).map((product) => (
                   <SwiperSlide className="py-2">
-                        <div className="rounded-3xl p-[3px] relative overflow-hidden after:absolute after:block after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-br after:from-gray-100 after:via-black  after:to-gray-100  hover:after:animate-borderGradient after:z-0">
+                        <div className="rounded-3xl p-[3px] relative overflow-hidden after:absolute after:block after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-br after:from-gray-100 after:via-black h-full after:to-gray-100  hover:after:animate-borderGradient after:z-0">
                             <div onClick={() => { navigate(`/product-details/${product.id}`); window.scrollTo({top: 0,left: 0,behavior: "smooth",});}}
                             className="bg-gradient-to-br from-black via-gray-900 to-black p-5 rounded-[calc(1.5rem-1px)]
-                            cursor-pointer flex flex-wrap transition-all z-[1] relative">
-                            <div className="rounded-lg w-1/2 py-1">
+                            cursor-pointer flex flex-col transition-all z-[1] relative h-full">
+                            <div className="rounded-lg w-full md:w-1/2 py-1">
                                 <img
                                     src={product.image || "/placeholder.svg"}
                                     alt={product.name}
                                     className="w-full object-cover group-hover:scale-105 transition-transform duration-300 rounded-lg"
                                 />
                             </div>
-                            <div className="w-1/2 flex flex-col justify-between items-center py-3 md:py-3 px-2">
+                            <div className="w-full md:w-1/2  flex flex-col justify-between items-center py-3 md:py-3 px-2">
                                 <div>
                                     <div className="flex flex-wrap justify-center mb-1">
                                         <div className="inline-flex items-center text-xs text-gray-400">{product.brand}</div>

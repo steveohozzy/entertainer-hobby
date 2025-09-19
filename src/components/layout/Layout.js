@@ -117,7 +117,7 @@ const Layout = () => {
                 </button>
                 <AccountPopUp />
               </div>
-              <div className="flex items-center space-x-4 pt-2 ml-1  md:ml-0 group">
+              <div className="flex items-center pt-2 md:ml-0 group">
                 <button onClick={() => {
                   navigate('/');
                    window.scrollTo({
@@ -125,7 +125,7 @@ const Layout = () => {
                     left: 0,
                     behavior: "smooth",
                   });
-                }} className="flex items-center w-[101px] md:w-[164px] lg:w-[350px]">
+                }} className="flex items-center w-[130px] md:w-[350px]">
                   <img src="/entertainer-xp-logo.svg" alt="Entertainer XP" />
                 </button>
               </div>

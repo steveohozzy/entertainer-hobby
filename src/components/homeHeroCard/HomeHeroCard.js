@@ -10,7 +10,7 @@ const HomeHeroCard = () => {
   };
 
   return (
-    <div className="h-auto shadow-text-blue rounded-xl overflow-hidden mt-10 mb-8 md:mt-14 md:mb-10">
+    <div className="h-auto shadow-text-blue rounded-xl mt-10 mb-8 md:mt-14 md:mb-10">
       <div className="rounded-xl bg-gradient-to-br from-black via-gray-900 to-black flex flex-wrap flex-row-reverse md:flex-row h-full">
         <div className="w-full md:w-1/2 flex flex-col justify-center items-center p-6 lg:p-12">
           <div className="mb-4">
