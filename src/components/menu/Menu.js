@@ -87,15 +87,16 @@ const Menu = () => {
     },[])
   return (
     <>
-      <button
-        name="Activate Menu"
-        className="transition-all md:shadow-lg flex flex-col items-center justify-center text-brandBlue bg-white px-3 md:py-1 rounded-xl rounded-tl-none hover:scale-105 h-full md:rounded-tl-xl md:rounded-bl-xl"
-        onClick={toggleMenu}
-      >
-        <MenuIcon />
-        <span className="text-[10px] mt-[-3px] relative">Menu</span>
-        <span className="sr-only">Activate Menu</span>
-      </button>
+      <div className="rounded-xl p-[3px] relative overflow-hidden after:absolute after:block after:top-0 after:left-0 after:w-[110%] after:h-full after:bg-gradient-to-br after:from-blue-500 after:via-black after:to-blue-500 hover:after:animate-borderGradient after:z-0">
+        <button
+          name="Activate Menu"
+          className="w-full flex flex-col items-center shadow-md justify-center bg-gradient-to-br from-black via-gray-900 to-black rounded-xl cursor-pointer flex flex-wrap transition-all z-[1] relative overflow-hidden p-4"
+          onClick={toggleMenu}
+        >
+          <MenuIcon />
+          <span className="sr-only">Activate Menu</span>
+        </button>
+      </div>
       {/* Hamburger Menu Overlay */}
       {showMenu && (
         <div

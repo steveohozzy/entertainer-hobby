@@ -17,7 +17,7 @@ const Dropdown = ({ title, activeTitle, swapActiveTitle, answer, expanded, arrow
         >
             <span className={`mr-2 flex  ${arrowAgainstWord ? null : 'w-full'}`}>{swapActiveTitle ? (accordionOpen ? activeTitle : title) : title} </span>
             <span
-            className={`w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[8px] border-brandBlue transition-all ${
+            className={`w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[8px] border-white transition-all ${
                 accordionOpen && "rotate-180"
             }`}
             ></span>

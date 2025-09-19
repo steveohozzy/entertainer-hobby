@@ -13,8 +13,8 @@ const HomeTopPicks = () => {
 
   return (
     <div id="top-picks" className='w-full text-center pt-5'>
-            <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold md:!leading-[1.2] text-transparent text-center mt-5 mb-1 md:mt-12 drop-shadow-md">
-                <span className='bg-gradient-to-r from-brandBlue via-textBlue to-brandBlue bg-clip-text md:!leading-[1.2] text-transparent textStroke'>
+            <h3 className="text-3xl md:text-4xl lg:text-5xl font-semibold md:!leading-[1.2] text-transparent text-center mt-5 mb-1 md:mt-12">
+                <span className='text-black title-purple'>
                     Top Picks
                 </span>
             </h3>
@@ -53,19 +53,18 @@ const HomeTopPicks = () => {
                                     <div className="flex flex-wrap justify-center mb-1">
                                         <div className="inline-flex items-center text-xs text-gray-400">{product.brand}</div>
                                     </div>
-                                    <div className=" text-brandBlue lg:text-lg font-bold leading-[1.2] xl:leading-[1.1] line-clamp-3 mb-2 md:mb-0">{product.name}</div>
+                                    <div className="bg-gradient-to-br from-gray-500 via-gray-100 to-gray-500 bg-clip-text md:!leading-[1.2] text-transparent lg:text-lg font-semibold leading-[1.2] xl:leading-[1.1] line-clamp-3 mb-2 md:mb-0">{product.name}</div>
                                 </div>
                                 <div>
-                                    <div className="price">
+                                    <div className="price mb-4">
                                         <div className="flex items-end justify-center">
-                                            <span className="text-brandRed font-bold text-sm">£{product.price}</span>
+                                            <span className="text-brandRed font-semibold text-sm">£{product.price}</span>
                                             {product.originalPrice &&
                                                 <span className="line-through text-gray-400 text-[10px] md:text-xs ml-1">£{product.originalPrice}</span>
                                             }
                                         </div>
                                     </div>
-                                    <Button 
-                                        className='shadow-md hover:shadow-lg w-full group inline-flex items-center justify-center font-bold text-sm rounded-[30px] bg-brandGreen text-white py-2 px-2 lg:px-4 lg:pl-0 pl-0 transition-all hover:bg-brandLightGreen hover:scale-105 mt-2 min-h-[44px]'
+                                    <Button
                                         onClick={() => { navigate(`/product-details/${product.id}`); window.scrollTo({top: 0,left: 0,behavior: "smooth",});}}>
                                             Details
                                     </Button>

@@ -10,7 +10,7 @@ const HomeDelivery = () => {
   };
   return (
     <div id="delivery" className="mt-20">
-        <div className="bg-white rounded-xl mb-2 shadow-lg">
+        <div className="border-[1px] border-gray-300 bg-gray-900 rounded-xl mb-2 shadow-lg">
             <div className="flex items-center justify-center gap-3 w-full py-2">
                 <img className="hidden md:block" src="https://www.thetoyshop.com/medias/hp-redesign-map.png?context=bWFzdGVyfHJvb3R8OTg4OXxpbWFnZS9wbmd8YURFM0wyZzNOUzh4TWpVMU5qSTJORGt6TVRNMU9DOW9jQzF5WldSbGMybG5iaTF0WVhBdWNHNW58YWEyNjA2ZDA0MzA2Mzk0NjQ1ZTdmMTg0YWZkMmQzN2M1MTQ1Nzc3YmI4NTkwY2Q4NDAyMmZlODI4ZjdhZWU3NA" alt="Find your local The Entertainer store or locker" title="Find your local The Entertainer store or locker" />
                 <div className="flex flex-col justify-center p-4">
