@@ -167,17 +167,22 @@ const Layout = () => {
                     </button>
                     <MiniCart />
                 </div>
-                <div className="rounded-lg p-[2px] relative -top-2 overflow-hidden after:absolute after:block after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-br after:from-gray-100 after:via-black h-full after:to-gray-100 hover:after:animate-borderGradient after:z-0">
+                <div className="rounded-lg p-[2px] relative -top-2 overflow-hidden after:absolute after:block after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-br after:from-gray-100 after:via-black h-full after:to-gray-100 hover:after:animate-borderGradient after:z-0 after:h-[150%]">
                 <a
                   href="https://www.thetoyshop.co.uk/"
                   rel="noreferrer"
                   target="_blank"
-                  className="py-2 h-full md:h-auto flex items-center rounded-lg px-2 md:px-3 bg-brandBlue relative z-[2]"
+                  className="py-2 h-full md:h-auto flex items-center rounded-lg overflow-hidden px-2 md:px-3 bg-brandBlue relative z-[2]"
                 >
                   <img
                     src="/entertainer-logo.svg"
                     alt="visit Early Learning Centre"
-                    className="h-8"
+                    className="h-8 hidden md:block"
+                  />
+                  <img
+                    src="/jack-logo.svg"
+                    alt="visit Early Learning Centre"
+                    className="h-8 md:hidden"
                   />
                   <span className="sr-only">
                     visit the Early Learning Centre website
