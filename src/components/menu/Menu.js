@@ -100,17 +100,17 @@ const Menu = () => {
       {/* Hamburger Menu Overlay */}
       {showMenu && (
         <div
-          className="fixed inset-0 bg-textBlue bg-opacity-40 z-40 h-screen"
+          className="fixed inset-0 bg-black/70 z-40 h-screen"
         />
       )}
 
       {/* Sliding Hamburger Menu */}
       <div
-        className={`fixed h-screen top-5 left-0 h-full w-80 z-50 transform transition-transform ease-in-out ${
-          showMenu ? "translate-x-0 top-5 left-4" : "-translate-x-full"
+        className={`fixed h-screen top-5 -left-4 h-full w-80 z-50 transform transition-transform ease-in-out ${
+          showMenu ? "translate-x-0 top-5 left-8" : "-translate-x-full"
         }`}
       >
-        <div ref={menuRef} className={`bg-white max-h-[calc(100vh-130px)] lg:max-h-[calc(100vh-80px)] relative rounded-3xl shadow-xl overflow-hidden
+        <div ref={menuRef} className={`bg-gradient-to-br from-black via-gray-900 to-black max-h-[calc(100vh-130px)] lg:max-h-[calc(100vh-80px)] relative rounded-3xl shadow-xl overflow-hidden shadow-text-blue
           ${navOpen ? 'overflow-y-auto' : 'overflow-hidden'}
         `}>
           {/* Animated Menu Categories */}
@@ -123,7 +123,7 @@ const Menu = () => {
                 <X className="h-7 w-7 mt-2" />
                 <span className="sr-only">close menu</span>
               </button>
-              <div className="flex items-center text-brandBlue pr-5">
+              <div className="flex items-center text-white pr-5">
                 <button
                 onClick={() => {
                   navigate('/account');
@@ -145,7 +145,7 @@ const Menu = () => {
                 </span>
               </button>
               <button onClick={goToWishlistHandler} className="group flex ml-2" name="View your favourites">
-                  <Heart className="transition-all h-6 w-6 text-brandBlue group-hover:scale-110 group-hover:rotate-[20deg]" />
+                  <Heart className="transition-all h-6 w-6 text-white group-hover:scale-110 group-hover:rotate-[20deg]" />
                   <span className="sr-only">View your favourites</span>
               </button>
               </div>
@@ -174,7 +174,7 @@ const Menu = () => {
                         <span
                           className={`w-0 h-0 border-l-[8px] border-t-[8px] border-t-transparent border-b-[8px] border-b-transparent border-brandBlue transition-all absolute ${
                             expandedCategories[category.id] ?
-                            "rotate-180 border-white left-[calc(100%-8px)] z-50" : "left-full"
+                            "rotate-180 !border-black !border-b-transparent !border-t-transparent left-[calc(100%-8px)] z-50" : "left-full"
                           }`}
                         ></span>
                       </div>
@@ -184,9 +184,9 @@ const Menu = () => {
                         onClick={() => toggleCategory(category.id)}
                         onMouseEnter={() => setHoveredItem(category.id)}
                         onMouseLeave={() => setHoveredItem(null)}
-                        className={`flex-1 flex items-center justify-between p-4 text-left transition-all duration-300 group hover:shadow-lg text-brandBlue`}
+                        className={`flex-1 flex items-center justify-between p-4 text-left transition-all duration-300 group hover:shadow-lg text-white`}
                       >
-                        <span className="font-bold text-lg">
+                        <span className="font-semibold text-lg">
                           {category.name}
                         </span>
                         <div className="flex items-center gap-2">
@@ -201,7 +201,7 @@ const Menu = () => {
                     {expandedCategories[category.id] && (
                       <div className="animate-fadeIn relative">
                         <div
-                          className={`w-[40px] absolute top-0 left-0 justify-center bg-brandLightBlue rounded-full h-full`}
+                          className={`w-[40px] absolute top-0 left-0 justify-center bg-purple-500 rounded-full h-full`}
                         ></div>
                         {category.items.map((item, itemIndex) => (
                           <div key={itemIndex}>
@@ -213,11 +213,11 @@ const Menu = () => {
                               >
                                 {item.hasSubItems && (
                                   <span
-                                    className={`w-0 h-0 border-l-[8px] border-t-[8px] border-t-transparent border-b-[8px] border-b-transparent border-brandLightBlue transition-all absolute ${
+                                    className={`w-0 h-0 border-l-[8px] border-t-[8px] border-t-transparent border-b-[8px] border-b-transparent border-purple-500 transition-all absolute ${
                                       expandedSubCategories[
                                         `${category.id}-${itemIndex}`
                                       ] ?
-                                      "rotate-180 border-white left-[calc(100%-8px)] z-50" : "left-full"
+                                      "rotate-180 !border-black !border-b-transparent !border-t-transparent left-[calc(100%-8px)] z-50" : "left-full"
                                     }`}
                                   ></span>
                                 )}
@@ -237,7 +237,7 @@ const Menu = () => {
                                     <div>
                                       <div className="flex items-center gap-2 justify-between mb-1p">
                                         <span
-                                          className={`font-bold text-textBlue text-left text-base`}
+                                          className={`font-semibold text-white text-left text-base`}
                                         >
                                           {item.name}
                                         </span>
@@ -246,7 +246,7 @@ const Menu = () => {
                                     {expandedSubCategories[
                                         `${category.id}-${itemIndex}`
                                       ] && (
-                                      <span className="text-textBlue">
+                                      <span className="text-white">
                                                 <Sparkles className="h-4 w-4 animate-spin" />
                                       </span>
                                     )}
@@ -262,7 +262,7 @@ const Menu = () => {
                                   className={`flex-1 p-3 transition-all duration-300 group`}
                                 >
                                   <div className="flex items-center gap-2 mb-1">
-                                    <span className={`font-bold text-textBlue text-left text-baset`}>
+                                    <span className={`font-semibold text-white text-left text-base`}>
                                       {item.name}
                                     </span>
                                     {item.color && (
@@ -270,7 +270,7 @@ const Menu = () => {
                                         className={`w-3 h-3 rounded-full ${item.color} animate-pulse`}
                                       ></div>
                                     )}
-                                    <ChevronRight className="h-4 w-4 transition-transform duration-300 text-brandBlue" />
+                                    <ChevronRight className="h-4 w-4 transition-transform duration-300 text-white" />
                                   </div>
                                 </button>
                               )}
@@ -296,10 +296,10 @@ const Menu = () => {
                                           navigate(subItem.href);
                                           closeMenu();
                                         }}
-                                        className="flex-1 p-2 bg-white/50 hover:bg-white/80 backdrop-blur-sm transition-all duration-300 hover:shadow-md group"
+                                        className="flex-1 p-2 transition-all duration-300 group"
                                       >
                                         <div className="flex items-center gap-2 mb-1">
-                                          <span className="flex font-semibold items-center text-sm text-brandBlue opacity-75 group-hover:opacity-100">
+                                          <span className="flex font-semibold items-center text-sm text-white opacity-75 group-hover:opacity-100">
                                             {subItem.name}
                                             <ChevronRight className="w-4 h-4 ml-2" />
                                           </span>
@@ -335,10 +335,10 @@ const Menu = () => {
                       className={`flex-1 p-4 transition-all duration-300 group ${category.bgColor}`}
                     >
                       <div className="flex items-center justify-between">
-                        <span className={`font-bold text-lg ${category.color ? category.color : 'text-brandBlue'}`}>
+                        <span className={`font-semibold text-lg ${category.color ? category.color : 'text-white'}`}>
                           {category.name}
                         </span>
-                        <ChevronRight className={`${category.color ? category.color : 'text-brandBlue'}`} />
+                        <ChevronRight className={`${category.color ? category.color : 'text-white'}`} />
                       </div>
                     </button>
                   </div>
