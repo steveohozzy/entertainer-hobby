@@ -838,7 +838,7 @@ const ProductDetails = () => {
                   <div className="flex flex-col items-center justify-center rounded-lg border-[3px] border-gray-200 bg-white shadow-sm relative">
                     <div>
                       {bundleExpanded && (
-                        <div className="text-lg font-semibold text-gray-100 text-center mt-2 lg:mt-0 mb-1 leading-[1]">
+                        <div className="text-lg font-semibold text-brandBlue text-center mt-2 lg:mt-0 mb-1 leading-[1]">
                           <div className={`absolute top-2 right-2 ${bundleItemsCount === 0 && 'opacity-30'}`}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="18" viewBox="0 0 30 18" fill="none">
                               <g clip-path="url(#clip0_2353_894)">
@@ -874,13 +874,13 @@ const ProductDetails = () => {
                             </svg>
                           </div>
                           {bundleItemsCount > 1 &&
-                            <span><span className="text-xl font-bold block leading-[1]">Buy</span>this bundle</span>
+                            <span><span className="text-xl font-semibold block leading-[1]">Buy</span>this bundle</span>
                           }
                           {bundleItemsCount === 1 &&
-                            <span><span className="text-xl font-bold block leading-[1]">Buy</span>this item</span>
+                            <span><span className="text-xl font-semibold block leading-[1]">Buy</span>this item</span>
                           }
                           {bundleItemsCount === 0 &&
-                            <span><span className="text-xl font-bold block leading-[1]">Pick</span>Items</span>
+                            <span><span className="text-xl font-semibold block leading-[1]">Pick</span>Items</span>
                           }
                         </div>
                       )}
@@ -1143,11 +1143,11 @@ const ProductDetails = () => {
 
         <button
           onClick={() => setTabOpen(!tabOpen)}
-          className={`fixed z-[600] top-1/2 -translate-y-1/2 transition-all -rotate-90 bg-brandRed py-2 px-6 text-lg rounded-tr-xl rounded-tl-xl font-bold text-white text shadow-[-5px_-5px_10px_1px_#bbb] ${
-            tabOpen ? "right-[138px]" : "right-[-52px]"
+          className={`fixed z-[600] top-1/2 -translate-y-1/2 transition-all -rotate-90 bg-gradient-to-br from-black via-gray-900 to-black py-2 px-6 text-lg rounded-tr-xl rounded-tl-xl font-bold text-black shadow-text-blue ${
+            tabOpen ? "right-[128px]" : "right-[-62px]"
           }`}
         >
-          <span className="shadow-text-red">you may like</span>
+          <span className="title-purple">you may like</span>
         </button>
         {(tabOpen) && (
           <div
@@ -1161,7 +1161,7 @@ const ProductDetails = () => {
           }`}
         >
           <div className="w-full text-center">
-            <div className="bg-white p-5 rounded-tl-lg rounded-bl-lg max-h-screen overflow-auto no-scrollbar">
+            <div className="bg-gradient-to-br from-black via-gray-900 p-5 rounded-tl-lg rounded-bl-lg max-h-screen overflow-auto no-scrollbar">
               <div className="flex flex-col gap-4 justify-start">
                 {products.slice(0, 6).map((product) => (
                   <div
