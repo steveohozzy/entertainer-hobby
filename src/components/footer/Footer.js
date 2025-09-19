@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <>
       <footer>
-        <div className="bg-gray-800 p-4">
+        <div className="bg-gray-900 p-4">
           <div className="max-w-7xl mx-auto px-4 pr-0 sm:px-6 lg:px-8">
             <div className="mb-4 flex flex-col md:flex-row">
             <div className="mb-6 flex flex-col items-center md:w-1/3 md:items-stretch md:pr-4">
@@ -352,7 +352,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="bg-gray-700 p-4 text-white relative z-40">
+        <div className="bg-gray-800 p-4 text-white relative z-40">
           <div className="max-w-7xl mx-auto px-4 pr-0 sm:px-6 lg:px-8 flex flex-wrap justify-between">
             <div className="w-full md:w-[65%]">
               <div className="text-xs text-white my-2 text-center md:text-left">

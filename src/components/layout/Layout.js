@@ -201,7 +201,7 @@ const Layout = () => {
         <button
           name="Scroll to to of site"
           onClick={scrollToTop}
-          className="fixed border-[2px] border-brandBlue bottom-4 right-4 inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm text-brandBlue bg-brandLightBlue hover:bg-brandBlue h-9 rounded-full px-2 shadow-md transition-all hover:scale-105 hover:shadow-lg hover:text-white hover:border-white z-[9999]"
+          className="fixed border-[2px] border-purple-500 bottom-4 right-4 inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm text-purple-500 hover:text-brandBlue bg-black h-9 rounded-full px-2 shadow-md transition-all hover:scale-105  hover:border-brandBlue z-[9999]"
         >
           <ChevronUp className="h-5 w-5" />
           <span className="sr-only">Back to top</span>
