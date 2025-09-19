@@ -1091,7 +1091,7 @@ const ProductDetails = () => {
                 className="!pb-5 !px-2.5"
                 modules={[Autoplay, Pagination]}
                 spaceBetween={10}
-                slidesPerView={1.5}
+                slidesPerView={1.7}
                 breakpoints={{
                   768: {
                     slidesPerView: 3,
@@ -1106,7 +1106,7 @@ const ProductDetails = () => {
                         <div className="rounded-3xl p-[3px] relative overflow-hidden after:absolute after:block after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-br after:from-gray-100 after:via-black h-full after:to-gray-100  hover:after:animate-borderGradient after:z-0">
                             <div onClick={() => { navigate(`/product-details/${product.id}`); window.scrollTo({top: 0,left: 0,behavior: "smooth",});}}
                             className="bg-gradient-to-br from-black via-gray-900 to-black p-5 rounded-[calc(1.5rem-1px)]
-                            cursor-pointer flex flex-col transition-all z-[1] relative h-full">
+                            cursor-pointer flex flex-col md:flex-row transition-all z-[1] relative h-full">
                             <div className="rounded-lg w-full md:w-1/2 py-1">
                                 <img
                                     src={product.image || "/placeholder.svg"}
