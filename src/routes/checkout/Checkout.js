@@ -258,7 +258,7 @@ const Checkout = () => {
                                     <Dropdown 
                                       expanded={true}
                                       title="Delivery Address"
-                                      className="relative bg-gray-600 p-4 rounded-md text-white font-semibold flex items-center justify-between w-full"
+                                      className="relative bg-gradient-to-br from-gray-600 to-gray-800 p-4 rounded-md text-white font-semibold flex items-center justify-between w-full"
                                       answer={
                                         <>
                                         <div className='py-6 px-4'>
@@ -289,7 +289,7 @@ const Checkout = () => {
                                     <Dropdown 
                                       expanded={true}
                                       title="Delivery Options"
-                                      className="relative bg-gray-600 p-4 px-2 sm:px-4 rounded-md text-white font-semibold flex items-center justify-between w-full"
+                                      className="relative bg-gradient-to-br from-gray-600 to-gray-800 p-4 px-2 sm:px-4 rounded-md text-white font-semibold flex items-center justify-between w-full"
                                       answer={
                                         <>
                                         <div className='py-6 px-4'>
@@ -354,7 +354,7 @@ const Checkout = () => {
                                           <span className='mr-8'>Delivery</span>
                                           <span className='font-[500] text-sm text-gray-100'>Standard</span>
                                         </div>}
-                                      className="relative bg-gray-600 w-[calc(100%+6px)] ml-[-3px] mt-[-3px] p-4 border-[3px] border-gray-300 rounded-md text-white font-semibold flex items-center justify-between"
+                                      className="relative bg-gradient-to-br from-gray-600 to-gray-800 w-[calc(100%+6px)] ml-[-3px] mt-[-3px] p-4 border-[3px] border-gray-300 rounded-md text-white font-semibold flex items-center justify-between"
                                       answer={
                                         <>
                                         <div className='py-6 px-4'>
@@ -385,7 +385,7 @@ const Checkout = () => {
                                     <Dropdown 
                                       expanded={true}
                                       title="Payment Method"
-                                      className="relative bg-gray-600 p-4 rounded-md text-white font-semibold flex items-center justify-between w-full"
+                                      className="relative bg-gradient-to-br from-gray-600 to-gray-800 p-4 rounded-md text-white font-semibold flex items-center justify-between w-full"
                                       answer={
                                         <>
                                         <div className='py-6 px-4'>
@@ -509,7 +509,7 @@ const Checkout = () => {
                                 <Dropdown 
                                   expanded={true}
                                   title="Delivery Address (*Mandatory)"
-                                  className="bg-black p-4 px-2 sm:px-4 rounded-md text-white font-semibold flex items-center justify-between w-full bg-gray-600"
+                                  className="p-4 px-2 sm:px-4 rounded-md text-white font-semibold flex items-center justify-between w-full bg-gradient-to-br from-gray-600 to-gray-800"
                                   answer={
                                     <form id="address-form" className='py-6 space-y-8 px-4'>
                                         <div className={`flex h-[44px] px-3 rounded-lg w-full border border-[3px] border-brandBlue relative ${name && 'border-red-600'}`}>
@@ -692,7 +692,7 @@ const Checkout = () => {
                                   <Dropdown 
                                     expanded={true}
                                     title="Collect Address"
-                                    className="relative bg-gray-600 p-4 rounded-md text-white font-semibold flex items-center justify-between w-full"
+                                    className="relative bg-gradient-to-br from-gray-600 to-gray-800 p-4 rounded-md text-white font-semibold flex items-center justify-between w-full"
                                     answer={
                                       <div>
                                         <form id="manual-address-form" className='py-6 px-4'>
@@ -831,7 +831,7 @@ const Checkout = () => {
                                     <Dropdown 
                                       expanded={true}
                                       title="Delivery Address"
-                                      className="relative bg-gray-600 p-4 rounded-md text-white font-semibold flex items-center justify-between w-full"
+                                      className="relative bg-gradient-to-br from-gray-600 to-gray-800 p-4 rounded-md text-white font-semibold flex items-center justify-between w-full"
                                       answer={
                                         <>
                                         <div className='py-6 px-4'>
@@ -862,7 +862,7 @@ const Checkout = () => {
                                     <Dropdown 
                                       expanded={true}
                                       title="Delivery Options"
-                                      className="relative bg-gray-600 p-4 px-2 sm:px-4 rounded-md text-white font-semibold flex items-center justify-between w-full"
+                                      className="relative bg-gradient-to-br from-gray-600 to-gray-800 p-4 px-2 sm:px-4 rounded-md text-white font-semibold flex items-center justify-between w-full"
                                       answer={
                                         <>
                                         <div className='py-6 px-4'>
@@ -957,7 +957,7 @@ const Checkout = () => {
                                     <Dropdown 
                                       expanded={true}
                                       title="Payment Method"
-                                      className="relative bg-gray-600 p-4 rounded-md text-white font-semibold flex items-center justify-between w-full"
+                                      className="relative bg-gradient-to-br from-gray-600 to-gray-800 p-4 rounded-md text-white font-semibold flex items-center justify-between w-full"
                                       answer={
                                         <>
                                         <div className='py-6 px-4'>
