@@ -10,15 +10,19 @@ const HomeDelivery = () => {
   };
   return (
     <div id="delivery" className="mt-20">
-        <div className="border-[1px] border-gray-300 bg-gray-900 rounded-xl mb-2 shadow-lg">
+        <div className="border-[2px] border-gray-400 bg-gray-900 rounded-xl mb-2 shadow-lg">
             <div className="flex items-center justify-center gap-3 w-full py-2">
                 <img className="hidden md:block" src="https://www.thetoyshop.com/medias/hp-redesign-map.png?context=bWFzdGVyfHJvb3R8OTg4OXxpbWFnZS9wbmd8YURFM0wyZzNOUzh4TWpVMU5qSTJORGt6TVRNMU9DOW9jQzF5WldSbGMybG5iaTF0WVhBdWNHNW58YWEyNjA2ZDA0MzA2Mzk0NjQ1ZTdmMTg0YWZkMmQzN2M1MTQ1Nzc3YmI4NTkwY2Q4NDAyMmZlODI4ZjdhZWU3NA" alt="Find your local The Entertainer store or locker" title="Find your local The Entertainer store or locker" />
                 <div className="flex flex-col justify-center p-4">
-                    <img className="hidden md:block mb-4" src="https://www.thetoyshop.com/medias/hp-redesign-store-locator-title.png?context=bWFzdGVyfHJvb3R8MTE2NDJ8aW1hZ2UvcG5nfGFEQm1MMmc0TXk4eE1qVTFOakkyTkRVd05UTTNOQzlvY0MxeVpXUmxjMmxuYmkxemRHOXlaUzFzYjJOaGRHOXlMWFJwZEd4bExuQnVad3w1NDYwMzQ4ZDQ4YWZjZjk4Mjc2NWE2YjIzMjZlYWVjNjE2ZGQyODA5MmE5NzY3NzdlYWI4MTEzYmE4ZWY2OWRl" alt="Find your local The Entertainer store or locker" title="Find your local The Entertainer store or locker" />
-                    <img className="md:hidden mb-3" src="https://www.thetoyshop.com/medias/store-locator-title-graphic.png?context=bWFzdGVyfHJvb3R8MTg0MjJ8aW1hZ2UvcG5nfGFHRTNMMmhtTUM4eE1qVTBOREExTXpNeE16VTJOaTl6ZEc5eVpTMXNiMk5oZEc5eUxYUnBkR3hsTFdkeVlYQm9hV011Y0c1bnw2YjEzMjZmMjRhNzBjMjY3MWRmZDVkN2U4MTQzNGI3MGMwOGIwNjBlMzkwYzUyNmRjNTJhYTUyZWJiYjBhZDI5" alt="Find your local The Entertainer store or locker" title="Find your local The Entertainer store or locker" />
+                  <div className="flex items-center mb-2">
+                    <img className="md:hidden" src="https://www.thetoyshop.com/medias/hp-redesign-map.png?context=bWFzdGVyfHJvb3R8OTg4OXxpbWFnZS9wbmd8YURFM0wyZzNOUzh4TWpVMU5qSTJORGt6TVRNMU9DOW9jQzF5WldSbGMybG5iaTF0WVhBdWNHNW58YWEyNjA2ZDA0MzA2Mzk0NjQ1ZTdmMTg0YWZkMmQzN2M1MTQ1Nzc3YmI4NTkwY2Q4NDAyMmZlODI4ZjdhZWU3NA" alt="Find your local The Entertainer store or locker" title="Find your local The Entertainer store or locker" />
+                    <div className="text-center mb-3 title-purple text-2xl font-bold text-black">
+                      Find your local The Entertainer store or locker
+                    </div>
+                    </div>
 
                     <div className="flex items-center justify-center gap-2">
-                        <img className="hidden md:block" src="https://www.thetoyshop.com/medias/hp-redesign-store-locator-locations-text.png?context=bWFzdGVyfHJvb3R8NTczMHxpbWFnZS9wbmd8YURJNUwyZzNPQzh4TWpVMU5qSTJORGcyTlRneU1pOW9jQzF5WldSbGMybG5iaTF6ZEc5eVpTMXNiMk5oZEc5eUxXeHZZMkYwYVc5dWN5MTBaWGgwTG5CdVp3fDM1YzA3YTY3Y2E2Njg2NjVjNzk4OGQyMjJiOWI2N2Q2MTVhMGRkZTk0YWQ4YjJmOWM4NTY4NzY4MmY1MDc0Mzc" alt="1000+ locations in the UK" title="1000+ locations in the UK" />
+                        <div className="title-purple text-xl font-bold text-black hidden md:block">1000+ locations in the UK</div>
                         <Button
                           className="shadow-md hover:shadow-lg group inline-flex items-center justify-center font-bold text-lg rounded-[30px] bg-brandRed text-white py-2 px-4 pl-0 transition-all hover:bg-brandLightGreen hover:scale-105"
                           iconpath={

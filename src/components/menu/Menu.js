@@ -110,8 +110,8 @@ const Menu = () => {
           showMenu ? "translate-x-0 top-5 left-8" : "-translate-x-full"
         }`}
       >
-        <div ref={menuRef} className={`bg-gradient-to-br from-black via-gray-900 to-black max-h-[calc(100vh-130px)] lg:max-h-[calc(100vh-80px)] relative rounded-3xl shadow-xl overflow-hidden shadow-text-blue
-          ${navOpen ? 'overflow-y-auto' : 'overflow-hidden'}
+        <div ref={menuRef} className={`bg-gradient-to-br from-black via-gray-900 to-black max-h-[calc(100vh-130px)] lg:max-h-[calc(100vh-80px)] relative rounded-3xl shadow-xl overflow-hidden
+          ${navOpen ? 'overflow-y-auto shadow-text-blue' : 'overflow-hidden'}
         `}>
           {/* Animated Menu Categories */}
           <nav className="relative space-y-2 pt-6 pb-4 w-[calc(100%-10px)]">

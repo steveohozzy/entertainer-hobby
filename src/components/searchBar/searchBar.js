@@ -1,6 +1,4 @@
 import { useState, useEffect, useRef } from "react";
-import ByTypeCarousel from "./byTypeCarousel";
-import ByAgeCarousel from "./byAgeCarousel";
 import TopSellersCarousel from "./topSellersCarousel";
 import { useNavigate } from "react-router-dom";
 import { products } from "../../data/products";
