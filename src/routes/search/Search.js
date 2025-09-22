@@ -427,17 +427,17 @@ const SearchResults = () => {
         {/* Filter and Sort Header */}
         <div
           id="filters-bar"
-          className={`sticky z-40 bg-brandLightBlue py-2 mb-4 transition-all duration-300 ${showHeader && ''}`}
+          className={`sticky z-40 bg-black py-2 mb-4 transition-all  ${showHeader && ''} ml-[calc(51%-50vw)] mr-[calc(51%-50vw)] pl-[calc(50%-49vw)] pr-[calc(50%-49vw)] shadow-sm`}
         >
-          <div className="shadow flex items-center gap-3 justify-between shadow-sm flex-wrap bg-brandLightBlue">
+          <div className="flex items-center gap-3 justify-between flex-wrap max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-3 gap-2 w-full flex-wrap">
-              <form id="sort-by-form" className="bg-brandBlue text-white text-sm rounded-tl-full rounded-bl-full block h-full w-full px-3">
+              <form id="sort-by-form" className="bg-black border-[3px] border-purple-500 text-white text-sm rounded-tl-full rounded-bl-full block h-full w-full px-3">
                 <label htmlFor="sort" className="sr-only">
                   Select an option
                 </label>
                 <select
                   id="sort"
-                  className="bg-brandBlue text-white text-sm rounded-tl-full rounded-bl-full block h-full w-full px-3 outline-0 cursor-pointer"
+                  className="bg-black text-white text-sm rounded-tl-full rounded-bl-full block h-full w-full px-3 outline-0 cursor-pointer"
                   value={sortOption}
                   onChange={(e) => setSortOption(e.target.value)}
                 >
@@ -453,21 +453,21 @@ const SearchResults = () => {
                   <option value="newest">Newest</option>
                 </select>
               </form>
-              <div ref={wrapperRef} className={`relative z-[2] bg-white border-[3px] border-brandBlue border-b-brandBlue ${showFilters && 'border-b-white'}`}>
+              <div ref={wrapperRef} className={`relative z-[2] bg-black border-[3px] border-purple-500 border-b-purple-500 ${showFilters && 'border-b-black'}`}>
                 <button
                   name="Show filters"
                   onClick={() => setShowFilters(!showFilters)}
-                  className={`relative z-[2] inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm py-3 h-full w-full px-4 transition-all group ${showFilters ? 'bg-white text-brandBlue' : 'bg-brandBlue text-white'}`}
+                  className={`relative z-[2] inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm py-3 h-full w-full px-4 transition-all group bg-black text-white`}
                 >
                   <span className="transition-all group-hover:scale-110">Refine</span>
-                  <span className={`w-4 h-4 ${showFilters ? 'text-brandBlue' : 'text-white'} transition-all group-hover:rotate-[20deg]`}>
+                  <span className={`w-4 h-4 text-white transition-all group-hover:rotate-[20deg]`}>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512"><path d="M0 416c0 17.7 14.3 32 32 32l54.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48L480 448c17.7 0 32-14.3 32-32s-14.3-32-32-32l-246.7 0c-12.3-28.3-40.5-48-73.3-48s-61 19.7-73.3 48L32 384c-17.7 0-32 14.3-32 32zm128 0a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zM320 256a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm32-80c-32.8 0-61 19.7-73.3 48L32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l246.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48l54.7 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-54.7 0c-12.3-28.3-40.5-48-73.3-48zM192 128a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm73.3-64C253 35.7 224.8 16 192 16s-61 19.7-73.3 48L32 64C14.3 64 0 78.3 0 96s14.3 32 32 32l86.7 0c12.3 28.3 40.5 48 73.3 48s61-19.7 73.3-48L480 128c17.7 0 32-14.3 32-32s-14.3-32-32-32L265.3 64z"/></svg>
                   </span>
                 </button>
                 {/* Sliding Filter Panel */}
                 <div ref={wrapperRef}
-                  className={`absolute overflow-hidden bg-white shadow-xl z-[1] transition-all ease-in-out w-[calc(100vw-60px)] md:w-[calc(100%+40px)] left-[calc(-100%+5px)] md:left-[-20px] no-scrollbar ${
-                    showFilters ? "max-h-[calc(100vh-250px)] overflow-y-auto border border-brandBlue border-[3px] rounded-bl-lg rounded-br-lg top-[calc(100%-3px)]" : "max-h-0 top-full "
+                  className={`absolute overflow-hidden bg-black shadow-xl z-[1] transition-all ease-in-out w-[calc(100vw-60px)] md:w-[calc(100%+40px)] left-[calc(-100%+5px)] md:left-[-20px] no-scrollbar ${
+                    showFilters ? "max-h-[calc(100vh-250px)] overflow-y-auto border border-purple-500 border-[3px] rounded-bl-lg rounded-br-lg top-[calc(100%-3px)]" : "max-h-0 top-full "
                   }`}
                 >
                   <div className="p-3 h-full overflow-y-auto]">
@@ -477,7 +477,7 @@ const SearchResults = () => {
                           <div
                             key={`brand-${brand}`}
                             variant="secondary"
-                            className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs transition-colors border-transparent bg-brandBlue text-white gap-1"
+                            className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs transition-colors border-transparent bg-black text-white gap-1"
                           >
                             {brand}
                             <X
@@ -489,7 +489,7 @@ const SearchResults = () => {
                         {selectedAgeGroups.map((age) => (
                           <div
                             key={`age-${age}`}
-                            className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs transition-colors border-transparent bg-brandBlue text-white gap-1"
+                            className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs transition-colors border-transparent bg-black text-white gap-1"
                           >
                             {age}
                             <X
@@ -501,7 +501,7 @@ const SearchResults = () => {
                         {selectedFeatures.map((feature) => (
                           <div
                             key={`feature-${feature}`}
-                            className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs transition-colors border-transparent bg-brandBlue text-white gap-1"
+                            className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs transition-colors border-transparent bg-black text-white gap-"
                           >
                             {feature}
                             <X
@@ -513,7 +513,7 @@ const SearchResults = () => {
                         {selectedSizes.map((size) => (
                           <div
                             key={`size-${size}`}
-                            className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs transition-colors border-transparent bg-brandBlue text-white gap-1"
+                            className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs transition-colors border-transparent bg-black text-white gap-"
                           >
                             {size}
                             <X
@@ -523,7 +523,7 @@ const SearchResults = () => {
                           </div>
                         ))}
                         {showInStockOnly && (
-                          <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs transition-colors border-transparent bg-brandBlue text-white gap-1">
+                          <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs transition-colors border-transparent bg-black text-white gap-">
                             In Stock Only
                             <X
                               className="h-3 w-3 cursor-pointer"
@@ -546,7 +546,7 @@ const SearchResults = () => {
                     {/* Brand Filters with Search */}
                     <Dropdown
                       title="Brands"
-                      className="w-full text-brandBlue flex items-center border-b-2 border-b-textBlue py-3"
+                      className="w-full text-white flex items-center border-b-2 border-b-purple-500 py-3"
                       answer={
                         <>
                           <div className="relative my-3">
@@ -565,15 +565,10 @@ const SearchResults = () => {
                               return (
                                 <div
                                   key={brand.name}
-                                  variant={
+                                  className={`inline-flex items-center rounded-full border-[2px] border-gray-400 px-2.5 py-0.5 cursor-pointer transition-all hover:scale-105 text-sm text-white ${
                                     selectedBrands.includes(brand.name)
-                                      ? "default"
-                                      : "outline"
-                                  }
-                                  className={`inline-flex items-center rounded-full border px-2.5 py-0.5 cursor-pointer transition-all hover:scale-105 text-sm hover:bg-brandBlue hover:text-white ${
-                                    selectedBrands.includes(brand.name)
-                                      ? `bg-brandBlue text-white`
-                                      : "hover:bg-brandBlue"
+                                      ? `bg-black text-white`
+                                      : "hover:bg-black"
                                   }`}
                                   onClick={() => toggleBrand(brand.name)}
                                 >
@@ -588,7 +583,7 @@ const SearchResults = () => {
                     {/* Age Group Filters */}
                     <Dropdown
                       title="Age Groups"
-                      className="w-full text-brandBlue flex items-center border-b-2 border-b-textBlue py-3"
+                      className="w-full text-white flex items-center border-b-2 border-b-purple-500 py-3"
                       answer={
                         <div className="space-y-3 pt-3">
                           {ageGroups.map((age) => {
@@ -603,7 +598,7 @@ const SearchResults = () => {
                                   type="checkbox"
                                   checked={selectedAgeGroups.includes(age.name)}
                                   onChange={() => toggleAgeGroup(age.name)}
-                                  className="relative mt-1 block size-[20px] appearance-none rounded-md border-[3px] border-textBlue bg-white outline-none transition-all checked:bg-textBlue"
+                                  className="relative mt-1 block size-[20px] appearance-none rounded-md border-[3px] border-textBlue bg-black outline-none transition-all checked:bg-textBlue"
                                 />
                                 <span className="absolute top-[3px] left-[-8px]">
                                   <svg viewBox="0 0 24 24" width="20px" height="20px" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -621,7 +616,7 @@ const SearchResults = () => {
                                     </g>
                                   </svg>
                                 </span>
-                                <span className="text-sm text-brandBlue">
+                                <span className="text-sm text-white">
                                   {age.name} ({count})
                                 </span>
                               </label>
@@ -633,7 +628,7 @@ const SearchResults = () => {
                     {/* Features Filters */}
                     <Dropdown
                       title="Features"
-                       className="w-full text-brandBlue flex items-center border-b-2 border-b-textBlue py-3"
+                       className="w-full text-white flex items-center border-b-2 border-b-purple-500 py-3"
                        answer={
                         <div className="space-y-3 pt-3">
                         {features.map((feature) => {
@@ -648,7 +643,7 @@ const SearchResults = () => {
                                 type="checkbox"
                                 checked={selectedFeatures.includes(feature.name)}
                                 onChange={() => toggleFeature(feature.name)}
-                                className="relative mt-1 block size-[20px] appearance-none rounded-md border-[3px] border-textBlue bg-white outline-none transition-all checked:bg-textBlue"
+                                className="relative mt-1 block size-[20px] appearance-none rounded-md border-[3px] border-textBlue bg-black outline-none transition-all checked:bg-textBlue"
                               />
                               <span className="absolute top-[3px] left-[-8px]">
                                 <svg viewBox="0 0 24 24" width="20px" height="20px" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -666,7 +661,7 @@ const SearchResults = () => {
                                   </g>
                                 </svg>
                               </span>
-                              <span className="text-sm text-brandBlue">
+                              <span className="text-sm text-white">
                                 {feature.name} ({count})
                               </span>
                             </label>
@@ -679,7 +674,7 @@ const SearchResults = () => {
                     {/* Size Filters */}
                     <Dropdown
                       title="Size"
-                      className="w-full text-brandBlue flex items-center border-b-2 border-b-textBlue py-3"
+                      className="w-full text-white flex items-center border-b-2 border-b-purple-500 py-3"
                       answer={
                         <div className="space-y-3 pt-3">
                         {sizes.map((size) => {
@@ -694,7 +689,7 @@ const SearchResults = () => {
                                 type="checkbox"
                                 checked={selectedSizes.includes(size.name)}
                                 onChange={() => toggleSize(size.name)}
-                                className="relative mt-1 block size-[20px] appearance-none rounded-md border-[3px] border-textBlue bg-white outline-none transition-all checked:bg-textBlue"
+                                className="relative mt-1 block size-[20px] appearance-none rounded-md border-[3px] border-textBlue bg-black outline-none transition-all checked:bg-textBlue"
                               />
                               <span className="absolute top-[3px] left-[-8px]">
                                 <svg viewBox="0 0 24 24" width="20px" height="20px" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -712,7 +707,7 @@ const SearchResults = () => {
                                   </g>
                                 </svg>
                               </span>
-                              <span className="text-sm text-brandBlue">
+                              <span className="text-sm text-white">
                                 {size.name} ({count})
                               </span>
                             </label>
@@ -725,7 +720,7 @@ const SearchResults = () => {
                     {/* Price Range */}
                     <Dropdown
                       title="Price Range"
-                      className="w-full text-brandBlue flex items-center border-b-2 border-b-textBlue py-3"
+                      className="w-full text-white flex items-center border-b-2 border-b-purple-500 py-3"
                       answer={
                         <div className="space-y-3">
                         <div className="flex items-center space-x-2 mt-3">
@@ -757,7 +752,7 @@ const SearchResults = () => {
                             className="flex h-10 rounded-md border border-input bg-background px-3 py-2 placeholder:text-muted-foreground text-brandBlue w-20 text-sm"
                           />
                         </div>
-                        <div className="text-sm text-brandBlue">
+                        <div className="text-sm text-white">
                           £{priceRange[0]} - £{priceRange[1]}
                         </div>
                       </div>
@@ -767,7 +762,7 @@ const SearchResults = () => {
                     {/* Additional Filters */}
                     <Dropdown
                       title="Additional Filters"
-                      className="w-full text-brandBlue flex items-center border-b-2 border-b-textBlue py-3"
+                      className="w-full text-white flex items-center border-b-2 border-b-purple-500 py-3"
                       answer={
                         <div className="space-y-3">
                         <label className="relative flex items-center space-x-2 cursor-pointer mt-3">
@@ -778,7 +773,7 @@ const SearchResults = () => {
                             onChange={(e) =>
                               setShowInStockOnly(e.target.checked)
                             }
-                           className="relative mt-1 block size-[20px] appearance-none rounded-md border-[3px] border-textBlue bg-white outline-none transition-all checked:bg-textBlue"
+                           className="relative mt-1 block size-[20px] appearance-none rounded-md border-[3px] border-textBlue bg-black outline-none transition-all checked:bg-textBlue"
                           />
                           <span className="absolute top-[3px] left-[-8px]">
                             <svg viewBox="0 0 24 24" width="20px" height="20px" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -796,7 +791,7 @@ const SearchResults = () => {
                               </g>
                             </svg>
                           </span>
-                          <span className="text-sm text-brandBlue">
+                          <span className="text-sm text-white">
                             In Stock Only
                           </span>
                         </label>
@@ -806,7 +801,7 @@ const SearchResults = () => {
                   </div>
                 </div>
               </div>
-              <p className="flex items-center justify-center bg-brandBlue text-white text-xs rounded-tr-full rounded-br-full block h-full w-full px-3">
+              <p className="flex items-center justify-center bg-black text-white text-xs rounded-tr-full rounded-br-full block h-full w-full px-3 border-[3px] border-purple-500">
                 {searchResults.length !== 0 ? (
                   <>
                     {startIndex + 1}-{Math.min(endIndex, searchResults.length)} of{" "}
@@ -824,13 +819,13 @@ const SearchResults = () => {
             {/* Active Filters Display */}
             {hasActiveFilters && (
               <div className="flex flex-wrap items-center gap-2 my-2 w-full">
-                <span className="text-sm text-brandBlue font-medium">
+                <span className="text-sm text-white font-medium">
                   Active filters:
                 </span>
                 {selectedBrands.map((brand) => (
                   <div
                     key={`brand-${brand}`}
-                    className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs transition-colors border-transparent bg-brandBlue text-white gap-1"
+                    className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs transition-colors border-transparent bg-black text-white gap-"
                   >
                     {brand}
                     <X
@@ -842,7 +837,7 @@ const SearchResults = () => {
                 {selectedAgeGroups.map((age) => (
                   <div
                     key={`age-${age}`}
-                    className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs transition-colors border-transparent bg-brandBlue text-white gap-1"
+                    className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs transition-colors border-transparent bg-black text-white gap-"
                   >
                     {age}
                     <X
@@ -854,7 +849,7 @@ const SearchResults = () => {
                 {selectedFeatures.map((feature) => (
                   <div
                     key={`feature-${feature}`}
-                    className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs transition-colors border-transparent bg-brandBlue text-white gap-1"
+                    className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs transition-colors border-transparent bg-black text-white gap-"
                   >
                     {feature}
                     <X
@@ -866,7 +861,7 @@ const SearchResults = () => {
                 {selectedSizes.map((size) => (
                   <div
                     key={`size-${size}`}
-                    className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs transition-colors border-transparent bg-brandBlue text-white gap-1"
+                    className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs transition-colors border-transparent bg-black text-white gap-"
                   >
                     {size}
                     <X
@@ -876,7 +871,7 @@ const SearchResults = () => {
                   </div>
                 ))}
                 {showInStockOnly && (
-                  <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs transition-colors border-transparent bg-brandBlue text-white gap-1">
+                  <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs transition-colors border-transparent bg-black text-white gap-">
                     In Stock Only
                     <X
                       className="h-3 w-3 cursor-pointer"
@@ -923,7 +918,7 @@ const SearchResults = () => {
                     >
                 {products.slice(0, 6).map((product) => (
                     <SwiperSlide>
-                    <div  onClick={() => { navigate(`/product-details/${product.id}`); window.scrollTo({top: 0,left: 0,behavior: "smooth",});}} className="cursor-pointer flex flex-wrap bg-white shadow-lg mb-5 rounded-lg">
+                    <div  onClick={() => { navigate(`/product-details/${product.id}`); window.scrollTo({top: 0,left: 0,behavior: "smooth",});}} className="cursor-pointer flex flex-wrap bg-black shadow-lg mb-5 rounded-lg">
                         <div className="border-[3px] border-brandBlue rounded-lg w-1/2">
                             <img
                                 src={product.image || "/placeholder.svg"}
@@ -961,8 +956,8 @@ const SearchResults = () => {
         {location.pathname !== "/search/pagination" ? 
           <>
             {searchResults.length !== 0 &&
-              <div className="text-textBlue text-2xl text-center font-bold w-full my-4">
-                  Search results for <span className="text-brandBlue">{id}</span>
+              <div className="title-purple text-2xl text-center font-bold w-full my-4">
+                  Search results for <span className="text-gray-900">{id}</span>
               </div>
             }
             <div className="grid gap-2 lg:gap-6 grid-cols-2 lg:grid-cols-4 xl:grid-cols-5">
@@ -981,23 +976,64 @@ const SearchResults = () => {
 
         {location.pathname !== "/search/pagination" && searchResults.length !== 0 ? 
           <>
-             <div className="max-w-[300px] mx-auto mt-8 flex flex-wrap justify-between items-center">
-                {(searchResults.length / searchResults.length * 100).toFixed() > 99 ?
-                  <div className="transition-all" style={{marginLeft: `${(searchResults.length / searchResults.length * 100 - 30).toFixed()}%`}}>
-                    <img src='/ship-finish.svg' alt='pirate ship indicator finsihed' />
+              <div className="max-w-[300px] mx-auto mt-8 flex flex-wrap justify-between items-center">
+                <div className="bg-gray-500 w-full h-4 rounded-full relative">
+                  <div className="rounded-full h-full bg-purple-500 transition-all" style={{width: `${(searchResults.length / searchResults.length * 100).toFixed()}%`}}></div>
+                  <div className="absolute top-[-5px] ml-[-10px]" style={{left: `${(searchResults.length / searchResults.length * 100).toFixed()}%`}}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="29" viewBox="0 0 24 29" fill="none">
+                      <path d="M13.0201 12.66H11.29V14.39H13.0201V12.66Z" fill="white"/>
+                      <path d="M11.29 12.66H9.56006V14.39H11.29V12.66Z" fill="white"/>
+                      <path d="M9.56006 12.66H7.83008V14.39H9.56006V12.66Z" fill="#BE6CFF"/>
+                      <path d="M7.83008 12.66H6.1001V14.39H7.83008V12.66Z" fill="#BE6CFF"/>
+                      <path d="M11.29 10.93H9.56006V12.66H11.29V10.93Z" fill="#BE6CFF"/>
+                      <path d="M9.56006 9.2H7.83008V10.93H9.56006V9.2Z" fill="#BE6CFF"/>
+                      <path d="M14.75 10.93H13.02V12.66H14.75V10.93Z" fill="#BE6CFF"/>
+                      <path d="M16.48 9.2H14.75V10.93H16.48V9.2Z" fill="#BE6CFF"/>
+                      <path d="M14.75 14.39H13.02V16.12H14.75V14.39Z" fill="#BE6CFF"/>
+                      <path d="M16.48 16.12H14.75V17.85H16.48V16.12Z" fill="#BE6CFF"/>
+                      <path d="M11.29 14.39H9.56006V16.12H11.29V14.39Z" fill="#BE6CFF"/>
+                      <path d="M9.56006 16.12H7.83008V17.85H9.56006V16.12Z" fill="#BE6CFF"/>
+                      <path d="M14.75 12.66H13.02V14.39H14.75V12.66Z" fill="white"/>
+                      <path d="M16.48 12.66H14.75V14.39H16.48V12.66Z" fill="#BE6CFF"/>
+                      <path d="M18.21 12.66H16.48V14.39H18.21V12.66Z" fill="#BE6CFF"/>
+                      <path d="M13.0201 10.93H11.29V12.66H13.0201V10.93Z" fill="white"/>
+                      <path d="M13.0201 9.2H11.29V10.93H13.0201V9.2Z" fill="#BE6CFF"/>
+                      <path d="M13.0201 7.48H11.29V9.21H13.0201V7.48Z" fill="#BE6CFF"/>
+                      <path d="M13.0201 5.75H11.29V7.48H13.0201V5.75Z" fill="#8200DA"/>
+                      <path d="M7.83008 7.48H6.1001V9.21H7.83008V7.48Z" fill="#8200DA"/>
+                      <path d="M18.21 7.48H16.48V9.21H18.21V7.48Z" fill="#8200DA"/>
+                      <path d="M6.1001 12.66H4.37012V14.39H6.1001V12.66Z" fill="#8200DA"/>
+                      <path d="M13.0201 19.58H11.29V21.31H13.0201V19.58Z" fill="#8200DA"/>
+                      <path d="M14.75 17.85H13.02V19.58H14.75V17.85Z" fill="#8200DA"/>
+                      <path d="M11.29 16.12H9.56006V17.85H11.29V16.12Z" fill="#8200DA"/>
+                      <path d="M11.29 17.85H9.56006V19.58H11.29V17.85Z" fill="#8200DA"/>
+                      <path d="M9.56006 14.39H7.83008V16.12H9.56006V14.39Z" fill="#8200DA"/>
+                      <path d="M7.83008 14.39H6.1001V16.12H7.83008V14.39Z" fill="#8200DA"/>
+                      <path d="M7.83008 10.93H6.1001V12.66H7.83008V10.93Z" fill="#8200DA"/>
+                      <path d="M9.56006 10.93H7.83008V12.66H9.56006V10.93Z" fill="#8200DA"/>
+                      <path d="M11.29 9.2H9.56006V10.93H11.29V9.2Z" fill="#8200DA"/>
+                      <path d="M11.29 7.48H9.56006V9.21H11.29V7.48Z" fill="#8200DA"/>
+                      <path d="M14.75 7.48H13.02V9.21H14.75V7.48Z" fill="#8200DA"/>
+                      <path d="M14.75 9.2H13.02V10.93H14.75V9.2Z" fill="#8200DA"/>
+                      <path d="M16.48 10.93H14.75V12.66H16.48V10.93Z" fill="#8200DA"/>
+                      <path d="M18.21 10.93H16.48V12.66H18.21V10.93Z" fill="#8200DA"/>
+                      <path d="M19.9302 12.66H18.2002V14.39H19.9302V12.66Z" fill="#8200DA"/>
+                      <path d="M18.21 17.85H16.48V19.58H18.21V17.85Z" fill="#8200DA"/>
+                      <path d="M7.83008 17.85H6.1001V19.58H7.83008V17.85Z" fill="#8200DA"/>
+                      <path d="M13.0201 4.02H11.29V5.75H13.0201V4.02Z" fill="#8200DA"/>
+                      <path d="M13.0201 23.03H11.29V24.76H13.0201V23.03Z" fill="#8200DA"/>
+                      <path d="M13.0201 26.45H11.29V28.18H13.0201V26.45Z" fill="#8200DA"/>
+                      <path d="M13.0201 0.560001H11.29V2.29H13.0201V0.560001Z" fill="#8200DA"/>
+                      <path d="M23.3901 12.66H21.6602V14.39H23.3901V12.66Z" fill="#8200DA"/>
+                      <path d="M2.64014 12.66H0.910156V14.39H2.64014V12.66Z" fill="#8200DA"/>
+                      <path d="M18.21 14.39H16.48V16.12H18.21V14.39Z" fill="#8200DA"/>
+                      <path d="M16.48 14.39H14.75V16.12H16.48V14.39Z" fill="#8200DA"/>
+                      <path d="M14.75 16.12H13.02V17.85H14.75V16.12Z" fill="#8200DA"/>
+                      <path d="M13.0201 14.39H11.29V16.12H13.0201V14.39Z" fill="white"/>
+                      <path d="M13.0201 16.12H11.29V17.85H13.0201V16.12Z" fill="#BE6CFF"/>
+                      <path d="M13.0201 17.85H11.29V19.58H13.0201V17.85Z" fill="#BE6CFF"/>
+                    </svg>
                   </div>
-                  :
-                  <div style={{marginLeft: `${(searchResults.length / searchResults.length * 100 - 10).toFixed()}%`}}>
-                    <img src='/ship.svg' alt='pirate ship indicator' />
-                  </div>
-                }
-                <span className={`transition-all ${(searchResults.length / searchResults.length * 100).toFixed() > 99 ? 'text-brandLightGreen' : 'text-gray-300 rotate-[10deg]' }`}>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="none">
-                    <path d="M3.52997 0.660034H6.14996L3.89996 5.89005H0.599976L3.53998 0.660034H3.52997ZM0.589966 6.94003H3.88998L7.90997 15.18C7.90997 15.18 7.90996 15.26 7.85995 15.29C7.80995 15.32 7.76997 15.32 7.74997 15.27L0.589966 6.94003ZM5.42996 6.94003H14.58L10.1 17.33C10.1 17.33 10.05 17.4 9.99997 17.4C9.94997 17.4 9.91996 17.38 9.89996 17.33L5.41998 6.94003H5.42996ZM12.29 0.660034L14.54 5.89005H5.44998L7.69998 0.660034H12.28H12.29ZM12.09 15.17L16.11 6.93002H19.41L12.25 15.26C12.25 15.26 12.19 15.31 12.14 15.28C12.09 15.25 12.07 15.21 12.09 15.17ZM16.47 0.660034L19.41 5.89005H16.11L13.85 0.660034H16.47Z" fill="currentColor"/>
-                  </svg>
-                </span>
-                <div className="bg-gray-300 w-full h-4 rounded-full">
-                  <div className="rounded-full h-full bg-brandLightGreen transition-all" style={{width: `${(searchResults.length / searchResults.length * 100).toFixed()}%`}}></div>
                 </div>
               </div>
             {/* Load More */}
