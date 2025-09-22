@@ -272,18 +272,18 @@ const ProductDetails = () => {
             </Swiper>
             <div className="absolute top-2 left-2 flex gap-1 flex flex-col items-center z-20">
               {product.isNew && (
-                <div className="inline-flex items-center rounded-lg px-2 py-0.5 text-xs md:text-sm w-12 h-12 md:w-14 md:h-14 text-center !leading-[1.1] font-bold bg-brandGreen text-white aspect-square">
+                <div className="inline-flex items-center rounded-lg px-2 py-0.5 text-xs md:text-sm w-12 h-12 md:w-14 md:h-14 text-center !leading-[1.1] font-bold text-black aspect-square">
                   <span className="shadow-text-green">NEW TOYS</span>
                 </div>
               )}
               {product.isBestseller && (
-                <div className="inline-flex items-center rounded-lg px-2 py-0.5 text-xs md:text-sm w-12 h-12 md:w-14 md:h-14 text-center !leading-[1.1] font-bold bg-brandRed text-white aspect-square">
+                <div className="inline-flex items-center rounded-lg px-2 py-0.5 text-xs md:text-sm w-12 h-12 md:w-14 md:h-14 text-center !leading-[1.1] font-bold text-black aspect-square">
                   <span className="shadow-text-red -mt-1.5"><span className="text-base md:text-lg">33</span>% OFF</span>
                 </div>
               )}
             </div>
 
-            <div className={`absolute top-2 left-1/2 -translate-x-1/2 z-[10] ${offerOpen && 'w-full p-4 !z-[602]'}`}>
+            {/* <div className={`absolute top-2 left-1/2 -translate-x-1/2 z-[10] ${offerOpen && 'w-full p-4 !z-[602]'}`}>
               <button onClick={() => {setOfferOpen(true)}} className={`shadow-md hover:shadow-lg group inline-flex items-center justify-center font-semibold text-lg rounded-[30px] bg-brandPinkDark text-white px-6 pr-0 border-[3px] border-white transition-all hover:bg-brandPink hover:scale-105 overflow-hidden ${offerOpen ? 'hidden' : 'inline-flex'}`}>
                 <span className="flex items-center gap-2">
                   offer
@@ -317,7 +317,7 @@ const ProductDetails = () => {
                   </button>
                   <img src="/offer-graphic.png" alt="buy 1 get 1 free" className="w-full h-auto" />
                </div>
-            </div>
+            </div> */}
             <div className="absolute top-3 right-3 z-[1]">
               <button
                 onClick={
