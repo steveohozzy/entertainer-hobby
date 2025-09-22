@@ -90,7 +90,7 @@ const Menu = () => {
       <div className="rounded-xl p-[3px] relative overflow-hidden after:absolute after:block after:top-0 after:left-0 after:w-[110%] after:h-full after:bg-gradient-to-br after:from-blue-500 after:via-black after:to-blue-500 hover:after:animate-borderGradient after:z-0">
         <button
           name="Activate Menu"
-          className="w-full flex flex-col items-center justify-center bg-gradient-to-br from-black via-gray-900 to-black rounded-xl cursor-pointer flex flex-wrap transition-all z-[1] relative overflow-hidden p-2 md:p-4"
+          className="w-full flex flex-col items-center shadow-md justify-center bg-gradient-to-br from-black via-gray-900 to-black rounded-xl cursor-pointer flex flex-wrap transition-all z-[1] relative overflow-hidden p-2 md:p-4"
           onClick={toggleMenu}
         >
           <MenuIcon />
@@ -106,11 +106,11 @@ const Menu = () => {
 
       {/* Sliding Hamburger Menu */}
       <div
-        className={`fixed h-screen top-5 -left-4 h-full w-80 z-50 transform transition-transform ease-in-out ${
+        className={`fixed h-screen top-5 -left-4 p-4 h-full w-80 z-50 transform transition-transform ease-in-out ${
           showMenu ? "translate-x-0 top-5 left-8" : "-translate-x-full"
         }`}
       >
-        <div ref={menuRef} className={`bg-gradient-to-br from-black via-gray-900 to-black max-h-[calc(100vh-130px)] lg:max-h-[calc(100vh-80px)] relative rounded-3xl overflow-hidden
+        <div ref={menuRef} className={`bg-gradient-to-br from-black via-gray-900 to-black max-h-[calc(100vh-130px)] lg:max-h-[calc(100vh-80px)] relative rounded-3xl shadow-xl overflow-hidden
           ${navOpen ? 'overflow-y-auto shadow-text-blue' : 'overflow-hidden'}
         `}>
           {/* Animated Menu Categories */}
@@ -165,7 +165,7 @@ const Menu = () => {
                       {/* Icon Bar */}
                       <div
                         className={`w-[40px] flex items-center justify-center relative ${
-                          expandedCategories[category.id] ? "" : ""
+                          expandedCategories[category.id] ? "shadow-inner" : ""
                         }`}
                       >
                         <span className="text-2xl text-white max-w-6 [&_svg]:w-full">
@@ -184,7 +184,7 @@ const Menu = () => {
                         onClick={() => toggleCategory(category.id)}
                         onMouseEnter={() => setHoveredItem(category.id)}
                         onMouseLeave={() => setHoveredItem(null)}
-                        className={`flex-1 flex items-center justify-between p-4 text-left transition-all duration-300 group text-white`}
+                        className={`flex-1 flex items-center justify-between p-4 text-left transition-all duration-300 group hover:shadow-lg text-white`}
                       >
                         <span className="font-semibold text-lg">
                           {category.name}
@@ -285,7 +285,7 @@ const Menu = () => {
                                   {item.subItems.map((subItem, subIndex) => (
                                     <div
                                       key={subIndex}
-                                      className="flex items-stretch rounded-md overflow-hidden"
+                                      className="flex items-stretch rounded-md overflow-hidden shadow-sm"
                                     >
                                       {/* Icon Bar for Third Level */}
                                       <div className="w-4 flex"></div>
