@@ -956,8 +956,8 @@ const SearchResults = () => {
         {location.pathname !== "/search/pagination" ? 
           <>
             {searchResults.length !== 0 &&
-              <div className="title-purple text-2xl text-center font-bold w-full my-4">
-                  Search results for <span className="text-gray-900">{id}</span>
+              <div className="text-2xl text-center font-bold w-full my-4">
+                  <span className="title-purple">Search results for</span> <span className="text-stroke-blue">{id}</span>
               </div>
             }
             <div className="grid gap-2 lg:gap-6 grid-cols-2 lg:grid-cols-4 xl:grid-cols-5">

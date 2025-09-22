@@ -56,6 +56,11 @@
       drop-shadow(2px 0 #FFFF00) drop-shadow(-2px 0 #FFFF00);
   }
 
+  .text-stroke-blue {
+    filter: drop-shadow(0 2px #0D5D9C) drop-shadow(0 -2px #0D5D9C)
+      drop-shadow(2px 0 #0D5D9C) drop-shadow(-2px 0 #0D5D9C);
+  }
+
   .no-scrollbar::-webkit-scrollbar {
     display: none;
   }
