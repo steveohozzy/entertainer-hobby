@@ -134,12 +134,10 @@ const Layout = () => {
                     <button
                     onClick={toggleIsCartOpen}
                     name="View cart"
-                    className="flex items-center  text-white group"
+                    className="flex items-center text-white group"
                     >
                     <span
-                        className={`transition-all group-hover:rotate-[25deg] relative z-20 ${
-                        isCartOpen ? "text-brandBlue" : "text-white"
-                        }`}
+                        className={`transition-all group-hover:rotate-[25deg] relative z-20 text-white`}
                     >
                         <svg
                         width="22"
@@ -160,7 +158,7 @@ const Layout = () => {
                         £{cartTotal.toFixed(2)}
                     </span>
                     {isCartOpen && (
-                        <span className="absolute bg-white left-[-5px] bottom-[-30px] lg:bottom-[-40px] h-[calc(100%+40px)] lg:h-[calc(100%+60px)] w-[60px] rounded-tl-lg rounded-tr-lg">
+                        <span className="absolute bg-black shadow-text-blue left-[-5px] bottom-[-30px] lg:bottom-[-40px] h-[calc(100%+40px)] lg:h-[calc(100%+60px)] w-[60px] rounded-tl-lg rounded-tr-lg">
                         &nbsp;
                         </span>
                     )}

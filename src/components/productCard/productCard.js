@@ -493,7 +493,7 @@ const ProductCard = ({ product }) => {
       )}
 
       <div className="rounded-3xl p-[2px] relative overflow-hidden after:absolute after:block after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-br after:from-gray-100 after:via-black  after:to-gray-100  hover:after:animate-borderGradient after:z-0">
-        <div className="h-full bg-gradient-to-br from-black via-gray-900 to-black p-2 rounded-[calc(1.5rem-1px)] cursor-pointer flex flex-wrap transition-all z-[1] relative">
+        <div className="h-full bg-gradient-to-br from-black via-gray-900 to-black p-2 rounded-[calc(1.5rem-1px)] cursor-pointer flex flex-wrap transition-all z-[1] relative flex flex-col">
           <div className="relative group">
             <button onClick={goToLinkHandler}>
               <img
@@ -511,12 +511,12 @@ const ProductCard = ({ product }) => {
             </button>
             <div className="absolute top-0 left-1/2 -translate-x-1/2 flex w-full gap-1 flex justify-center drop-shadow-md">
               {isNew && (
-                <div className="inline-flex items-center rounded-lg px-2 py-0.5 text-xs md:text-sm font-bold bg-brandGreen text-white">
+                <div className="inline-flex items-center rounded-lg px-2 py-0.5 text-xs md:text-sm font-bold text-black">
                   <span className="shadow-text-green">NEW TOYS</span>
                 </div>
               )}
               {isBestseller && (
-                <div className="inline-flex items-center rounded-lg px-2 py-0.5 text-xs md:text-sm font-bold bg-brandRed text-white">
+                <div className="inline-flex items-center rounded-lg px-2 py-0.5 text-xs md:text-sm font-bold text-black">
                   <span className="shadow-text-red ">33% OFF</span>
                 </div>
               )}
@@ -567,11 +567,11 @@ const ProductCard = ({ product }) => {
             <div className="flex flex-wrap justify-center mb-1">
               <div className="inline-flex items-center text-xs text-gray-400">{brand}</div>
             </div>
-            <button className="flex flex-col h-full" onClick={goToLinkHandler}>
+            <button className="flex flex-col h-full flex-flex-col" onClick={goToLinkHandler}>
               <h2 className="bg-gradient-to-br from-gray-500 via-gray-100 to-gray-500 bg-clip-text md:!leading-[1.2] text-transparent lg:text-lg font-semibold leading-[1.2] xl:leading-[1.1] line-clamp-3 mb-2">
                 {name}
               </h2>
-              <div className="flex items-center justify-center gap-2">
+              <div className="flex items-center justify-center gap-2 grow">
                 <div className="flex items-center">
                   <Star className="h-3 w-3 fill-yellow-400 text-yellow-400" />
                   <Star className="h-3 w-3 fill-yellow-400 text-yellow-400" />

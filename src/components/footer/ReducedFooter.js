@@ -4,7 +4,7 @@ const ReducedFooter = () => {
   return (
     <>
       <footer>
-        <div className="bg-brandBlue p-4 text-white">
+        <div className="bg-gray-900 p-4 text-white">
           <div className="max-w-7xl mx-auto px-4 pr-0 sm:px-6 lg:px-8 flex flex-wrap justify-between">
             <div className="w-full md:w-[65%]">
               <div className="text-xs text-white my-2 text-center md:text-left">

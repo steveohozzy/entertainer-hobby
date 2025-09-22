@@ -15,18 +15,18 @@ const Confirmation = () => {
   return (
     <>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="rounded-xl bg-white shadow-sm p-8">
-          <h1 className="text-2xl text-textBlue font-bold">Thanks for your order!</h1>
-          <div className="text-lg text-textBlue mt-6">
-            Your Order Number is <span className="font-bold text-brandBlue">00587456</span>
+        <div className="rounded-xl mt-6 rounded-lg border-[3px] border-brandLightBlue bg-gradient-to-br from-black via-gray-900 to-black w-full p-8">
+          <h1 className="text-2xl text-gray-100 font-bold">Thanks for your order!</h1>
+          <div className="text-lg text-gray-100 mt-6">
+            Your Order Number is <span className="font-bold text-gray-100">00587456</span>
           </div>
-          <div className="text-lg text-textBlue mt-6">
-            A copy of your order details has been sent to <span className="font-bold text-brandBlue">steve.hoskins@theentertainer.com</span>
+          <div className="text-lg text-gray-100 mt-6">
+            A copy of your order details has been sent to <span className="font-bold text-gray-100">steve.hoskins@theentertainer.com</span>
           </div>
         </div>
 
-        <div className="rounded-xl bg-white shadow-sm p-8 mt-6">
-          <h2 className="text-2xl text-textBlue font-bold mb-8">Order Summary</h2>
+        <div className="rounded-xl mt-6 rounded-lg border-[3px] border-brandLightBlue bg-gradient-to-br from-black via-gray-900 to-black w-full p-8 mt-6">
+          <h2 className="text-2xl text-gray-100 font-bold mb-8">Order Summary</h2>
             <div className="flex items-end flex-wrap">
               <div className="w-full">
                 {products.slice(0,3).map((item) => (
@@ -40,12 +40,12 @@ const Confirmation = () => {
                     </div>
                     <div className={`w-[70%] md:w-[80%]`}>
                         <div className="flex flex-wrap py-1">
-                            <div className={`w-full md:w-[70%] text-textBlue font-bold px-4 text-lg`}>
+                            <div className={`w-full md:w-[70%] text-gray-100 font-bold px-4 text-lg`}>
                                 <div className="flex flex-wrap">
                               <div className="inline-flex items-center text-xs text-gray-400">{item.brand}</div>
                           </div>
                                     <div>{item.name}</div>
-                                    <span className={`text-textBlue w-full text-xs mt-3`}>Product #{item.sku}</span>
+                                    <span className={`text-gray-100 w-full text-xs mt-3`}>Product #{item.sku}</span>
                             </div>
                             <div className={`w-full md:w-[30%] px-4 md:px-0`}>
                                 <div className="flex flex-wrap justify-between items-start">
@@ -65,25 +65,25 @@ const Confirmation = () => {
             </div>
             <div className="w-full border-t-[2px] pt-4 text-right pr-2 md:pr-8">
               <div className="flex text-lg font-bold mb-3 gap-3 justify-end">
-                <span className="text-textBlue">Delivery</span>
+                <span className="text-gray-100">Delivery</span>
                 <span className="text-lg text-brandRed font-bold w-[80px]">£3.99</span>
               </div>
               <div className="flex text-xl font-bold gap-3 justify-end">
-                <span className="text-textBlue">Total</span>
+                <span className="text-gray-100">Total</span>
                 <span className="text-brandRed font-bold w-[80px]">£56.78</span>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="rounded-xl bg-white shadow-sm p-8 mt-6">
+        <div className="rounded-xl mt-6 rounded-lg border-[3px] border-brandLightBlue bg-gradient-to-br from-black via-gray-900 to-black w-full p-8 mt-6">
           <div className="grid md:grid-cols-2">
             <div>
-              <h2 className="text-xl text-textBlue font-bold">Shipping Information</h2>
-              <div className="text-lg text-textBlue mt-6">
+              <h2 className="text-xl text-gray-100 font-bold">Shipping Information</h2>
+              <div className="text-lg text-gray-100 mt-6">
                 <span className="font-bold">Shipping To:</span>
               </div>
-              <div className="text-lg text-textBlue mt-6">
+              <div className="text-lg text-gray-100 mt-6">
                 42 Lomond Road,<br />
                 Hemel Hempstead,<br />
                 Herts,<br />
@@ -91,11 +91,11 @@ const Confirmation = () => {
               </div>
             </div>
             <div>
-              <h2 className="text-xl text-textBlue font-bold mt-12 md:mt-0">Billing Information</h2>
-              <div className="text-lg text-textBlue mt-6">
+              <h2 className="text-xl text-gray-100 font-bold mt-12 md:mt-0">Billing Information</h2>
+              <div className="text-lg text-gray-100 mt-6">
                 <span className="font-bold">VISA **** **** **** 1234</span>
               </div>
-              <div className="text-lg text-textBlue mt-6">
+              <div className="text-lg text-gray-100 mt-6">
                 42 Lomond Road,<br />
                 Hemel Hempstead,<br />
                 Herts,<br />
@@ -108,10 +108,10 @@ const Confirmation = () => {
         <div className="w-full text-center mt-12">
           <div className='flex justify-center'>
             <div className="text-2xl md:text-3xl lg:text-4xl font-bold md:!leading-[1.2] text-transparent text-center mb-3 drop-shadow-md">
-              <span className='bg-gradient-to-r from-brandBlue via-textBlue to-brandBlue bg-clip-text md:!leading-[1.2] text-transparent textStroke'>Your Next Purchase?</span>
+              <span className='text-black title-purple'>Your Next Purchase?</span>
             </div>
           </div>
-          <div className="bg-white pt-8 pb-6 px-3 rounded-xl mt-[-27px] shadow-sm">
+          <div className="mt-6 rounded-lg border-[3px] border-brandLightBlue bg-gradient-to-br from-black via-gray-900 to-black w-full pt-8 pb-6 px-3 rounded-xl mt-[-27px] shadow-sm">
             <div className="flex gap-4 justify-center mx-auto [&_.swiper-pagination]:relative [&_.swiper-pagination]:top-[-10px!important] [&_.swiper-pagination]:mt-2 [&_.swiper-pagination-bullet]:size-3 [&_.swiper-pagination-bullet-active]:scale-[1.2] hover:[&_.swiper-pagination-bullet]:scale-[1.2]">
               <Swiper
                 className="!pb-5 !px-2.5"
@@ -148,7 +148,7 @@ const Confirmation = () => {
                         <div className="flex flex-wrap justify-center">
                               <div className="inline-flex items-center text-xs text-gray-400">{product.brand}</div>
                           </div>
-                        <div className="text-xs lg:text-sm text-brandBlue font-bold leading-[1.2] xl:leading-[1.1] mb-2 md:mb-0 line-clamp-2">
+                        <div className="text-xs lg:text-sm text-gray-100 font-bold leading-[1.2] xl:leading-[1.1] mb-2 md:mb-0 line-clamp-2">
                           {product.name}
                         </div>
                         <div>

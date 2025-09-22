@@ -12,15 +12,15 @@ const CheckoutLayout = () => {
             id="site-header"
             className={`text-white border-b w-full z-50 transition-transform duration-300`}
         >
-            <div className="bg-brandBlue shadow-sm md:shadow-md">
+            <div className="bg-black shadow-sm md:shadow-md">
                 <div className="max-w-7xl mx-auto px-4 pr-0 sm:px-6 lg:px-8">
                     <div className="flex items-center justify-between">
                         <div className="flex items-center space-x-4 pt-2 ml-2 md:pt-4 md:ml-0">
                              <Link to="/">
                                 <img
-                                    src="/entertainer-logo.svg"
+                                    src="/entertainer-xp-logo.svg"
                                     alt="The Entertainer"
-                                    className="w-[137px] md:w-[218px]"
+                                    className="w-[137px] md:w-[218px] mb-4"
                                 />
                             </Link>
                         </div>

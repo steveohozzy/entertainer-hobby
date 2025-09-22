@@ -43,31 +43,24 @@ const MiniCart = () => {
     <>
       {isCartOpen && (
         <div
-          className="fixed h-screen inset-0 bg-brandBlue bg-opacity-50 z-40 top-[60px] md:top-[87px] lg:top-[98px] left-[-20px]"
+          className="fixed h-screen inset-0 bg-black bg-opacity-50 z-40 top-[60px] md:top-[87px] lg:top-[98px] left-[-20px]"
           onClick={() => toggleIsCartOpen(false)}
         />
       )}
       <div
         className={`absolute max-w-[90vw] overflow-hidden w-[320px] duration-300 ease-in-out right-[-60px] md:right-0  ${
           isCartOpen ? "max-h-[calc(100vh-130px)] lg:max-h-[calc(100vh-80px)]" : "max-h-0"
-        } top-[calc(100%+17px)] md:top-[calc(100%+23px)] lg:top-[calc(100%+15px)] z-[9999] bg-white rounded-xl text-black`}
+        } top-[calc(100%+17px)] md:top-[calc(100%+23px)] lg:top-[calc(100%+15px)] z-[9999] bg-black shadow-text-blue rounded-xl text-black`}
       >
-        <div className="max-h-[calc(100vh-170px)] lg:max-h-[calc(100vh-120px)] overflow-y-auto w-full px-3">
-          <div className="text-xs text-gray-500 flex items-center justify-center pt-4">
+        <div className="max-h-[calc(100vh-170px)] lg:max-h-[calc(100vh-120px)] overflow-y-auto w-full">
+          <div className="text-xs text-gray-100 flex items-center justify-center pt-4 ">
             <span className="font-bold">Basket</span>
             <img src="/stars-icon.svg" alt="stars" className="mx-4" />
             <span>Delivery</span>
             <img src="/rocket-icon.svg" alt="stars" className="mx-4" />
             <span>Payment</span>
           </div>
-          <div className="mx-auto max-w-[335px] mt-3">
-            <img src="/train-icon.svg" alt="train" />
-            <div className="flex items-center mt-4 max-w-[335px]">
-              <div className="w-[30%] border-b-4 border-dashed border-brandLightGreen"></div>
-              <div className="w-[69%] ml-[1%] border-b-4 border-dashed border-gray-200"></div>
-            </div>
-          </div>
-          <div>
+          <div className="px-3">
             {cartItems.length ? (
               cartItems.map((item) => (
                 <CartProductTile
@@ -83,16 +76,16 @@ const MiniCart = () => {
             )}
           </div>
 
-          <div className="bg-gray-200 border-4 border-gray-400 py-3 px-4 rounded-md mt-2">
+          <div className="bg-black border-4 border-gray-400 py-3 px-4 rounded-md mt-2">
             <Dropdown
               title="Use a promo code"
-              className="text-brandBlue font-bold flex items-center justify-center w-full"
+              className="text-gray-100 font-bold flex items-center justify-center w-full"
               answer={
                 <form id="promo-form" className="flex items-center py-2">
                   <input
                     type="search"
                     placeholder="Add a promo code"
-                    className="outline-0 h-[44px] font-semibold px-3 rounded-3xl w-full border border-[3px] border-brandBlue text-textBlue placeholder:text-gray-400 mr-2"
+                    className="outline-0 h-[44px] bg-black font-semibold px-3 rounded-3xl w-full border border-[3px] border-brandBlue text-gray-100 placeholder:text-gray-400 mr-2"
                   />
                   <button className="group text-white font-bold bg-brandBlue rounded-[50px] px-5 h-[44px] transition-all hover:bg-blue-500 hover:scale-105">
                     <span className="block transition-all group-hover:rotate-[10deg]">
@@ -107,21 +100,20 @@ const MiniCart = () => {
           <div className="w-full text-center mt-6">
             <div className='flex justify-center'>
                 <div className="text-base md:text-lg lg:text-xl font-bold md:!leading-[1.2] text-transparent text-center mb-4 drop-shadow-md">
-                  <span className='bg-gradient-to-r from-brandBlue via-textBlue to-brandBlue bg-clip-text md:!leading-[1.2] text-transparent textStroke'>
                     <button
-                      className="flex items-center bg-gradient-to-r from-brandBlue via-textBlue to-brandBlue bg-clip-text md:!leading-[1.2] text-transparent textStroke--thin"
+                      className="flex items-center bg-black bg-clip-text md:!leading-[1.2] text-transparent title-purple"
                       onClick={() => setRecsDetailsOpen(!recsDetailsOpen)}
                     >
                       You may also like...
                       <span
-                        className={`w-0 h-0 ml-2 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[8px] border-brandBlue transition-all ${
+                        className={`w-0 h-0 ml-2 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[8px] border-black transition-all ${
                           recsDetailsOpen && "rotate-180"
                         }`}
                     ></span>
-              </button></span>
+              </button>
                 </div>
               </div>
-            <div className="bg-brandLightBlue pt-12 pb-4 px-2 rounded-xl mt-[-27px] [&_.swiper-pagination]:relative [&_.swiper-pagination]:mt-2 [&_.swiper-pagination-bullet]:size-3 [&_.swiper-pagination-bullet-active]:scale-[1.2] hover:[&_.swiper-pagination-bullet]:scale-[1.2]">
+            <div className="bg-black pt-12 pb-4 px-3 rounded-xl mt-[-27px] [&_.swiper-pagination]:relative [&_.swiper-pagination]:mt-2 [&_.swiper-pagination-bullet]:size-3 [&_.swiper-pagination-bullet-active]:scale-[1.2] hover:[&_.swiper-pagination-bullet]:scale-[1.2]">
               <Swiper
                 modules={[Autoplay, Pagination]}
                 spaceBetween={10}
@@ -142,7 +134,7 @@ const MiniCart = () => {
                         });
                         toggleIsCartOpen(false)
                       }}
-                      className={`cursor-pointer flex flex-col h-full group bg-white rounded-xl ${recsDetailsOpen && 'pb-2'}`}
+                      className={`cursor-pointer flex flex-col h-full group bg-black rounded-xl ${recsDetailsOpen && 'pb-2'}`}
                     >
                       <div className={`border-[3px] border-brandBlue rounded-lg overflow-hidden w-full ${recsDetailsOpen && 'mb-3'}`}>
                         <img
@@ -167,7 +159,7 @@ const MiniCart = () => {
                         <div className="flex flex-wrap justify-center">
                             <div className="inline-flex items-center text-[10px] text-gray-400">{product.brand}</div>
                         </div>
-                        <div className="line-clamp-2 text-xs text-brandBlue font-bold leading-[1.2] xl:leading-[1.1] mb-2 md:mb-0">
+                        <div className="line-clamp-2 text-xs text-gray-100 font-semibold leading-[1.2] xl:leading-[1.1] mb-2 md:mb-0">
                           {product.name}
                         </div>
                         <div>
@@ -183,8 +175,8 @@ const MiniCart = () => {
                               )}
                             </div>
                           </div>
-                          <Button
-                            className="shadow-md hover:shadow-lg w-full group inline-flex items-center justify-center font-bold text-xs lg:text-sm rounded-[30px] bg-brandGreen text-white py-2 px-2 pl-0 lg:px-4 lg:pl-0 pl-0 transition-all hover:bg-brandLightGreen hover:scale-105 mt-2 min-h-[44px]"
+                          <button
+                            className="bg-gradient-to-br from-purple-700 via-purple-500 to-purple-700 text-white font-semibold py-1 px-4 text-lg rounded-full border-[3px] border-gray-300 shadow-md hover:shadow-text-blue hover:scale-[1.02] transition-all mt-2"
                             onClick={() => {
                               navigate(`/product-details/${product.id}`);
                               window.scrollTo({
@@ -196,7 +188,7 @@ const MiniCart = () => {
                             }}
                           >
                             Details
-                          </Button>
+                          </button>
                         </div>
                       </div>
                       }
@@ -207,9 +199,8 @@ const MiniCart = () => {
             </div>
           </div>
 
-          <div className="bg-white w-full sticky bottom-0 py-2 z-20">
+          <div className="bg-black shadow-text-blue w-full sticky bottom-0 py-2 z-20 w-[calc(100%+22px) pt-4 flex flex-col items-center px-3">
             <Button
-              className="shadow-md hover:shadow-lg w-full group inline-flex items-center justify-center font-bold text-xs sm:text-sm my-2 rounded-[30px] bg-brandGreen text-white py-2 px-4 pl-0 transition-all hover:bg-brandLightGreen hover:scale-105 min-h-[44px]"
               iconpath={
                 <svg
                   width="22"
@@ -226,7 +217,7 @@ const MiniCart = () => {
               Checkout Securely £{cartTotal.toFixed(2)}
             </Button>
             <button
-              className="shadow-md hover:shadow-lg w-full group inline-flex items-center justify-center font-bold text-xs sm:text-sm rounded-[30px] bg-white text-textBlue py-2 mb-2 px-4 pl-2 transition-all border-[2px] border-textBlue hover:bg-textBlue hover:text-white hover:scale-105 min-h-[44px]"
+              className="w-full group inline-flex items-center justify-center font-semibold text-xs sm:text-sm rounded-[30px] bg-black text-purple-400 hover:text-purple-500 py-2 mb-2 px-4 pl-2 transition-all border-[2px] border-purple-500 hover:scale-[1.02] hover:shadow-text-purple min-h-[44px] mt-2"
               onClick={() => toggleIsCartOpen(false)}
             >
               Continue shopping

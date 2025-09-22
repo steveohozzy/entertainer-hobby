@@ -34,7 +34,7 @@ const HomePods= () => {
       >
         <SwiperSlide className="h-auto">
           <div className="rounded-3xl p-[3px] relative overflow-hidden after:absolute after:block after:top-0 after:left-0 after:w-[110%] after:h-full after:bg-gradient-to-br after:from-gray-100 after:via-black after:to-gray-100 hover:after:animate-borderGradient after:z-0">
-          <button onClick={() => {
+          <div onClick={() => {
             navigate("/category?type=action-figures");
             window.scrollTo({top: 0,left: 0,behavior: "smooth",});
           }} className="w-full flex flex-col items-center shadow-md justify-center bg-gradient-to-br from-black via-gray-900 to-black rounded-[calc(1.5rem)] cursor-pointer flex flex-wrap transition-all z-[1] relative overflow-hidden">
@@ -49,13 +49,13 @@ const HomePods= () => {
                 Shop Now
               </Button>
           </div>
-          </button>
+          </div>
           </div>
         </SwiperSlide>
 
         <SwiperSlide className="h-auto">
           <div className="rounded-3xl p-[3px] relative overflow-hidden after:absolute after:block after:top-0 after:left-0 after:w-[110%] after:h-full after:bg-gradient-to-br after:from-gray-100 after:via-black after:to-gray-100 hover:after:animate-borderGradient after:z-0">
-          <button onClick={() => {
+          <div onClick={() => {
             navigate("/category?type=action-figures");
             window.scrollTo({top: 0,left: 0,behavior: "smooth",});
           }} className="w-full flex flex-col items-center shadow-md justify-center bg-gradient-to-br from-black via-gray-900 to-black rounded-[calc(1.5rem)] cursor-pointer flex flex-wrap transition-all z-[1] relative overflow-hidden">
@@ -70,13 +70,13 @@ const HomePods= () => {
                 Shop Now
               </Button>
           </div>
-          </button>
+          </div>
           </div>
         </SwiperSlide>
 
         <SwiperSlide className="h-auto">
           <div className="rounded-3xl p-[3px] relative overflow-hidden after:absolute after:block after:top-0 after:left-0 after:w-[110%] after:h-full after:bg-gradient-to-br after:from-gray-100 after:via-black after:to-gray-100 hover:after:animate-borderGradient after:z-0">
-          <button onClick={() => {
+          <div onClick={() => {
             navigate("/category?type=action-figures");
             window.scrollTo({top: 0,left: 0,behavior: "smooth",});
           }} className="w-full flex flex-col items-center shadow-md justify-center bg-gradient-to-br from-black via-gray-900 to-black rounded-[calc(1.5rem)] cursor-pointer flex flex-wrap transition-all z-[1] relative overflow-hidden">
@@ -91,13 +91,13 @@ const HomePods= () => {
                 Shop Now
               </Button>
           </div>
-          </button>
+          </div>
           </div>
         </SwiperSlide>
 
         <SwiperSlide className="h-auto">
           <div className="rounded-3xl p-[3px] relative overflow-hidden after:absolute after:block after:top-0 after:left-0 after:w-[110%] after:h-full after:bg-gradient-to-br after:from-gray-100 after:via-black after:to-gray-100 hover:after:animate-borderGradient after:z-0">
-          <button onClick={() => {
+          <div onClick={() => {
             navigate("/category?type=action-figures");
             window.scrollTo({top: 0,left: 0,behavior: "smooth",});
           }} className="w-full flex flex-col items-center shadow-md justify-center bg-gradient-to-br from-black via-gray-900 to-black rounded-[calc(1.5rem)] cursor-pointer flex flex-wrap transition-all z-[1] relative overflow-hidden">
@@ -112,13 +112,13 @@ const HomePods= () => {
                 Shop Now
               </Button>
           </div>
-          </button>
+          </div>
           </div>
         </SwiperSlide>
 
         <SwiperSlide className="h-auto">
           <div className="rounded-3xl p-[3px] relative overflow-hidden after:absolute after:block after:top-0 after:left-0 after:w-[110%] after:h-full after:bg-gradient-to-br after:from-gray-100 after:via-black after:to-gray-100 hover:after:animate-borderGradient after:z-0">
-          <button onClick={() => {
+          <div onClick={() => {
             navigate("/category?type=action-figures");
             window.scrollTo({top: 0,left: 0,behavior: "smooth",});
           }} className="w-full flex flex-col items-center shadow-md justify-center bg-gradient-to-br from-black via-gray-900 to-black rounded-[calc(1.5rem)] cursor-pointer flex flex-wrap transition-all z-[1] relative overflow-hidden">
@@ -133,13 +133,13 @@ const HomePods= () => {
                 Shop Now
               </Button>
           </div>
-          </button>
+          </div>
           </div>
         </SwiperSlide>
 
         <SwiperSlide className="h-auto">
           <div className="rounded-3xl p-[3px] relative overflow-hidden after:absolute after:block after:top-0 after:left-0 after:w-[110%] after:h-full after:bg-gradient-to-br after:from-gray-100 after:via-black after:to-gray-100 hover:after:animate-borderGradient after:z-0">
-          <button onClick={() => {
+          <div onClick={() => {
             navigate("/category?type=action-figures");
             window.scrollTo({top: 0,left: 0,behavior: "smooth",});
           }} className="w-full flex flex-col items-center shadow-md justify-center bg-gradient-to-br from-black via-gray-900 to-black rounded-[calc(1.5rem)] cursor-pointer flex flex-wrap transition-all z-[1] relative overflow-hidden">
@@ -154,7 +154,7 @@ const HomePods= () => {
                 Shop Now
               </Button>
           </div>
-          </button>
+          </div>
           </div>
         </SwiperSlide>
 
