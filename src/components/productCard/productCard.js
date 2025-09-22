@@ -18,7 +18,6 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/pagination";
 
-import Button from "../button/Button";
 import Dropdown from "../../components/dropdown/Dropdown";
 
 const ProductCard = ({ product }) => {
