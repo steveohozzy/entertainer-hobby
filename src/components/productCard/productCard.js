@@ -110,15 +110,15 @@ const ProductCard = ({ product }) => {
     <>
       {/* Quick View Modal */}
       {quickViewProduct && (
-        <div className="fixed inset-0 z-[700] bg-brandBlue/60">
-          <div ref={wrapperRef} className="fixed left-[50%] top-[50%] z-50 grid w-full translate-x-[-50%] translate-y-[-50%] gap-4 border bg-white p-6 shadow-lg sm:rounded-lg max-w-4xl max-h-[90vh] overflow-y-auto">
+        <div className="fixed inset-0 z-[700] bg-black/60">
+          <div ref={wrapperRef} className="fixed left-[50%] top-[50%] z-50 grid w-full translate-x-[-50%] translate-y-[-50%] gap-4 shadow-text-blue bg-gradient-to-br from-black via-gray-900 to-black p-6 sm:rounded-lg max-w-4xl max-h-[90vh] overflow-y-auto">
             <div className="relative flex flex-col gap-4">
               {quickViewProduct && (
                 <>
                   <button
                     name="Close quick view"
                     onClick={closeQuickView}
-                    className="absolute right-[-10px] top-[-15px] text-textBlue rounded-full border-[2px] border-textBlue z-[2]"
+                    className="absolute right-[-10px] top-[-15px] text-purple-500 rounded-full border-[2px] border-purple-500 z-[2]"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -204,7 +204,7 @@ const ProductCard = ({ product }) => {
                               className={`h-6 md:h-10 w-6 md:w-10 ${
                                 wishlistItems.some(item => product.id === item.id)
                                   ? "text-brandPink animate-bigheart"
-                                  : "text-brandBlue"
+                                  : "text-gray-100"
                               }`}
                               fill={
                                 wishlistItems.some(item => product.id === item.id) ? "#FF7BAC" : "transparent"
@@ -214,7 +214,7 @@ const ProductCard = ({ product }) => {
                               className={`absolute bottom-0 left-[-6px] 0 h-[5px] md:h-[10px] w-[5px] md:w-[10px] opacity-0 text-transparent ${
                                 wishlistItems.some(item => product.id === item.id)
                                   ? "animate-miniheartleft text-brandPink"
-                                  : "text-brandBlue"
+                                  : "text-gray-100"
                               }`}
                               fill={
                                 wishlistItems.some(item => product.id === item.id) ? "#FF7BAC" : "transparent"
@@ -224,7 +224,7 @@ const ProductCard = ({ product }) => {
                               className={`absolute bottom-0 right-[-4px] h-[5px] md:h-[10px] w-[5px] md:w-[10px] opacity-0 text-transparent ${
                                 wishlistItems.some(item => product.id === item.id)
                                   ? "animate-miniheartright text-brandPink"
-                                  : "text-brandBlue"
+                                  : "text-gray-100"
                               }`}
                               fill={
                                 wishlistItems.some(item => product.id === item.id) ? "#FF7BAC" : "transparent"
@@ -239,7 +239,7 @@ const ProductCard = ({ product }) => {
                     {/* Product Details */}
                     <div className="space-y-3 md:space-y-6">
                       <div>
-                        <h2 className="text-xl md:text-3xl font-bold text-brandBlue text-left">
+                        <h2 className="bg-gradient-to-br from-gray-500 via-gray-100 to-gray-500 bg-clip-text text-transparent text-xl md:text-3xl font-semibold text-left">
                           {product.name} {swatchColor === 'orange' && <span className="text-orange-600">ORANGE</span>}
                         </h2>
                         <button className="text-gray-400 text-xs underline mt-0" onClick={() => {goToLinkHandler(product); window.scrollTo({
@@ -257,7 +257,7 @@ const ProductCard = ({ product }) => {
                               <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
                               <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
                               <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
-                              <span className="text-xs ml-1 text-brandBlue">
+                              <span className="text-xs ml-1 text-gray-100">
                                 (3)
                               </span>
                             </div>
@@ -285,7 +285,7 @@ const ProductCard = ({ product }) => {
                             <span className="flex items-center justify-between text-brandNeonBlue border-[2px] border-brandNeonBlue p-2 rounded-md mb-2 md:mb-0 w-full md:w-auto font-bold">
                               <span className="font-semibold">Other styles</span>
                               <div className="flex items-center">
-                                <button onClick={() => setSwatchColor('blue')} className={`transition-all rounded-full bg-brandNeonBlue w-[20px] md:w-[25px] h-[20px] md:h-[25px] border-[3px] ml-3 hover:border-brandBlue ${swatchColor === 'blue' ? 'border-brandBlue' : 'border-brandNeonBlue'}`}><span className="sr-only">Blue</span></button>
+                                <button onClick={() => setSwatchColor('blue')} className={`transition-all rounded-full bg-brandNeonBlue w-[20px] md:w-[25px] h-[20px] md:h-[25px] border-[3px] ml-3 hover:border-gray-100 ${swatchColor === 'blue' ? 'border-gray-100' : 'border-brandNeonBlue'}`}><span className="sr-only">Blue</span></button>
                                 <button onClick={() => setSwatchColor('orange')} className={`rounded-full bg-orange-300 w-[20px] md:w-[25px] h-[20px] md:h-[25px] border-[3px]  ml-3 transition-all hover:border-orange-500 ${swatchColor === 'orange' ? 'border-orange-500' : 'border-orange-300'}`}><span className="sr-only">Orange</span></button>
                                 <button onClick={() => setSwatchColor('black')}  className={`rounded-full bg-black w-[20px] md:w-[25px] h-[20px] md:h-[25px] border-[3px] ml-3 transition-all hover:border-gray-500 ${swatchColor === 'black' ? 'border-gray-500' : 'border-black'}`}><span className="sr-only">Black</span></button>
                                 <button onClick={() => setSwatchColor('red')}  className={`rounded-full bg-red-500 w-[20px] md:w-[25px] h-[20px] md:h-[25px] border-[3px] ml-3 transition-all hover:border-red-700 ${swatchColor === 'red' ? 'border-red-700' : 'border-red-500'}`}><span className="sr-only">red</span></button>
@@ -325,7 +325,7 @@ const ProductCard = ({ product }) => {
                               <div className="w-full overflow-hidden">
                                 <div className="mt-4">
                                   <form id="pickup-form" className="flex">
-                                    <label className="text-sm text-textBlue mr-6 font-semibold">
+                                    <label className="text-sm text-gray-100 mr-6 font-semibold">
                                       <input
                                         type="radio"
                                         name="option"
@@ -335,7 +335,7 @@ const ProductCard = ({ product }) => {
                                       />
                                       Entertainer stores
                                     </label>
-                                    <label className="text-sm text-textBlue font-semibold">
+                                    <label className="text-sm text-gray-100 font-semibold">
                                       <input
                                         type="radio"
                                         name="option"
@@ -356,7 +356,7 @@ const ProductCard = ({ product }) => {
                                     </div>
                                     <span className="text-sm text-gray-400">Results</span>
                                   </div>
-                                  <div className="text-sm text-brandBlue py-4">
+                                  <div className="text-sm text-gray-100 py-4">
                                     <span className="font-semibold">The Entertainer Amersham</span>
                                     <br />2 Sycamore Road, Amersham HP6 5DR
                                     <div className="text-gray-400 mt-2">
@@ -373,9 +373,9 @@ const ProductCard = ({ product }) => {
                           title="More Details"
                           swapActiveTitle={true}
                           activeTitle={'Less Details'}
-                          className="text-brandBlue font-semibold text-base flex items-center justify-center border-[3px] border-gray-400 rounded-full w-full py-2 [&_.border-r-transparent]:hidden"
+                          className="text-gray-100 font-semibold text-base flex items-center justify-center border-[3px] border-purple-500 rounded-full w-full py-2 [&_.border-r-transparent]:hidden hover:shadow-text-purple transition-all"
                           answer={
-                            <div className="py-3 text-textBlue">
+                            <div className="py-3 text-gray-100">
                               <p className="mb-3">
                                 The Hot Wheels Monster Trucks Big Rigs haul big
                                 personalities on six wheels for epic adventures.
@@ -393,26 +393,26 @@ const ProductCard = ({ product }) => {
 
                               <p className="mb-2 font-semibold text-lg">Product features:</p>
                               <ul className="list-none">
-                                <li className="flex items-start mb-3 before:aspect-square before:mt-1.5 before:mr-2 before:block before:h-2.5 before:w-2.5 before:rounded-full before:bg-brandBlue">
+                                <li className="flex items-start mb-3 before:aspect-square before:mt-1.5 before:mr-2 before:block before:h-2.5 before:w-2.5 before:rounded-full before:bg-purple-500">
                                   Includes: 1x Hot Wheels Monster Trucks Big Rigs Vehicle
                                   (styles vary) Get the adventures movin' with a Hot Wheels
                                   Monster Trucks Big Rig!
                                 </li>
-                                <li className="flex items-start mb-3 before:aspect-square before:mt-1.5 before:mr-2 before:block before:h-2.5 before:w-2.5 before:rounded-full before:bg-brandBlue">
+                                <li className="flex items-start mb-3 before:aspect-square before:mt-1.5 before:mr-2 before:block before:h-2.5 before:w-2.5 before:rounded-full before:bg-purple-500">
                                   These Big Rigs feature six wheels to go even bigger on the
                                   Monster Truck action
                                 </li>
-                                <li className="flex items-start mb-3 before:aspect-square before:mt-1.5 before:mr-2 before:block before:h-2.5 before:w-2.5 before:rounded-full before:bg-brandBlue">
+                                <li className="flex items-start mb-3 before:aspect-square before:mt-1.5 before:mr-2 before:block before:h-2.5 before:w-2.5 before:rounded-full before:bg-purple-500">
                                   Each 1:64 scale die-cast vehicle captures the personality
                                   of fan-favourite Monster Truck creatures and characters
                                   with the eye-catching designs that fans love
                                 </li>
-                                <li className="flex items-start mb-3 before:aspect-square before:mt-1.5 before:mr-2 before:block before:h-2.5 before:w-2.5 before:rounded-full before:bg-brandBlue">
+                                <li className="flex items-start mb-3 before:aspect-square before:mt-1.5 before:mr-2 before:block before:h-2.5 before:w-2.5 before:rounded-full before:bg-purple-500">
                                   Kids can haul additional 1:64 scale vehicles on the
                                   flatbed or with a tow hook on the Big Rig (sold
                                   separately)
                                 </li>
-                                <li className="flex items-start mb-3 before:aspect-square before:mt-1.5 before:mr-2 before:block before:h-2.5 before:w-2.5 before:rounded-full before:bg-brandBlue">
+                                <li className="flex items-start mb-3 before:aspect-square before:mt-1.5 before:mr-2 before:block before:h-2.5 before:w-2.5 before:rounded-full before:bg-purple-500">
                                   Suitable for ages 3 years +
                                 </li>
                               </ul>
@@ -446,17 +446,17 @@ const ProductCard = ({ product }) => {
                           <div className="flex items-center border-[3px] border-gray-300 rounded-full">
                             <button
                                 name="Reduce quanitity"
-                                className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-colors disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 h-9 px-3 text-brandBlue"
+                                className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-colors disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 h-9 px-3 text-gray-100"
                                 onClick={() => setQuantity(Math.max(1, quantity - 1))}
                                 disabled={quantity <= 1}
                             >
                                 <Minus className="h-4 w-4" />
                                 <span className="sr-only">Reduce quantity</span>
                             </button>
-                            <span className="px-3 md:px-4 py-1 md:py-2 min-w-[3rem] text-center text-brandBlue text-lg font-bold">{quantity}</span>
+                            <span className="px-3 md:px-4 py-1 md:py-2 min-w-[3rem] text-center text-gray-100 text-lg font-bold">{quantity}</span>
                             <button
                                 name="Increase quantity"
-                                className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-colors disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 h-9 px-3 text-brandBlue"
+                                className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-colors disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 h-9 px-3 text-gray-100"
                                 onClick={() => setQuantity(quantity + 1)}
                                 disabled={quantity >= 10}
                             >
@@ -465,23 +465,12 @@ const ProductCard = ({ product }) => {
                             </button>
                           </div>
                         </div> */}
-                        <Button
-                          className="shadow-md hover:shadow-lg w-full group inline-flex items-center justify-center font-bold text-base min-h-[44px] md:text-lg rounded-[30px] bg-brandGreen text-white py-2 px-4 pl-0 transition-all hover:bg-brandLightGreen hover:scale-105"
-                          iconpath={
-                            <svg
-                              width="22"
-                              height="18"
-                              viewBox="0 0 22 18"
-                              fill="currentColor"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path d="M21.2401 7.57V8.14C21.2401 8.38 21.1601 8.58 20.9901 8.75C20.8201 8.92 20.6201 9 20.3801 9H20.0901L19.1601 15.57C19.0901 16 18.8901 16.35 18.5701 16.63C18.2501 16.9 17.8701 17.04 17.4401 17.04H4.36006C3.93006 17.04 3.55006 16.9 3.23006 16.63C2.91006 16.35 2.71006 16 2.64006 15.57L1.71006 9H1.42006C1.18006 9 0.980059 8.92 0.810059 8.75C0.640059 8.58 0.560059 8.38 0.560059 8.14V7.57C0.560059 7.33 0.640059 7.13 0.810059 6.96C0.980059 6.79 1.18006 6.71 1.42006 6.71H3.83006L7.67006 1.43C7.86006 1.17 8.11006 1.01 8.42006 0.960001C8.73006 0.910001 9.02006 0.980002 9.28006 1.18C9.54006 1.37 9.70006 1.62 9.75006 1.93C9.80006 2.24 9.73006 2.53 9.53006 2.79L6.66006 6.71H15.1401L12.2701 2.79C12.0801 2.53 12.0101 2.24 12.0501 1.93C12.1001 1.62 12.2501 1.37 12.5201 1.18C12.7801 0.990002 13.0701 0.920001 13.3801 0.960001C13.6901 1.01 13.9401 1.16 14.1301 1.43L17.9701 6.71H20.3801C20.6201 6.71 20.8201 6.79 20.9901 6.96C21.1601 7.13 21.2401 7.33 21.2401 7.57ZM7.73006 13.89V9.87C7.73006 9.63 7.65006 9.43 7.48006 9.26C7.31006 9.09 7.11006 9.01 6.87006 9.01C6.63006 9.01 6.43006 9.09 6.26006 9.26C6.09006 9.43 6.01006 9.63 6.01006 9.87V13.89C6.01006 14.13 6.09006 14.33 6.26006 14.5C6.43006 14.67 6.63006 14.75 6.87006 14.75C7.11006 14.75 7.31006 14.67 7.48006 14.5C7.65006 14.33 7.73006 14.13 7.73006 13.89ZM11.7501 13.89V9.87C11.7501 9.63 11.6701 9.43 11.5001 9.26C11.3301 9.09 11.1301 9.01 10.8901 9.01C10.6501 9.01 10.4501 9.09 10.2801 9.26C10.1101 9.43 10.0301 9.63 10.0301 9.87V13.89C10.0301 14.13 10.1101 14.33 10.2801 14.5C10.4501 14.67 10.6501 14.75 10.8901 14.75C11.1301 14.75 11.3301 14.67 11.5001 14.5C11.6701 14.33 11.7501 14.13 11.7501 13.89ZM15.7701 13.89V9.87C15.7701 9.63 15.6901 9.43 15.5201 9.26C15.3501 9.09 15.1501 9.01 14.9101 9.01C14.6701 9.01 14.4701 9.09 14.3001 9.26C14.1301 9.43 14.0501 9.63 14.0501 9.87V13.89C14.0501 14.13 14.1301 14.33 14.3001 14.5C14.4701 14.67 14.6701 14.75 14.9101 14.75C15.1501 14.75 15.3501 14.67 15.5201 14.5C15.6901 14.33 15.7701 14.13 15.7701 13.89Z" />
-                            </svg>
-                          }
+                        <button
+                          className="bg-gradient-to-br from-purple-700 via-purple-500 to-purple-700 text-white font-semibold py-1 px-8 text-lg rounded-full border-[3px] border-gray-300 shadow-md hover:shadow-text-blue hover:scale-[1.02] transition-all w-full"
                           onClick={addProductToCart}
                         >
                           Add to Basket
-                        </Button>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -531,7 +520,7 @@ const ProductCard = ({ product }) => {
                   className={`h-5 md:h-8 w-5 md:w-8 ${
                     wishlistItems.some(item => product.id === item.id)
                       ? "text-brandPink animate-bigheart"
-                      : "text-brandBlue"
+                      : "text-gray-100"
                   }`}
                   fill={wishlistItems.some(item => product.id === item.id) ? "#FF7BAC" : "transparent"}
                 />
@@ -539,7 +528,7 @@ const ProductCard = ({ product }) => {
                   className={`absolute bottom-0 left-1 h-2 w-2 opacity-0 text-transparent ${
                     wishlistItems.some(item => product.id === item.id)
                       ? "animate-miniheartleft text-brandPink"
-                      : "text-brandBlue"
+                      : "text-gray-100"
                   }`}
                   fill={wishlistItems.some(item => product.id === item.id) ? "#FF7BAC" : "transparent"}
                 />
@@ -547,7 +536,7 @@ const ProductCard = ({ product }) => {
                   className={`absolute bottom-0 right-2 h-2 w-2 opacity-0 text-transparent ${
                     wishlistItems.some(item => product.id === item.id)
                       ? "animate-miniheartright text-brandPink"
-                      : "text-brandBlue"
+                      : "text-gray-100"
                   }`}
                   fill={wishlistItems.some(item => product.id === item.id) ? "#FF7BAC" : "transparent"}
                 />
@@ -558,7 +547,7 @@ const ProductCard = ({ product }) => {
                 className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium h-9 rounded-md px-3 transition-all hover:scale-105"
                 onClick={() => openQuickView(product)}
               >
-                <Eye className="h-5 md:h-8 w-5 md:w-8 text-textBlue hover:text-brandMediumGreen transition-all" />
+                <Eye className="h-5 md:h-8 w-5 md:w-8 text-purple-500 hover:text-purple-800 transition-all" />
                 <span className="sr-only">Open quick view</span>
               </button>
             </div>
@@ -578,7 +567,7 @@ const ProductCard = ({ product }) => {
                   <Star className="h-3 w-3 fill-yellow-400 text-yellow-400" />
                   <Star className="h-3 w-3 fill-yellow-400 text-yellow-400" />
                   <Star className="h-3 w-3 fill-yellow-400 text-yellow-400" />
-                  <span className="text-xs text-textBlue ml-1">(3)</span>
+                  <span className="text-xs text-gray-100 ml-1">(3)</span>
                 </div>
               </div>
               <div className="flex items-center justify-center gap-1 my-2">
@@ -593,23 +582,12 @@ const ProductCard = ({ product }) => {
               </div>
             </button>
             <div className="flex items-center justify-center">
-              <Button
-                className="shadow-md hover:shadow-lg w-full group inline-flex items-center justify-center font-bold text-base rounded-[30px] bg-brandGreen text-white py-2 px-4 pl-0 transition-all hover:bg-brandLightGreen hover:scale-105"
-                iconpath={
-                  <svg
-                    width="22"
-                    height="18"
-                    viewBox="0 0 22 18"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M21.2401 7.57V8.14C21.2401 8.38 21.1601 8.58 20.9901 8.75C20.8201 8.92 20.6201 9 20.3801 9H20.0901L19.1601 15.57C19.0901 16 18.8901 16.35 18.5701 16.63C18.2501 16.9 17.8701 17.04 17.4401 17.04H4.36006C3.93006 17.04 3.55006 16.9 3.23006 16.63C2.91006 16.35 2.71006 16 2.64006 15.57L1.71006 9H1.42006C1.18006 9 0.980059 8.92 0.810059 8.75C0.640059 8.58 0.560059 8.38 0.560059 8.14V7.57C0.560059 7.33 0.640059 7.13 0.810059 6.96C0.980059 6.79 1.18006 6.71 1.42006 6.71H3.83006L7.67006 1.43C7.86006 1.17 8.11006 1.01 8.42006 0.960001C8.73006 0.910001 9.02006 0.980002 9.28006 1.18C9.54006 1.37 9.70006 1.62 9.75006 1.93C9.80006 2.24 9.73006 2.53 9.53006 2.79L6.66006 6.71H15.1401L12.2701 2.79C12.0801 2.53 12.0101 2.24 12.0501 1.93C12.1001 1.62 12.2501 1.37 12.5201 1.18C12.7801 0.990002 13.0701 0.920001 13.3801 0.960001C13.6901 1.01 13.9401 1.16 14.1301 1.43L17.9701 6.71H20.3801C20.6201 6.71 20.8201 6.79 20.9901 6.96C21.1601 7.13 21.2401 7.33 21.2401 7.57ZM7.73006 13.89V9.87C7.73006 9.63 7.65006 9.43 7.48006 9.26C7.31006 9.09 7.11006 9.01 6.87006 9.01C6.63006 9.01 6.43006 9.09 6.26006 9.26C6.09006 9.43 6.01006 9.63 6.01006 9.87V13.89C6.01006 14.13 6.09006 14.33 6.26006 14.5C6.43006 14.67 6.63006 14.75 6.87006 14.75C7.11006 14.75 7.31006 14.67 7.48006 14.5C7.65006 14.33 7.73006 14.13 7.73006 13.89ZM11.7501 13.89V9.87C11.7501 9.63 11.6701 9.43 11.5001 9.26C11.3301 9.09 11.1301 9.01 10.8901 9.01C10.6501 9.01 10.4501 9.09 10.2801 9.26C10.1101 9.43 10.0301 9.63 10.0301 9.87V13.89C10.0301 14.13 10.1101 14.33 10.2801 14.5C10.4501 14.67 10.6501 14.75 10.8901 14.75C11.1301 14.75 11.3301 14.67 11.5001 14.5C11.6701 14.33 11.7501 14.13 11.7501 13.89ZM15.7701 13.89V9.87C15.7701 9.63 15.6901 9.43 15.5201 9.26C15.3501 9.09 15.1501 9.01 14.9101 9.01C14.6701 9.01 14.4701 9.09 14.3001 9.26C14.1301 9.43 14.0501 9.63 14.0501 9.87V13.89C14.0501 14.13 14.1301 14.33 14.3001 14.5C14.4701 14.67 14.6701 14.75 14.9101 14.75C15.1501 14.75 15.3501 14.67 15.5201 14.5C15.6901 14.33 15.7701 14.13 15.7701 13.89Z" />
-                  </svg>
-                }
+              <button
+                className="bg-gradient-to-br from-purple-700 via-purple-500 to-purple-700 text-white font-semibold py-1 px-8 text-lg rounded-full border-[3px] border-gray-300 shadow-md hover:shadow-text-blue hover:scale-[1.02] transition-all"
                 onClick={addProductToCart}
               >
-                Add
-              </Button>
+                Buy
+              </button>
             </div>
           </div>
         </div>
