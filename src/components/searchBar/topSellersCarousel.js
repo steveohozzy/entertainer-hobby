@@ -10,7 +10,7 @@ const TopSellersCarousel = ({setShowSearchBox, filteredProducts, startedSearch})
 
   return (
     <div className="mt-1">
-      <div className="text-lg text-textBlue font-bold md:mb-2">
+      <div className="text-lg text-gray-100 font-semibold md:mb-2">
         {startedSearch ? 'Matching Products' : 'Top Picks'}
       </div>
         <Swiper
@@ -42,11 +42,11 @@ const TopSellersCarousel = ({setShowSearchBox, filteredProducts, startedSearch})
                   <div className="overflow-hidden flex flex-col">
                     <div>
                       <div className="text-[8px] leading-[8px] text-gray-400 mt-1 mb-1">{product.brand}</div>
-                      <h3 className="text-[10px] font-bold text-brandBlue mb-2 grow leading-[1.2] line-clamp-2">{product.name}</h3>
+                      <h3 className="text-[10px] font-semibold text-gray-100 mb-2 grow leading-[1.2] line-clamp-2">{product.name}</h3>
                     </div>
                     <div className="price">
                       <div className="flex items-end">
-                        <span className="text-brandRed font-bold text-[12px]">
+                        <span className="text-brandRed font-semibold text-[12px]">
                           £{product.price}
                         </span>
                         {product.originalPrice && (
