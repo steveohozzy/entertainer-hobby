@@ -179,7 +179,7 @@ const SearchBar = () => {
                   <span className="sr-only">Close</span>
                 </button>
               }
-              <div className={`absolute z-10 top-4 left-0 mx-6 sm:mx-12 lg:mx-8 w-[calc(100%-3rem)] sm:w-[calc(100%-6rem)] lg:w-[calc(100%-4rem)] opacity-0 h-0 transition-all  ${showSearchBox && 'opacity-100 h-auto'}`}>
+              <div className={`absolute z-10 top-4 left-0 mx-6 sm:mx-12 lg:mx-8 w-[calc(100%-3rem)] sm:w-[calc(100%-6rem)] lg:w-[calc(100%-4rem)] opacity-0 h-0 transition-all ${showSearchBox ? 'opacity-100 h-auto' : 'overflow-hidden'}`}>
                 <div className="w-full bg-gradient-to-br from-black via-gray-900 to-black rounded-lg p-4 pt-8 md:pt-11 pb-3 text-gray-100 shadow-text-blue max-h-[calc(100vh-230px)] overflow-y-auto no-scrollbar shadow-md mb-4">
                   <div className="flex items-start justify-between w-full">
                     <div className="flex flex-col w-full md:w-2/3 max-w-[400px]">
