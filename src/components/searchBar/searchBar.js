@@ -140,7 +140,7 @@ const SearchBar = () => {
   return (
     <>
       {showSearchBox &&
-        <div id="search-backing" className="fixed inset-0 bg-black/40 h-screen w-screen z-0"></div>
+        <div id="search-backing" className="fixed inset-0 bg-black/60 h-screen w-screen z-0"></div>
       }
       <div ref={wrapperRef} className="search bg-black pt-5 z-2 relative">
         <div className="max-w-3xl mx-auto px-6 sm:px-12 lg:px-8 relative">
