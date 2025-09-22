@@ -4,7 +4,6 @@ import { useSelector, useDispatch } from "react-redux";
 import { selectIsSignedIn } from "../../store/account/accountSelector";
 import { setIsSignedIn } from "../../store/account/accountReducer";
 
-import Button from "../../components/button/Button";
 import AccountTabs from "../../components/accountTabs/AccountTabs";
 
 const Account = () => {
