@@ -8,19 +8,19 @@ const MeAccountSection = () => {
     <div className="flex gap-6 flex-wrap md:flex-nowrap items-start">
       <div className="flex items-center justify-between w-full flex-wrap md:w-2/3">
         <div className="flex flex-col w-[100px] md:w-[150px]">
-          <div className="text-lg font-bold md:text-xl text-textBlue">
+          <div className="text-lg font-bold md:text-xl text-gray-100">
             Account
           </div>
           <div className="w-full bg-gray-300 rounded-full h-2">
             <div className="w-full bg-brandLightGreen rounded-full h-2 w-3/4"></div>
           </div>
-          <div className="text-xs text-textBlue">75%</div>
+          <div className="text-xs text-gray-100">75%</div>
         </div>
         <div className="flex items-center gap-2 w-[200px]">
           <button className="group relative">
             <img src="/account-icon-1.png" alt="account1" />
             <div className="transition-all absolute top-[-70px] left-0 opacity-0 group-hover:opacity-100 z-[999] pointer-events-none">
-              <div className="relative bg-white border-[2px] w-[80px] p-3 text-xs text-textBlue border-brandLightBlue rounded-full before:content-[''] before:absolute before:top-[calc(100%-1px)] before:left-[23px] after:content-[''] after:absolute before:border-[12px] before:border-transparent after:border-[10px] after:border-transparent after:border-[10px] after:top-[calc(100%-1px)] after:left-[25px] after:border-t-white rotate-[10deg] before:!border-t-brandLightBlue">
+              <div className="relative bg-white border-[2px] w-[80px] p-3 text-xs text-gray-100 border-brandLightBlue rounded-full before:content-[''] before:absolute before:top-[calc(100%-1px)] before:left-[23px] after:content-[''] after:absolute before:border-[12px] before:border-transparent after:border-[10px] after:border-transparent after:border-[10px] after:top-[calc(100%-1px)] after:left-[25px] after:border-t-white rotate-[10deg] before:!border-t-brandLightBlue">
                 <span className="block rotate-[-10deg] flex flex-col leading-[1.2]">
                   <span className="font-bold">Kool Kid</span>
                   <span className="text-[10px]">Buy hot or trending toys</span>
@@ -31,7 +31,7 @@ const MeAccountSection = () => {
           <button className="group relative">
             <img src="/account-icon-2.png" alt="account2" />
              <div className="transition-all absolute top-[-70px] left-0 opacity-0 group-hover:opacity-100 z-[999] pointer-events-none">
-              <div className="relative bg-white border-[2px] w-[80px] p-3 text-xs text-textBlue border-brandLightBlue rounded-full before:content-[''] before:absolute before:top-[calc(100%-1px)] before:left-[23px] after:content-[''] after:absolute before:border-[12px] before:border-transparent after:border-[10px] after:border-transparent after:border-[10px] after:top-[calc(100%-1px)] after:left-[25px] after:border-t-white rotate-[10deg] before:!border-t-brandLightBlue">
+              <div className="relative bg-white border-[2px] w-[80px] p-3 text-xs text-gray-100 border-brandLightBlue rounded-full before:content-[''] before:absolute before:top-[calc(100%-1px)] before:left-[23px] after:content-[''] after:absolute before:border-[12px] before:border-transparent after:border-[10px] after:border-transparent after:border-[10px] after:top-[calc(100%-1px)] after:left-[25px] after:border-t-white rotate-[10deg] before:!border-t-brandLightBlue">
                 <span className="block rotate-[-10deg] flex flex-col leading-[1.2]">
                   <span className="font-bold">Dreamer</span>
                   <span className="text-[10px]">Make 3 wishlists</span>
@@ -42,7 +42,7 @@ const MeAccountSection = () => {
           <button className="group relative">
             <img src="/account-icon-3.png" alt="account3" />
              <div className="transition-all absolute top-[-70px] left-0 opacity-0 group-hover:opacity-100 z-[999] pointer-events-none">
-              <div className="relative bg-white border-[2px] w-[80px] p-3 text-xs text-textBlue border-brandLightBlue rounded-full before:content-[''] before:absolute before:top-[calc(100%-1px)] before:left-[23px] after:content-[''] after:absolute before:border-[12px] before:border-transparent after:border-[10px] after:border-transparent after:border-[10px] after:top-[calc(100%-1px)] after:left-[25px] after:border-t-white rotate-[10deg] before:!border-t-brandLightBlue">
+              <div className="relative bg-white border-[2px] w-[80px] p-3 text-xs text-gray-100 border-brandLightBlue rounded-full before:content-[''] before:absolute before:top-[calc(100%-1px)] before:left-[23px] after:content-[''] after:absolute before:border-[12px] before:border-transparent after:border-[10px] after:border-transparent after:border-[10px] after:top-[calc(100%-1px)] after:left-[25px] after:border-t-white rotate-[10deg] before:!border-t-brandLightBlue">
                 <span className="block rotate-[-10deg] flex flex-col leading-[1.2]">
                   <span className="font-bold">Jacks Pack</span>
                   <span className="text-[10px]">Buy a full wishlist</span>
@@ -54,7 +54,7 @@ const MeAccountSection = () => {
             <img src="/account-icon-4.png" alt="account4" />
             <div className="absolute bg-gray-500 bg-opacity-65 w-full h-full top-0 left-0 rounded-full"></div>
              <div className="transition-all absolute top-[-70px] left-0 opacity-0 group-hover:opacity-100 z-[999] pointer-events-none">
-              <div className="relative bg-white border-[2px] w-[80px] p-3 text-xs text-textBlue border-brandLightBlue rounded-full before:content-[''] before:absolute before:top-[calc(100%-1px)] before:left-[23px] after:content-[''] after:absolute before:border-[12px] before:border-transparent after:border-[10px] after:border-transparent after:border-[10px] after:top-[calc(100%-1px)] after:left-[25px] after:border-t-white rotate-[10deg] before:!border-t-brandLightBlue">
+              <div className="relative bg-white border-[2px] w-[80px] p-3 text-xs text-gray-100 border-brandLightBlue rounded-full before:content-[''] before:absolute before:top-[calc(100%-1px)] before:left-[23px] after:content-[''] after:absolute before:border-[12px] before:border-transparent after:border-[10px] after:border-transparent after:border-[10px] after:top-[calc(100%-1px)] after:left-[25px] after:border-t-white rotate-[10deg] before:!border-t-brandLightBlue">
                 <span className="block rotate-[-10deg] flex flex-col leading-[1.2]">
                   <span className="font-bold">Santa Squad</span>
                   <span className="text-[10px]">Share an Xmas list</span>
@@ -67,12 +67,12 @@ const MeAccountSection = () => {
           <div className={`flex h-[44px] px-3 rounded-lg border border-[3px] border-brandBlue relative`}>
             <span
               className="absolute left-[calc(20%-20px)] md:left-[calc(15%-10px)] z-[2] top-[14px] w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-t-[6px] border-gray-400 transition-all"></span>
-            <select className='relative w-[20%] appearance-none border-r-[3px] bg-white border-gray-400 pr-4 mr-2 text-textBlue font-bold outline-none'>
+            <select className='relative w-[20%] appearance-none border-r-[3px] bg-black border-gray-400 pr-4 mr-2 text-gray-100 font-bold outline-none'>
               <option>Mr</option>
             </select>
             <div className="relative w-full">
-              <input type="text" placeholder="First Name" className="peer pr-[20px] text-base m-0 block h-[38px] w-full bg-transparent text-textBlue transition duration-200 ease-linear placeholder:text-transparent focus:outline-none" />
-              <label className="pointer-events-none font-semibold absolute left-0 top-[4px] origin-[0_0] border border-solid border-transparent text-base text-gray-400 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-7 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-focus:text-brandBlue peer-[:not(:placeholder-shown)]:-translate-y-7 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] peer-[:not(:placeholder-shown)]:text-brandBlue motion-reduce:transition-none">First Name</label>
+              <input type="text" placeholder="First Name" className="peer pr-[20px] text-base m-0 block h-[38px] w-full bg-transparent text-gray-100 transition duration-200 ease-linear placeholder:text-transparent focus:outline-none" />
+              <label className="pointer-events-none font-semibold absolute left-0 top-[4px] origin-[0_0] border border-solid border-transparent text-base text-gray-400 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-7 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-focus:text-gray-100 peer-[:not(:placeholder-shown)]:-translate-y-7 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] peer-[:not(:placeholder-shown)]:text-gray-100 motion-reduce:transition-none">First Name</label>
               <span className="absolute h-full w-[20px] flex items-center justify-center top-0 right-0 text-gray-300 peer-[:not(:placeholder-shown)]:text-brandGreen">
                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="10" viewBox="0 0 14 10" fill="none" className="w-full h-auto">
                 <path d="M4.49273 9.76762L0.180742 5.48145C0.0602474 5.36095 0 5.20603 0 5.01668C0 4.82733 0.0602474 4.67241 0.180742 4.55191L1.13609 3.62238C1.25659 3.48467 1.4029 3.41582 1.57504 3.41582C1.76439 3.41582 1.92792 3.48467 2.06563 3.62238L4.9575 6.51426L11.1544 0.317383C11.2921 0.179674 11.447 0.11082 11.6191 0.11082C11.8085 0.11082 11.9634 0.179674 12.0839 0.317383L13.0393 1.24691C13.1598 1.36741 13.22 1.52233 13.22 1.71168C13.22 1.90103 13.1598 2.05595 13.0393 2.17645L5.42227 9.76762C5.30177 9.90533 5.14685 9.97418 4.9575 9.97418C4.76815 9.97418 4.61323 9.90533 4.49273 9.76762Z" fill="currentColor" />
@@ -81,8 +81,8 @@ const MeAccountSection = () => {
             </div>
           </div>
           <div className={`flex mt-5 h-[44px] px-3 rounded-lg w-full border border-[3px] border-brandBlue relative group`}>
-            <input type="text" placeholder="Last Name" className="peer text-base m-0 block h-[38px] w-full bg-transparent text-textBlue transition duration-200 ease-linear placeholder:text-transparent focus:outline-none" />
-            <label className="font-semibold px-3 pointer-events-none absolute left-0 top-[4px] origin-[0_0] border border-solid border-transparent text-base text-gray-400 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-7 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-focus:text-brandBlue peer-[:not(:placeholder-shown)]:-translate-y-7 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] peer-[:not(:placeholder-shown)]:text-brandBlue motion-reduce:transition-none">Last Name</label>
+            <input type="text" placeholder="Last Name" className="peer text-base m-0 block h-[38px] w-full bg-transparent text-gray-100 transition duration-200 ease-linear placeholder:text-transparent focus:outline-none" />
+            <label className="font-semibold px-3 pointer-events-none absolute left-0 top-[4px] origin-[0_0] border border-solid border-transparent text-base text-gray-400 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-7 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-focus:text-gray-100 peer-[:not(:placeholder-shown)]:-translate-y-7 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] peer-[:not(:placeholder-shown)]:text-gray-100 motion-reduce:transition-none">Last Name</label>
             <span className="absolute h-full w-[20px] flex items-center justify-center top-0 right-2 text-gray-300 peer-[:not(:placeholder-shown)]:text-brandGreen">
                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="10" viewBox="0 0 14 10" fill="none" className="w-full h-auto">
                 <path d="M4.49273 9.76762L0.180742 5.48145C0.0602474 5.36095 0 5.20603 0 5.01668C0 4.82733 0.0602474 4.67241 0.180742 4.55191L1.13609 3.62238C1.25659 3.48467 1.4029 3.41582 1.57504 3.41582C1.76439 3.41582 1.92792 3.48467 2.06563 3.62238L4.9575 6.51426L11.1544 0.317383C11.2921 0.179674 11.447 0.11082 11.6191 0.11082C11.8085 0.11082 11.9634 0.179674 12.0839 0.317383L13.0393 1.24691C13.1598 1.36741 13.22 1.52233 13.22 1.71168C13.22 1.90103 13.1598 2.05595 13.0393 2.17645L5.42227 9.76762C5.30177 9.90533 5.14685 9.97418 4.9575 9.97418C4.76815 9.97418 4.61323 9.90533 4.49273 9.76762Z" fill="currentColor" />
@@ -90,8 +90,8 @@ const MeAccountSection = () => {
               </span>
           </div>
           <div className={`flex mt-5 h-[44px] px-3 rounded-lg w-full border border-[3px] border-brandBlue relative group`}>
-            <input type="text" placeholder="Email Address" className="peer text-base m-0 block h-[38px] w-full bg-transparent text-textBlue transition duration-200 ease-linear placeholder:text-transparent focus:outline-none" />
-            <label className="font-semibold px-3 pointer-events-none absolute left-0 top-[4px] origin-[0_0] border border-solid border-transparent text-base text-gray-400 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-7 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-focus:text-brandBlue peer-[:not(:placeholder-shown)]:-translate-y-7 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] peer-[:not(:placeholder-shown)]:text-brandBlue motion-reduce:transition-none">Email Address</label>
+            <input type="text" placeholder="Email Address" className="peer text-base m-0 block h-[38px] w-full bg-transparent text-gray-100 transition duration-200 ease-linear placeholder:text-transparent focus:outline-none" />
+            <label className="font-semibold px-3 pointer-events-none absolute left-0 top-[4px] origin-[0_0] border border-solid border-transparent text-base text-gray-400 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-7 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-focus:text-gray-100 peer-[:not(:placeholder-shown)]:-translate-y-7 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] peer-[:not(:placeholder-shown)]:text-gray-100 motion-reduce:transition-none">Email Address</label>
             <span className="absolute h-full w-[20px] flex items-center justify-center top-0 right-2 text-gray-300 peer-[:not(:placeholder-shown)]:text-brandGreen">
                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="10" viewBox="0 0 14 10" fill="none" className="w-full h-auto">
                 <path d="M4.49273 9.76762L0.180742 5.48145C0.0602474 5.36095 0 5.20603 0 5.01668C0 4.82733 0.0602474 4.67241 0.180742 4.55191L1.13609 3.62238C1.25659 3.48467 1.4029 3.41582 1.57504 3.41582C1.76439 3.41582 1.92792 3.48467 2.06563 3.62238L4.9575 6.51426L11.1544 0.317383C11.2921 0.179674 11.447 0.11082 11.6191 0.11082C11.8085 0.11082 11.9634 0.179674 12.0839 0.317383L13.0393 1.24691C13.1598 1.36741 13.22 1.52233 13.22 1.71168C13.22 1.90103 13.1598 2.05595 13.0393 2.17645L5.42227 9.76762C5.30177 9.90533 5.14685 9.97418 4.9575 9.97418C4.76815 9.97418 4.61323 9.90533 4.49273 9.76762Z" fill="currentColor" />
@@ -99,8 +99,8 @@ const MeAccountSection = () => {
               </span>
           </div>
           <div className={`flex mt-5 h-[44px] px-3 rounded-lg w-full border border-[3px] border-brandBlue relative group`}>
-            <input type="text" placeholder="Address First Line" className="peer text-base m-0 block h-[38px] w-full bg-transparent text-textBlue transition duration-200 ease-linear placeholder:text-transparent focus:outline-none" />
-            <label className="font-semibold px-3 pointer-events-none absolute left-0 top-[4px] origin-[0_0] border border-solid border-transparent text-base text-gray-400 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-7 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-focus:text-brandBlue peer-[:not(:placeholder-shown)]:-translate-y-7 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] peer-[:not(:placeholder-shown)]:text-brandBlue motion-reduce:transition-none">Address First Line</label>
+            <input type="text" placeholder="Address First Line" className="peer text-base m-0 block h-[38px] w-full bg-transparent text-gray-100 transition duration-200 ease-linear placeholder:text-transparent focus:outline-none" />
+            <label className="font-semibold px-3 pointer-events-none absolute left-0 top-[4px] origin-[0_0] border border-solid border-transparent text-base text-gray-400 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-7 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-focus:text-gray-100 peer-[:not(:placeholder-shown)]:-translate-y-7 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] peer-[:not(:placeholder-shown)]:text-gray-100 motion-reduce:transition-none">Address First Line</label>
             <span className="absolute h-full w-[20px] flex items-center justify-center top-0 right-2 text-gray-300 peer-[:not(:placeholder-shown)]:text-brandGreen">
                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="10" viewBox="0 0 14 10" fill="none" className="w-full h-auto">
                 <path d="M4.49273 9.76762L0.180742 5.48145C0.0602474 5.36095 0 5.20603 0 5.01668C0 4.82733 0.0602474 4.67241 0.180742 4.55191L1.13609 3.62238C1.25659 3.48467 1.4029 3.41582 1.57504 3.41582C1.76439 3.41582 1.92792 3.48467 2.06563 3.62238L4.9575 6.51426L11.1544 0.317383C11.2921 0.179674 11.447 0.11082 11.6191 0.11082C11.8085 0.11082 11.9634 0.179674 12.0839 0.317383L13.0393 1.24691C13.1598 1.36741 13.22 1.52233 13.22 1.71168C13.22 1.90103 13.1598 2.05595 13.0393 2.17645L5.42227 9.76762C5.30177 9.90533 5.14685 9.97418 4.9575 9.97418C4.76815 9.97418 4.61323 9.90533 4.49273 9.76762Z" fill="currentColor" />
@@ -109,8 +109,8 @@ const MeAccountSection = () => {
           </div>
           <div className="flex">
             <div className={`flex mt-5 h-[44px] px-3 rounded-lg w-full border border-[3px] border-brandBlue relative group`}>
-              <input type="text" placeholder="Address Second Line" className="peer text-base m-0 block h-[38px] w-full bg-transparent text-textBlue transition duration-200 ease-linear placeholder:text-transparent focus:outline-none" />
-              <label className="font-semibold px-3 pointer-events-none absolute left-0 top-[4px] origin-[0_0] border border-solid border-transparent text-base text-gray-400 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-7 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-focus:text-brandBlue peer-[:not(:placeholder-shown)]:-translate-y-7 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] peer-[:not(:placeholder-shown)]:text-brandBlue motion-reduce:transition-none">Address Second Line</label>
+              <input type="text" placeholder="Address Second Line" className="peer text-base m-0 block h-[38px] w-full bg-transparent text-gray-100 transition duration-200 ease-linear placeholder:text-transparent focus:outline-none" />
+              <label className="font-semibold px-3 pointer-events-none absolute left-0 top-[4px] origin-[0_0] border border-solid border-transparent text-base text-gray-400 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-7 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-focus:text-gray-100 peer-[:not(:placeholder-shown)]:-translate-y-7 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] peer-[:not(:placeholder-shown)]:text-gray-100 motion-reduce:transition-none">Address Second Line</label>
               <span className="absolute h-full w-[20px] flex items-center justify-center top-0 right-2 text-gray-300 peer-[:not(:placeholder-shown)]:text-brandGreen">
                   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="10" viewBox="0 0 14 10" fill="none" className="w-full h-auto">
                   <path d="M4.49273 9.76762L0.180742 5.48145C0.0602474 5.36095 0 5.20603 0 5.01668C0 4.82733 0.0602474 4.67241 0.180742 4.55191L1.13609 3.62238C1.25659 3.48467 1.4029 3.41582 1.57504 3.41582C1.76439 3.41582 1.92792 3.48467 2.06563 3.62238L4.9575 6.51426L11.1544 0.317383C11.2921 0.179674 11.447 0.11082 11.6191 0.11082C11.8085 0.11082 11.9634 0.179674 12.0839 0.317383L13.0393 1.24691C13.1598 1.36741 13.22 1.52233 13.22 1.71168C13.22 1.90103 13.1598 2.05595 13.0393 2.17645L5.42227 9.76762C5.30177 9.90533 5.14685 9.97418 4.9575 9.97418C4.76815 9.97418 4.61323 9.90533 4.49273 9.76762Z" fill="currentColor" />
@@ -127,8 +127,8 @@ const MeAccountSection = () => {
           <div className="flex flex-wrap md:flex-nowrap gap-3 md:gap-5">
             <div className={`flex  mt-5 h-[44px] px-3 rounded-lg w-full border border-[3px] border-brandBlue relative `}>
               <div className="relative w-full">
-                <input type="text" placeholder="Postcode" className="peer text-base m-0 block h-[38px] w-full bg-transparent text-textBlue transition duration-200 ease-linear placeholder:text-transparent focus:outline-none" />
-                <label className="font-semibold pointer-events-none absolute left-0 top-[4px] origin-[0_0] border border-solid border-transparent text-base text-gray-400 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-7 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-focus:text-brandBlue peer-[:not(:placeholder-shown)]:-translate-y-7 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] peer-[:not(:placeholder-shown)]:text-brandBlue motion-reduce:transition-none">Postcode</label>
+                <input type="text" placeholder="Postcode" className="peer text-base m-0 block h-[38px] w-full bg-transparent text-gray-100 transition duration-200 ease-linear placeholder:text-transparent focus:outline-none" />
+                <label className="font-semibold pointer-events-none absolute left-0 top-[4px] origin-[0_0] border border-solid border-transparent text-base text-gray-400 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-7 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-focus:text-gray-100 peer-[:not(:placeholder-shown)]:-translate-y-7 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] peer-[:not(:placeholder-shown)]:text-gray-100 motion-reduce:transition-none">Postcode</label>
                 <span className="absolute h-full w-[20px] flex items-center justify-center top-0 right-0 text-gray-300 peer-[:not(:placeholder-shown)]:text-brandGreen">
                   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="10" viewBox="0 0 14 10" fill="none" className="w-full h-auto">
                   <path d="M4.49273 9.76762L0.180742 5.48145C0.0602474 5.36095 0 5.20603 0 5.01668C0 4.82733 0.0602474 4.67241 0.180742 4.55191L1.13609 3.62238C1.25659 3.48467 1.4029 3.41582 1.57504 3.41582C1.76439 3.41582 1.92792 3.48467 2.06563 3.62238L4.9575 6.51426L11.1544 0.317383C11.2921 0.179674 11.447 0.11082 11.6191 0.11082C11.8085 0.11082 11.9634 0.179674 12.0839 0.317383L13.0393 1.24691C13.1598 1.36741 13.22 1.52233 13.22 1.71168C13.22 1.90103 13.1598 2.05595 13.0393 2.17645L5.42227 9.76762C5.30177 9.90533 5.14685 9.97418 4.9575 9.97418C4.76815 9.97418 4.61323 9.90533 4.49273 9.76762Z" fill="currentColor" />
@@ -139,12 +139,12 @@ const MeAccountSection = () => {
             <div className={`flex mt-2 md:mt-5 h-[44px] px-3 rounded-lg w-full border border-[3px] border-brandBlue relative `}>
               <span
                 className="absolute left-[calc(20%-20px)] md:left-[calc(25%-10px)] lg:left-[calc(20%-10px)] z-[2] top-[14px] w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-t-[6px] border-gray-400 transition-all"></span>
-              <select className='relative w-[20%] md:w-[35%] lg:w-[25%] appearance-none border-r-[3px] bg-white border-gray-400 pr-4 mr-2 text-textBlue font-bold outline-none'>
+              <select className='relative w-[20%] md:w-[35%] lg:w-[25%] appearance-none border-r-[3px] bg-black border-gray-400 pr-4 mr-2 text-gray-100 font-bold outline-none'>
                 <option>+44</option>
               </select>
               <div className="relative w-full">
-                <input type="number" placeholder="1234 567890" className="peer text-base m-0 block h-[38px] w-full bg-transparent text-textBlue transition duration-200 ease-linear placeholder:text-transparent focus:outline-none" />
-                <label className="font-semibold pointer-events-none absolute left-0 top-[4px] origin-[0_0] border border-solid border-transparent text-base text-gray-400 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-7 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-focus:text-brandBlue peer-[:not(:placeholder-shown)]:-translate-y-7 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] peer-[:not(:placeholder-shown)]:text-brandBlue motion-reduce:transition-none">Phone Number</label>
+                <input type="number" placeholder="1234 567890" className="peer text-base m-0 block h-[38px] w-full bg-transparent text-gray-100 transition duration-200 ease-linear placeholder:text-transparent focus:outline-none" />
+                <label className="font-semibold pointer-events-none absolute left-0 top-[4px] origin-[0_0] border border-solid border-transparent text-base text-gray-400 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-7 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-focus:text-gray-100 peer-[:not(:placeholder-shown)]:-translate-y-7 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] peer-[:not(:placeholder-shown)]:text-gray-100 motion-reduce:transition-none">Phone Number</label>
                 <span className="absolute h-full w-[20px] flex items-center justify-center top-0 right-0 text-gray-300 peer-[:not(:placeholder-shown)]:text-brandGreen">
                   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="10" viewBox="0 0 14 10" fill="none" className="w-full h-auto">
                   <path d="M4.49273 9.76762L0.180742 5.48145C0.0602474 5.36095 0 5.20603 0 5.01668C0 4.82733 0.0602474 4.67241 0.180742 4.55191L1.13609 3.62238C1.25659 3.48467 1.4029 3.41582 1.57504 3.41582C1.76439 3.41582 1.92792 3.48467 2.06563 3.62238L4.9575 6.51426L11.1544 0.317383C11.2921 0.179674 11.447 0.11082 11.6191 0.11082C11.8085 0.11082 11.9634 0.179674 12.0839 0.317383L13.0393 1.24691C13.1598 1.36741 13.22 1.52233 13.22 1.71168C13.22 1.90103 13.1598 2.05595 13.0393 2.17645L5.42227 9.76762C5.30177 9.90533 5.14685 9.97418 4.9575 9.97418C4.76815 9.97418 4.61323 9.90533 4.49273 9.76762Z" fill="currentColor" />
@@ -165,7 +165,7 @@ const MeAccountSection = () => {
             <label className="relative flex items-center text-brandBlue text-sm md:text-base">
               <input
                 type="checkbox"
-                className="relative mt-1 block size-[20px] appearance-none rounded-md border-[3px] border-textBlue bg-white outline-none transition-all checked:bg-textBlue"
+                className="relative mt-1 block size-[20px] appearance-none rounded-md border-[3px] border-gray-100 bg-white outline-none transition-all checked:bg-gray-100"
                 name="signup"
                 value="signup"
               />
@@ -192,7 +192,7 @@ const MeAccountSection = () => {
             <label className="relative flex items-center text-brandBlue text-sm md-text-base">
               <input
                 type="checkbox"
-                className="relative mt-1 block size-[20px] appearance-none rounded-md border-[3px] border-textBlue bg-white outline-none transition-all checked:bg-textBlue"
+                className="relative mt-1 block size-[20px] appearance-none rounded-md border-[3px] border-gray-100 bg-white outline-none transition-all checked:bg-gray-100"
                 name="signup"
                 value="signup"
               />
@@ -242,11 +242,11 @@ const MeAccountSection = () => {
         </div>
         <button className="text-white w-full font-bold mt-4 transition-all rounded-full bg-brandGreen py-2 px-4 hover:bg-brandLightGreen hover:scale-110">Save</button>
         </div>
-        <div className="text-lg text-textBlue font-bold my-4">
+        <div className="text-lg text-gray-100 font-bold my-4">
           Saved Addresses
         </div>
         <div className="space-y-3">
-          <div className="text-textBlue border-[3px] border-brandLightBlue rounded-xl p-3">
+          <div className="text-gray-100 border-[3px] border-brandLightBlue rounded-xl p-3">
             Mr. steven hoskins {defaultAddress === '1' && <span className="font-bold text-brandBlue)">(Default)</span>}<br />
             42 Lomond Road<br />
             Hemel Hempstead, Hertfordshire<br />
@@ -264,7 +264,7 @@ const MeAccountSection = () => {
               </button>
             </div>
           </div>
-          <div className="text-textBlue border-[3px] border-brandLightBlue rounded-xl p-3">
+          <div className="text-gray-100 border-[3px] border-brandLightBlue rounded-xl p-3">
             Mr. steven hoskins {defaultAddress === '2' && <span className="font-bold text-brandBlue)">(Default)</span>}<br />
             42 Lomond Road<br />
             Hemel Hempstead, Hertfordshire<br />

@@ -8,7 +8,6 @@ import { setIsAccountOpen } from "../../store/account/accountReducer";
 import { selectIsSignedIn } from "../../store/account/accountSelector";
 import { setIsSignedIn } from "../../store/account/accountReducer";
 
-import Button from "../button/Button";
 import { Heart, Star } from "lucide-react";
 
 const AccountPopUp = () => {
@@ -100,7 +99,7 @@ const AccountPopUp = () => {
         >
           <span className="sr-only">Hi Jack!</span>
           <span className="hidden md:block">Hi Jack!</span>
-          <span className="transition-all text-white md:text-brandLightBlue rotate-[20deg] group-hover:animate-wave">
+          <span className="transition-all text-gray-100 md:text-brandLightBlue rotate-[20deg] group-hover:animate-wave">
             <svg
               className="animate-wave translate-x-[2px] translate-y-[-3px]"
               xmlns="http://www.w3.org/2000/svg"
@@ -115,15 +114,15 @@ const AccountPopUp = () => {
         </button>
       )}
       {isAccountOpen && (
-        <div className="fixed h-screen top-0 left-0 inset-0 z-[99999] bg-brandBlue/60">
-          <div ref={wrapperRef} className="absolute left-[50%] top-[50%] z-50 grid w-full translate-x-[-50%] translate-y-[-50%] gap-3 border bg-white p-3 pb-6 shadow-lg sm:rounded-lg max-w-[320px] max-h-[90vh] overflow-y-auto">
+        <div className="fixed h-screen top-0 left-0 inset-0 z-[99999] bg-black/60">
+          <div ref={wrapperRef} className="absolute left-[50%] top-[50%] z-50 grid w-full translate-x-[-50%] translate-y-[-50%] gap-3 border bg-gradient-to-br from-black via-gray-900 to-black shadow-text-blue p-3 pb-6 shadow-lg sm:rounded-lg max-w-[320px] max-h-[90vh] overflow-y-auto">
             {!isSignedIn ? (
               <>
                 <div className="relative flex flex-col gap-2">
                   <button
                     name="Close quick view"
                     onClick={handleAccountPopUp}
-                    className="absolute right-0 top-0 text-textBlue rounded-full border-[2px] border-textBlue z-[2]"
+                    className="absolute right-0 top-0 text-gray-100 rounded-full border-[2px] border-textBlue z-[2]"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -142,7 +141,7 @@ const AccountPopUp = () => {
                     </svg>
                     <span className="sr-only">Close</span>
                   </button>
-                  <div className="text-textBlue font-bold text-lg mb-2">
+                  <div className="text-gray-100 font-semibold text-lg mb-2">
                     Existing Customer?
                   </div>
                   <form id="sign-in-form">
@@ -156,9 +155,9 @@ const AccountPopUp = () => {
                         placeholder="Email"
                         onChange={handleEmailChange}
                         onBlur={handleEmailChange}
-                        className="peer text-base m-0 block h-[38px] w-full bg-transparent text-textBlue transition duration-200 ease-linear placeholder:text-transparent focus:outline-none"
+                        className="peer text-base m-0 block h-[38px] w-full bg-transparent text-gray-100 transition duration-200 ease-linear placeholder:text-transparent focus:outline-none"
                       />
-                      <label className="font-semibold px-3 pointer-events-none absolute left-0 top-[4px] origin-[0_0] border border-solid border-transparent text-base text-gray-400 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-7 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-focus:text-brandBlue peer-[:not(:placeholder-shown)]:-translate-y-7 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] peer-[:not(:placeholder-shown)]:text-brandBlue motion-reduce:transition-none">
+                      <label className="font-semibold px-3 pointer-events-none absolute left-0 top-[4px] origin-[0_0] border border-solid border-transparent text-base text-gray-400 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-7 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-focus:text-gray-100 peer-[:not(:placeholder-shown)]:-translate-y-7 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] peer-[:not(:placeholder-shown)]:text-gray-100 motion-reduce:transition-none">
                         Email
                       </label>
                       <span className="absolute h-full w-[20px] flex items-center justify-center top-0 right-2 text-gray-300 peer-[:not(:placeholder-shown)]:text-brandGreen">
@@ -187,9 +186,9 @@ const AccountPopUp = () => {
                         placeholder="Password"
                         onChange={handlePasswordChange}
                         onBlur={handlePasswordChange}
-                        className="peer text-base m-0 block h-[38px] w-full bg-transparent text-textBlue transition duration-200 ease-linear placeholder:text-transparent focus:outline-none pr-[70px]"
+                        className="peer text-base m-0 block h-[38px] w-full bg-transparent text-gray-100 transition duration-200 ease-linear placeholder:text-transparent focus:outline-none pr-[70px]"
                       />
-                      <label className="font-semibold px-3 pointer-events-none absolute left-0 top-[4px] origin-[0_0] border border-solid border-transparent text-base text-gray-400 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-7 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-focus:text-brandBlue peer-[:not(:placeholder-shown)]:-translate-y-7 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] peer-[:not(:placeholder-shown)]:text-brandBlue motion-reduce:transition-none">
+                      <label className="font-semibold px-3 pointer-events-none absolute left-0 top-[4px] origin-[0_0] border border-solid border-transparent text-base text-gray-400 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-7 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-focus:text-gray-100 peer-[:not(:placeholder-shown)]:-translate-y-7 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] peer-[:not(:placeholder-shown)]:text-gray-100 motion-reduce:transition-none">
                         Password
                       </label>
                       <span className="absolute h-full w-[20px] flex items-center justify-center top-0 right-2 text-gray-300 peer-[:not(:placeholder-shown)]:text-brandGreen">
@@ -218,70 +217,34 @@ const AccountPopUp = () => {
                       </button>
                     </div>
                     <button
-                      className="text-textBlue text-sm mt-2"
+                      className="text-gray-100 text-sm mt-2"
                       onClick={(e) => e.preventDefault()}
                     >
                       Forgot password?
                     </button>
                   </form>
-                  <Button
-                    className="shadow-md hover:shadow-lg w-full group inline-flex items-center justify-center font-bold rounded-[30px] bg-brandGreen text-white py-2 px-2 lg:px-4 lg:pl-0 pl-0 transition-all hover:bg-brandLightGreen hover:scale-105 mt-1"
+                  <button
+                  className="bg-gradient-to-br from-purple-700 via-purple-500 to-purple-700 text-white font-semibold py-1 px-8 text-lg rounded-full border-[3px] border-gray-300 shadow-md hover:shadow-text-blue hover:scale-[1.02] transition-all"
                     onClick={handleSignIn}
-                    iconpath={
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="rotate-[20deg]"
-                        fill="currentColor"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 60 60"
-                      >
-                        <defs></defs>
-                        <path
-                          className="cls-1"
-                          d="M794,356h32a4,4,0,0,1,4,4v26a4,4,0,0,1-4,4H794a4,4,0,0,1-4-4V360A4,4,0,0,1,794,356Zm18,17.445V378a2,2,0,0,1-4,0v-4.555A4,4,0,1,1,812,373.445ZM796,352v-6a10,10,0,0,0-20,0v6h-6v-6a16,16,0,0,1,32,0v6h-6Z"
-                          id="unlock"
-                          transform="translate(-770 -330)"
-                        />
-                      </svg>
-                    }
                   >
                     Login
-                  </Button>
+                  </button>
                 </div>
                 <div className="relative flex justify-center text-gray-400 text-sm after:block after:content[''] after:w-full after:h-[2px] after:absolute after:bg-gray-300 after:top-1/2">
-                  <span className="block bg-white mt-2 px-3 z-20">Or</span>
+                  <span className="block bg-black mt-2 px-3 z-20">Or</span>
                 </div>
-                <div className="text-textBlue font-bold text-lg">
+                <div className="text-gray-100 font-semibold text-lg">
                   New to The Entertainer?
                 </div>
-                <p className="text-sm text-textBlue">
+                <p className="text-sm text-gray-100">
                   Register to gain perks when shopping with us
                 </p>
-                <Button
-                  className="shadow-md hover:shadow-lg w-full group inline-flex items-center justify-center font-bold rounded-[30px] bg-brandBlue text-white py-2 px-2 lg:px-4 lg:pl-0 pl-0 transition-all hover:bg-textBlue hover:scale-105 mt-2"
+                <button
+                  className="bg-gradient-to-br from-purple-700 via-purple-500 to-purple-700 text-white font-semibold py-1 px-8 text-lg rounded-full border-[3px] border-gray-300 shadow-md hover:shadow-text-blue hover:scale-[1.02] transition-all"
                   onClick={handleFindOutMore}
-                  iconpath={
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="rotate-[20deg]"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                    >
-                      <path
-                        d="M12 5H9C7.11438 5 6.17157 5 5.58579 5.58579C5 6.17157 5 7.11438 5 9V15C5 16.8856 5 17.8284 5.58579 18.4142C6.17157 19 7.11438 19 9 19H15C16.8856 19 17.8284 19 18.4142 18.4142C19 17.8284 19 16.8856 19 15V12M9.31899 12.6911L15.2486 6.82803C15.7216 6.36041 16.4744 6.33462 16.9782 6.76876C17.5331 7.24688 17.5723 8.09299 17.064 8.62034L11.2329 14.6702L9 15L9.31899 12.6911Z"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  }
                 >
                   Find out more
-                </Button>
+                </button>
               </>
             ) : (
               <>
@@ -289,7 +252,7 @@ const AccountPopUp = () => {
                   <button
                     name="Close quick view"
                     onClick={handleAccountPopUp}
-                    className="absolute right-2 top-2 text-textBlue rounded-full border-[2px] border-textBlue z-[2]"
+                    className="absolute right-2 top-2 text-gray-100 rounded-full border-[2px] border-textBlue z-[2]"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -309,12 +272,12 @@ const AccountPopUp = () => {
                     <span className="sr-only">Close</span>
                   </button>
                   <div>
-                    <div className="text-lg text-textBlue">Hello Jack!</div>
-                    <div className="text-lg text-textBlue">
+                    <div className="text-lg text-gray-100">Hello Jack!</div>
+                    <div className="text-lg text-gray-100">
                       Welcome to your Account
                     </div>
                   </div>
-                  <div className="text-textBlue opacity-75 rotate-[20deg] flex items-start">
+                  <div className="text-gray-100 opacity-75 rotate-[20deg] flex items-start">
                     <svg
                       className="animate-wave translate-x-[2px] translate-y-[-3px]"
                       xmlns="http://www.w3.org/2000/svg"
@@ -331,7 +294,7 @@ const AccountPopUp = () => {
                 <div className="grid grid-cols-5 gap-4 py-3">
                   <button
                     onClick={handleGoToAccount}
-                    className="transition-all text-brandBlue flex flex-col items-center hover:scale-110 group text-xs "
+                    className="transition-all text-gray-100 flex flex-col items-center hover:scale-110 group text-xs "
                   >
                     <span className="transition-all w-9 h-9 transition-duration-500 rotate-[-20deg] group-hover:rotate-[20deg] group-hover:shadow-lg bg-brandBlue text-brandLightblue rounded-full  p-2 flex items-center justify-center mb-1">
                       <svg
@@ -348,7 +311,7 @@ const AccountPopUp = () => {
                   </button>
                   <button
                     onClick={handleGoToAccount}
-                    className="transition-all text-brandBlue flex flex-col items-center hover:scale-110 group text-xs "
+                    className="transition-all text-gray-100 flex flex-col items-center hover:scale-110 group text-xs "
                   >
                     <span className="transition-all w-9 h-9 transition-duration-500 group-hover:rotate-[20deg] group-hover:shadow-lg text-brandLightBlue bg-brandBlue rounded-full  p-2  flex items-center justify-center mb-1">
                       <svg
@@ -377,7 +340,7 @@ const AccountPopUp = () => {
                   </button>
                   <button
                     onClick={handleGoToAccount}
-                    className="transition-all text-brandBlue flex flex-col items-center hover:scale-110 group text-xs "
+                    className="transition-all text-gray-100 flex flex-col items-center hover:scale-110 group text-xs "
                   >
                     <span className="transition-all w-9 h-9 p-2 transition-duration-500 group-hover:rotate-[20deg] group-hover:shadow-lg text-brandLightBlue bg-brandBlue rounded-full  p-1 flex items-center justify-center mb-1">
                       <svg
@@ -399,7 +362,7 @@ const AccountPopUp = () => {
                   </button>
                   <button
                     onClick={handleGoToAccount}
-                    className="transition-all text-brandBlue flex flex-col items-center hover:scale-110 group text-xs "
+                    className="transition-all text-gray-100 flex flex-col items-center hover:scale-110 group text-xs "
                   >
                     <span className="transition-all w-9 h-9 transition-duration-500 group-hover:rotate-[20deg] group-hover:shadow-lg text-brandLightBlue bg-brandBlue rounded-full  p-2 flex items-center justify-center mb-1">
                       <svg
@@ -418,7 +381,7 @@ const AccountPopUp = () => {
                   </button>
                   <button
                     onClick={handleGoToAccount}
-                    className="transition-all text-brandBlue flex flex-col items-center hover:scale-110 group text-xs "
+                    className="transition-all text-gray-100 flex flex-col items-center hover:scale-110 group text-xs "
                   >
                     <span className="transition-all w-9 h-9 transition-duration-500 group-hover:rotate-[20deg] group-hover:shadow-lg text-brandLightBlue bg-brandBlue rounded-full  p-2 flex items-center justify-center mb-1">
                       <svg
@@ -438,7 +401,7 @@ const AccountPopUp = () => {
                   </button>
                   <button
                     onClick={handleGoToAccount}
-                    className="transition-all text-brandBlue flex flex-col items-center hover:scale-110 group text-xs "
+                    className="transition-all text-gray-100 flex flex-col items-center hover:scale-110 group text-xs "
                   >
                     <span className="transition-all w-9 h-9 transition-duration-500 group-hover:rotate-[20deg] group-hover:shadow-lg text-brandLightBlue bg-brandBlue rounded-full  p-2 flex items-center justify-center mb-1">
                       <svg
@@ -454,7 +417,7 @@ const AccountPopUp = () => {
                   </button>
                   <button
                     onClick={handleGoToAccount}
-                    className="transition-all text-brandBlue flex flex-col items-center hover:scale-110 group text-xs "
+                    className="transition-all text-gray-100 flex flex-col items-center hover:scale-110 group text-xs "
                   >
                     <span className="transition-all w-9 h-9 transition-duration-500 group-hover:rotate-[20deg] group-hover:shadow-lg text-brandLightBlue bg-brandBlue rounded-full  p-2 flex items-center justify-center mb-1">
                       <svg
@@ -471,7 +434,7 @@ const AccountPopUp = () => {
                   </button>
                   <button
                     onClick={handleGoToAccount}
-                    className="transition-all text-brandBlue flex flex-col items-center hover:scale-110 group text-xs "
+                    className="transition-all text-gray-100 flex flex-col items-center hover:scale-110 group text-xs "
                   >
                     <span className="transition-all w-9 h-9 transition-duration-500 group-hover:rotate-[20deg] group-hover:shadow-lg text-brandLightBlue bg-brandBlue rounded-full  p-2  flex items-center justify-center mb-1">
                       <Heart fill="currentColor" />
@@ -480,7 +443,7 @@ const AccountPopUp = () => {
                   </button>
                   <button
                     onClick={handleGoToAccount}
-                    className="transition-all text-brandBlue flex flex-col items-center hover:scale-110 group text-xs "
+                    className="transition-all text-gray-100 flex flex-col items-center hover:scale-110 group text-xs "
                   >
                     <span className="transition-all w-9 h-9 transition-duration-500 group-hover:rotate-[20deg] group-hover:shadow-lg text-brandLightBlue bg-brandBlue rounded-full  p-2  flex items-center justify-center mb-1">
                       <svg
@@ -567,7 +530,7 @@ const AccountPopUp = () => {
                   </button>
                   <button
                     onClick={handleGoToAccount}
-                    className="transition-all text-brandBlue flex flex-col items-center hover:scale-110 group text-xs "
+                    className="transition-all text-gray-100 flex flex-col items-center hover:scale-110 group text-xs "
                   >
                     <span className="transition-all w-9 h-9 transition-duration-500 group-hover:rotate-[20deg] group-hover:shadow-lg text-brandLightBlue bg-brandBlue rounded-full  p-2  flex items-center justify-center mb-1">
                       <svg

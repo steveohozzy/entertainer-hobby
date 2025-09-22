@@ -15,8 +15,8 @@ const AccountTabs = () => {
       <div className="grid grid-cols-5">
         <button
           onClick={() => setTabSelected("wishlist")}
-          className={`transition duration-300 ease-in-out transition duration-300 ease-in-out px-1 py-2 w-full rounded-tr-xl rounded-tl-xl text-textBlue flex flex-col items-center group ${
-            tabSelected === "wishlist" ? "bg-white font-bold" : "font-semibold"
+          className={`transition duration-300 ease-in-out transition duration-300 ease-in-out px-1 py-2 w-full rounded-tr-xl rounded-tl-xl text-gray-100 flex flex-col items-center group border-[2px] border-brandBlue opacity-[0.5] ${
+            tabSelected === "wishlist" ? "bg-black font-semibold shadow-text-blue opacity-[1]" : "font-semibold"
           }`}
         >
           <span className="text-brandRed transition-all group-hover:rotate-[25deg] group-hover:scale-110">
@@ -26,8 +26,8 @@ const AccountTabs = () => {
         </button>
         <button
           onClick={() => setTabSelected("me")}
-          className={`transition duration-300 ease-in-out px-1 py-2 w-full rounded-tr-xl rounded-tl-xl text-textBlue flex flex-col items-center group ${
-            tabSelected === "me" ? "bg-white font-bold" : "font-semibold"
+          className={`transition duration-300 ease-in-out px-1 py-2 w-full rounded-tr-xl rounded-tl-xl text-gray-100 flex flex-col items-center group border-[2px] border-brandBlue opacity-[0.5] ${
+            tabSelected === "me" ? "bg-black font-semibold shadow-text-blue opacity-[1]" : "font-semibold"
           }`}
         >
           <span className="transition-all group-hover:rotate-[25deg] group-hover:scale-110">
@@ -94,8 +94,8 @@ const AccountTabs = () => {
         </button>
         <button
           onClick={() => setTabSelected("bank")}
-          className={`transition duration-300 ease-in-out px-1 py-2 w-full rounded-tr-xl rounded-tl-xl text-textBlue flex flex-col items-center group ${
-            tabSelected === "bank" ? "bg-white font-bold" : "font-semibold"
+          className={`transition duration-300 ease-in-out px-1 py-2 w-full rounded-tr-xl rounded-tl-xl text-gray-100 flex flex-col items-center group border-[2px] border-brandBlue opacity-[0.5] ${
+            tabSelected === "bank" ? "bg-black font-semibold shadow-text-blue opacity-[1]" : "font-semibold"
           }`}
         >
           <span className="transition-all group-hover:rotate-[25deg] group-hover:scale-110">
@@ -147,8 +147,8 @@ const AccountTabs = () => {
         </button>
         <button
           onClick={() => setTabSelected("orders")}
-          className={`transition duration-300 ease-in-out px-1 py-2 w-full rounded-tr-xl rounded-tl-xl text-textBlue flex flex-col items-center group ${
-            tabSelected === "orders" ? "bg-white font-bold" : "font-semibold"
+          className={`transition duration-300 ease-in-out px-1 py-2 w-full rounded-tr-xl rounded-tl-xl text-gray-100 flex flex-col items-center group border-[2px] border-brandBlue opacity-[0.5] ${
+            tabSelected === "orders" ? "bg-black font-semibold shadow-text-blue opacity-[1]" : "font-semibold"
           }`}
         >
           <span className="transition-all group-hover:rotate-[25deg] group-hover:scale-110 text-brandBlue">
@@ -165,8 +165,8 @@ const AccountTabs = () => {
         </button>
         <button
           onClick={() => setTabSelected("peeks")}
-          className={`transition duration-300 ease-in-out px-1 py-2 w-full rounded-tr-xl rounded-tl-xl text-textBlue flex flex-col items-center group ${
-            tabSelected === "peeks" ? "bg-white font-bold" : "font-semibold"
+          className={`transition duration-300 ease-in-out px-1 py-2 w-full rounded-tr-xl rounded-tl-xl text-gray-100 flex flex-col items-center group border-[2px] border-brandBlue opacity-[0.5] ${
+            tabSelected === "peeks" ? "bg-black font-semibold shadow-text-blue opacity-[1]" : "font-semibold"
           }`}
         >
           <span className="group-hover:scale-[1.2] group-hover:-scale-x-100 ">
@@ -248,19 +248,19 @@ const AccountTabs = () => {
           Peeks
         </button>
       </div>
-      <div className={`transition duration-300 ease-in-out bg-white opacity-0 max-h-0 rounded-tr-xl rounded-br-xl rounded-bl-xl ${tabSelected === 'wishlist' ? 'opacity-100 p-6 max-h-none' : 'overflow-hidden '}`}>
+      <div className={`transition duration-300 ease-in-out bg-gradient-to-br from-black via-gray-900 to-black opacity-0 max-h-0 rounded-tr-xl rounded-br-xl rounded-bl-xl ${tabSelected === 'wishlist' ? 'opacity-100 shadow-text-blue p-6 max-h-none' : 'overflow-hidden '}`}>
         <WishlistContainer />
       </div>
-      <div className={`transition duration-300 ease-in-out bg-white opacity-0 max-h-0 rounded-tr-xl rounded-tl-xl rounded-br-xl rounded-bl-xl ${tabSelected === 'me' ? 'opacity-100 p-6 max-h-none' : 'overflow-hidden'}`}>
+      <div className={`transition duration-300 ease-in-out bg-gradient-to-br from-black via-gray-900 to-black opacity-0 max-h-0 rounded-tr-xl rounded-tl-xl rounded-br-xl rounded-bl-xl ${tabSelected === 'me' ? 'shadow-text-blue opacity-100 p-6 max-h-none' : 'overflow-hidden'}`}>
         <MeAccountSection />
       </div>
-      <div className={`transition duration-300 ease-in-out bg-white opacity-0 max-h-0 overflow-hidden rounded-tr-xl rounded-tl-xl rounded-br-xl rounded-bl-xl ${tabSelected === 'bank' ? 'opacity-100 p-6 max-h-none' : ''}`}>
+      <div className={`transition duration-300 ease-in-out bg-gradient-to-br from-black via-gray-900 to-black opacity-0 max-h-0 overflow-hidden rounded-tr-xl rounded-tl-xl rounded-br-xl rounded-bl-xl ${tabSelected === 'bank' ? 'opacity-100 p-6 max-h-none shadow-text-blue' : ''}`}>
         <BankAccountSection />
       </div>
-      <div className={`transition duration-300 ease-in-out bg-white opacity-0 max-h-0 overflow-hidden rounded-tr-xl rounded-tl-xl rounded-br-xl rounded-bl-xl ${tabSelected === 'orders' ? 'opacity-100 p-6 max-h-none' : ''}`}>
+      <div className={`transition duration-300 ease-in-out bg-gradient-to-br from-black via-gray-900 to-black opacity-0 max-h-0 overflow-hidden rounded-tr-xl rounded-tl-xl rounded-br-xl rounded-bl-xl ${tabSelected === 'orders' ? 'opacity-100 p-6 max-h-none shadow-text-blue' : ''}`}>
         <OrdersAccountSection />
       </div>
-      <div className={`transition duration-300 ease-in-out bg-white opacity-0 max-h-0 overflow-hidden rounded-tl-xl rounded-br-xl rounded-bl-xl ${tabSelected === 'peeks' ? 'opacity-100 p-6 max-h-none' : ''}`}>
+      <div className={`transition duration-300 ease-in-out bg-gradient-to-br from-black via-gray-900 to-black opacity-0 max-h-0 overflow-hidden rounded-tl-xl rounded-br-xl rounded-bl-xl ${tabSelected === 'peeks' ? 'opacity-100 p-6 max-h-none shadow-text-blue' : ''}`}>
         <PeeksAccountSection />
       </div>
     </>

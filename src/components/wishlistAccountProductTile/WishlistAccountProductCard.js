@@ -90,15 +90,15 @@ const WishlistAccountProductCard = ({ product }) => {
     <>
       {/* Quick View Modal */}
       {quickViewProduct && (
-        <div className="fixed inset-0 z-[700] bg-brandBlue/60">
-          <div ref={wrapperRef} className="fixed left-[50%] top-[50%] z-50 grid w-full translate-x-[-50%] translate-y-[-50%] gap-4 border bg-white p-6 shadow-lg sm:rounded-lg max-w-4xl max-h-[90vh] overflow-y-auto">
+        <div className="fixed inset-0 z-[700] bg-black/60">
+          <div ref={wrapperRef} className="fixed left-[50%] top-[50%] z-50 grid w-full translate-x-[-50%] translate-y-[-50%] gap-4 p-6 shadow-text-blue bg-gradient-to-br from-black via-gray-900 to-black sm:rounded-lg max-w-4xl max-h-[90vh] overflow-y-auto">
             <div className="relative flex flex-col gap-4">
               {quickViewProduct && (
                 <>
                   <button
                     name="Close quick view"
                     onClick={closeQuickView}
-                    className="absolute right-[-10px] top-[-15px] text-textBlue rounded-full border-[2px] border-textBlue z-[2]"
+                    className="absolute right-[-10px] top-[-15px] text-gray-100 rounded-full border-[2px] border-gray-100 z-[2]"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -170,7 +170,7 @@ const WishlistAccountProductCard = ({ product }) => {
                                 src={image}
                                 alt={product.name}
                               />
-                              {swatchColor === 'orange' && <span className="absolute top-1/2 left-1/2 -rotate-45 text-orange-600 font-bold text-[100px] -translate-y-1/2 -translate-x-1/2">ORANGE</span>}
+                              {swatchColor === 'orange' && <span className="absolute top-1/2 left-1/2 -rotate-45 text-orange-600 font-semibold text-[100px] -translate-y-1/2 -translate-x-1/2">ORANGE</span>}
                             </SwiperSlide>
                           ))}
                         </Swiper>
@@ -180,7 +180,7 @@ const WishlistAccountProductCard = ({ product }) => {
                     {/* Product Details */}
                     <div className="space-y-3 md:space-y-6">
                       <div>
-                        <h2 className="text-xl md:text-3xl font-bold text-brandBlue text-left">
+                        <h2 className="bg-gradient-to-br from-gray-500 via-gray-100 to-gray-500 bg-clip-text text-transparent text-xl md:text-3xl font-semibold text-left">
                           {product.name} {swatchColor === 'orange' && <span className="text-orange-600">ORANGE</span>}
                         </h2>
                         <button className="text-gray-400 text-xs underline mt-0" onClick={() => {goToLinkHandler(product); window.scrollTo({
@@ -198,14 +198,14 @@ const WishlistAccountProductCard = ({ product }) => {
                               <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
                               <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
                               <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
-                              <span className="text-xs ml-1 text-brandBlue">
+                              <span className="text-xs ml-1 text-gray-100">
                                 (3)
                               </span>
                             </div>
                           </div>
                           <div className="price">
                             <div className="flex items-end">
-                              <span className="text-brandRed font-bold text-xl md:text-2xl">
+                              <span className="text-brandRed font-semibold text-xl md:text-2xl">
                                 £{product.price}
                               </span>
                               {product.originalPrice && (
@@ -223,10 +223,10 @@ const WishlistAccountProductCard = ({ product }) => {
                       <div className="flex flex-wrap items-end justify-between pb-6 border-b-[3px] border-gray-300 md:flex-row">
                         <div className="w-full md:w-auto mb-0">
                           <div className="flex flex-wrap items-center notices justify-end">
-                            <span className="flex items-center justify-between text-brandNeonBlue border-[2px] border-brandNeonBlue p-2 rounded-md mb-2 md:mb-0 w-full md:w-auto font-bold">
+                            <span className="flex items-center justify-between text-brandNeonBlue border-[2px] border-brandNeonBlue p-2 rounded-md mb-2 md:mb-0 w-full md:w-auto font-semibold">
                               <span className="font-semibold">Other styles</span>
                               <div className="flex items-center">
-                                <button onClick={() => setSwatchColor('blue')} className={`transition-all rounded-full bg-brandNeonBlue w-[20px] md:w-[25px] h-[20px] md:h-[25px] border-[3px] ml-3 hover:border-brandBlue ${swatchColor === 'blue' ? 'border-brandBlue' : 'border-brandNeonBlue'}`}><span className="sr-only">Blue</span></button>
+                                <button onClick={() => setSwatchColor('blue')} className={`transition-all rounded-full bg-brandNeonBlue w-[20px] md:w-[25px] h-[20px] md:h-[25px] border-[3px] ml-3 hover:border-gray-100 ${swatchColor === 'blue' ? 'border-gray-100' : 'border-brandNeonBlue'}`}><span className="sr-only">Blue</span></button>
                                 <button onClick={() => setSwatchColor('orange')} className={`rounded-full bg-orange-300 w-[20px] md:w-[25px] h-[20px] md:h-[25px] border-[3px]  ml-3 transition-all hover:border-orange-500 ${swatchColor === 'orange' ? 'border-orange-500' : 'border-orange-300'}`}><span className="sr-only">Orange</span></button>
                                 <button onClick={() => setSwatchColor('black')}  className={`rounded-full bg-black w-[20px] md:w-[25px] h-[20px] md:h-[25px] border-[3px] ml-3 transition-all hover:border-gray-500 ${swatchColor === 'black' ? 'border-gray-500' : 'border-black'}`}><span className="sr-only">Black</span></button>
                                 <button onClick={() => setSwatchColor('red')}  className={`rounded-full bg-red-500 w-[20px] md:w-[25px] h-[20px] md:h-[25px] border-[3px] ml-3 transition-all hover:border-red-700 ${swatchColor === 'red' ? 'border-red-700' : 'border-red-500'}`}><span className="sr-only">red</span></button>
@@ -248,7 +248,7 @@ const WishlistAccountProductCard = ({ product }) => {
                                 fill="#328320"
                               />
                             </svg>
-                            <span className="font-bold ml-3 text-sm md:text-md text-brandGreen">
+                            <span className="font-semibold ml-3 text-sm md:text-md text-brandGreen">
                               3 in stock in Amersham
                             </span>
                             <button className="text-xs text-gray-400 underline ml-3"
@@ -266,7 +266,7 @@ const WishlistAccountProductCard = ({ product }) => {
                               <div className="w-full overflow-hidden">
                                 <div className="mt-4">
                                   <form id="pickup-form" className="flex">
-                                    <label className="text-sm text-textBlue mr-6 font-semibold">
+                                    <label className="text-sm text-gray-100 mr-6 font-semibold">
                                       <input
                                         type="radio"
                                         name="option"
@@ -276,7 +276,7 @@ const WishlistAccountProductCard = ({ product }) => {
                                       />
                                       Entertainer stores
                                     </label>
-                                    <label className="text-sm text-textBlue font-semibold">
+                                    <label className="text-sm text-gray-100 font-semibold">
                                       <input
                                         type="radio"
                                         name="option"
@@ -297,7 +297,7 @@ const WishlistAccountProductCard = ({ product }) => {
                                     </div>
                                     <span className="text-sm text-gray-400">Results</span>
                                   </div>
-                                  <div className="text-sm text-brandBlue py-4">
+                                  <div className="text-sm text-gray-100 py-4">
                                     <span className="font-semibold">The Entertainer Amersham</span>
                                     <br />2 Sycamore Road, Amersham HP6 5DR
                                     <div className="text-gray-400 mt-2">
@@ -314,9 +314,9 @@ const WishlistAccountProductCard = ({ product }) => {
                           title="More Details"
                           swapActiveTitle={true}
                           activeTitle={'Less Details'}
-                          className="text-brandBlue font-semibold text-base flex items-center justify-center border-[3px] border-gray-400 rounded-full w-full py-2 [&_.border-r-transparent]:hidden"
+                          className="text-gray-100 font-semibold text-base flex items-center justify-center border-[3px] border-purple-500 rounded-full w-full py-2 [&_.border-r-transparent]:hidden hover:shadow-text-purple transition-all"
                           answer={
-                            <div className="py-3 text-textBlue">
+                            <div className="py-3 text-gray-100">
                               <p className="mb-3">
                                 The Hot Wheels Monster Trucks Big Rigs haul big
                                 personalities on six wheels for epic adventures.
@@ -334,46 +334,46 @@ const WishlistAccountProductCard = ({ product }) => {
 
                               <p className="mb-2 font-semibold text-lg">Product features:</p>
                               <ul className="list-none">
-                                <li className="flex items-start mb-3 before:aspect-square before:mt-1.5 before:mr-2 before:block before:h-2.5 before:w-2.5 before:rounded-full before:bg-brandBlue">
+                                <li className="flex items-start mb-3 before:aspect-square before:mt-1.5 before:mr-2 before:block before:h-2.5 before:w-2.5 before:rounded-full before:bg-gray-100">
                                   Includes: 1x Hot Wheels Monster Trucks Big Rigs Vehicle
                                   (styles vary) Get the adventures movin' with a Hot Wheels
                                   Monster Trucks Big Rig!
                                 </li>
-                                <li className="flex items-start mb-3 before:aspect-square before:mt-1.5 before:mr-2 before:block before:h-2.5 before:w-2.5 before:rounded-full before:bg-brandBlue">
+                                <li className="flex items-start mb-3 before:aspect-square before:mt-1.5 before:mr-2 before:block before:h-2.5 before:w-2.5 before:rounded-full before:bg-gray-100">
                                   These Big Rigs feature six wheels to go even bigger on the
                                   Monster Truck action
                                 </li>
-                                <li className="flex items-start mb-3 before:aspect-square before:mt-1.5 before:mr-2 before:block before:h-2.5 before:w-2.5 before:rounded-full before:bg-brandBlue">
+                                <li className="flex items-start mb-3 before:aspect-square before:mt-1.5 before:mr-2 before:block before:h-2.5 before:w-2.5 before:rounded-full before:bg-gray-100">
                                   Each 1:64 scale die-cast vehicle captures the personality
                                   of fan-favourite Monster Truck creatures and characters
                                   with the eye-catching designs that fans love
                                 </li>
-                                <li className="flex items-start mb-3 before:aspect-square before:mt-1.5 before:mr-2 before:block before:h-2.5 before:w-2.5 before:rounded-full before:bg-brandBlue">
+                                <li className="flex items-start mb-3 before:aspect-square before:mt-1.5 before:mr-2 before:block before:h-2.5 before:w-2.5 before:rounded-full before:bg-gray-100">
                                   Kids can haul additional 1:64 scale vehicles on the
                                   flatbed or with a tow hook on the Big Rig (sold
                                   separately)
                                 </li>
-                                <li className="flex items-start mb-3 before:aspect-square before:mt-1.5 before:mr-2 before:block before:h-2.5 before:w-2.5 before:rounded-full before:bg-brandBlue">
+                                <li className="flex items-start mb-3 before:aspect-square before:mt-1.5 before:mr-2 before:block before:h-2.5 before:w-2.5 before:rounded-full before:bg-gray-100">
                                   Suitable for ages 3 years +
                                 </li>
                               </ul>
-                              <p className="text-lg font-bold mt-4">Specifications</p>
+                              <p className="text-lg font-semibold mt-4">Specifications</p>
                               <p className="mb-1">
-                                Manufacturer: <span className="font-bold">MATTEL TOYS</span>
+                                Manufacturer: <span className="font-semibold">MATTEL TOYS</span>
                               </p>
                               <p className="mb-1">
                                 Manufacturer Number:
-                                <span className="font-bold">HWN86</span>
+                                <span className="font-semibold">HWN86</span>
                               </p>
                               <p className="mb-1">
                                 Our Product Number:
-                                <span className="font-bold">566798</span>
+                                <span className="font-semibold">566798</span>
                               </p>
                               <p>
                                 Safety Information:
                               </p>
                               <p>
-                                <span className="font-bold">
+                                <span className="font-semibold">
                                   WARNING. Not suitable for children under 36 months. Small
                                   Parts. Choking Hazard.
                                 </span>
@@ -387,17 +387,17 @@ const WishlistAccountProductCard = ({ product }) => {
                           <div className="flex items-center border-[3px] border-gray-300 rounded-full">
                             <button
                                 name="Reduce quanitity"
-                                className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-colors disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 h-9 px-3 text-brandBlue"
+                                className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-colors disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 h-9 px-3 text-gray-100"
                                 onClick={() => setQuantity(Math.max(1, quantity - 1))}
                                 disabled={quantity <= 1}
                             >
                                 <Minus className="h-4 w-4" />
                                 <span className="sr-only">Reduce quantity</span>
                             </button>
-                            <span className="px-3 md:px-4 py-1 md:py-2 min-w-[3rem] text-center text-brandBlue text-lg font-bold">{quantity}</span>
+                            <span className="px-3 md:px-4 py-1 md:py-2 min-w-[3rem] text-center text-gray-100 text-lg font-semibold">{quantity}</span>
                             <button
                                 name="Increase quantity"
-                                className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-colors disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 h-9 px-3 text-brandBlue"
+                                className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-colors disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 h-9 px-3 text-gray-100"
                                 onClick={() => setQuantity(quantity + 1)}
                                 disabled={quantity >= 10}
                             >
@@ -407,7 +407,7 @@ const WishlistAccountProductCard = ({ product }) => {
                           </div>
                         </div> */}
                         <Button
-                          className="shadow-md hover:shadow-lg w-full group inline-flex items-center justify-center font-bold text-base min-h-[44px] md:text-lg rounded-[30px] bg-brandGreen text-white py-2 px-4 pl-0 transition-all hover:bg-brandLightGreen hover:scale-105"
+                          className="shadow-md hover:shadow-lg w-full group inline-flex items-center justify-center font-semibold text-base min-h-[44px] md:text-lg rounded-[30px] bg-brandGreen text-white py-2 px-4 pl-0 transition-all hover:bg-brandLightGreen hover:scale-105"
                           iconpath={
                             <svg
                               width="22"
@@ -434,15 +434,15 @@ const WishlistAccountProductCard = ({ product }) => {
       )}
 
       <div key={product.id} className="flex flex-col">
-        <div onClick={() => openQuickView(product)} className="cursor-pointer flex flex-col rounded-xl border-[3px] border-gray-200 bg-white shadow-sm hover:border-brandBlue transition-all duration-300 overflow-hidden">
+        <div onClick={() => openQuickView(product)} className="cursor-pointer flex flex-col rounded-xl border-[3px] border-gray-200 bg-white shadow-sm hover:border-gray-100 transition-all duration-300 overflow-hidden">
         <div className="relative group">
           <img
               src={product.image || "/placeholder.svg"}
               alt={product.name}
               className="w-full object-cover group-hover:scale-105 transition-transform duration-300 rounded-l"
           />
-            <span className="absolute top-[50%] left-[50%] scale-0 translate-y-[-50%] translate-x-[-50%] opacity-0 transition-all w-9 h-9 transition-duration-600 group-hover:shadow-lg group-hover:opacity-85 group-hover:scale-100 text-brandLightBlue bg-brandBlue rounded-full md:w-16 md:h-16 p-2 md:p-3 flex items-center justify-center">
-            <Eye className="h-5 md:h-8 w-5 md:w-8 hover:text-brandMediumGreen transition-all" />
+            <span className="absolute top-[50%] left-[50%] scale-0 translate-y-[-50%] translate-x-[-50%] opacity-0 transition-all w-9 h-9 transition-duration-600 group-hover:shadow-lg group-hover:opacity-85 group-hover:scale-100 text-purple-500 bg-gray-100 rounded-full md:w-16 md:h-16 p-2 md:p-3 flex items-center justify-center">
+            <Eye className="h-5 md:h-8 w-5 md:w-8 hover:text-purple-800 transition-all" />
           </span>
           </div>
         </div>
@@ -453,21 +453,21 @@ const WishlistAccountProductCard = ({ product }) => {
       left: 0,
       behavior: "smooth",
     });}} className="cursor-pointer flex items-end justify-center">
-                <span className="text-brandRed font-bold text-[10px] md:text-sm">£{product.price}</span>
+                <span className="text-brandRed font-semibold text-[10px] md:text-sm">£{product.price}</span>
                 {product.originalPrice &&
                     <span className="line-through text-gray-400 text-[8px] md:text-xs ml-1">£{product.originalPrice}</span>
                 }
             </div>
           </div>
           <button
-            className='shadow-md hover:shadow-lg w-full group inline-flex items-center justify-center font-bold text-xs lg:text-base rounded-[30px] bg-brandGreen text-white py-2 px-4 transition-all hover:bg-brandLightGreen hover:scale-105 mt-2 add-to-basket tracking-[1px]'
+            className='w-full bg-gradient-to-br from-purple-700 via-purple-500 to-purple-700 text-white font-semibold py-1 px-8 text-lg rounded-full border-[3px] border-gray-300 shadow-md hover:shadow-text-blue hover:scale-[1.02] transition-all'
             onClick={() => {addProductToCart(product)}}>
               Buy
           </button>
           <button
             name={`remove' ${product.name}`}
             onClick={() => removeProductFromWishlist(product)}
-            className="mt-1 text-xs font-bold text-brandRed underline"
+            className="mt-1 text-xs font-semibold text-brandRed underline"
           >remove</button>
         </div>
       </div>
