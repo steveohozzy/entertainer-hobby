@@ -114,7 +114,7 @@ const Menu = () => {
           ${navOpen ? 'overflow-y-auto shadow-text-blue' : 'overflow-hidden'}
         `}>
           {/* Animated Menu Categories */}
-          <nav className="relative space-y-2 pt-6 pb-4 w-[calc(100%-10px)]">
+          <nav className="relative space-y-2 pt-6 pb-4 w-[calc(100%-10px)] drop-shadow-none">
             <div className="h-full w-[40px] bg-brandBlue rounded-full absolute left-0 top-0"></div>
             <div className="w-full flex justify-between absolute -top-[5px] left-[5px]">
               <button
