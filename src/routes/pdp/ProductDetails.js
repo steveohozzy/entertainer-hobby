@@ -448,20 +448,20 @@ const ProductDetails = () => {
                       <div className="fixed inset-0 z-50 bg-black/60">
                         <div
                           ref={wrapperRef}
-                          className="fixed left-[50%] top-[50%] z-50 grid w-full translate-x-[-50%] translate-y-[-50%] gap-4 border bg-white p-6 shadow-lg sm:rounded-lg max-w-4xl max-h-[90vh] overflow-y-auto"
+                          className="fixed left-[50%] top-[50%] z-50 grid w-full translate-x-[-50%] translate-y-[-50%] gap-4 shadow-text-blue bg-gradient-to-br from-black via-gray-900 to-black p-6 shadow-lg sm:rounded-lg max-w-4xl max-h-[90vh] overflow-y-auto"
                         >
                           <div className="relative flex flex-col gap-4">
                             <button
                               name="Close Klarna view"
                               onClick={() => setKlarnaOpen(!klarnaOpen)}
-                              className="absolute right-[-10px] top-[-15px] text-gray-100 rounded-full border-[2px] border-textBlue z-[2]"
+                              className="absolute right-[-10px] top-[-15px] text-purple-500 rounded-full border-[2px] border-purple-500 z-[2]"
                             >
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="24"
                                 height="24"
                                 viewBox="0 0 24 24"
-                                fill="none"
+                                fill="currentColor"
                                 stroke="currentColor"
                                 strokeWidth="2"
                                 strokeLinecap="round"
@@ -474,10 +474,10 @@ const ProductDetails = () => {
                               <span className="sr-only">Close</span>
                             </button>
                           </div>
-                            <h2 className="text-gray-100 text-2xl font-bold text-center mb-4">
+                            <h2 className="text-gray-100 text-2xl font-semibold text-center mb-4">
                               How to shop with Klarna
                             </h2>
-                            <div className="flex items-start gap-4 pb-4">
+                            <div className="flex items-start gap-4 pb-4 text-gray-100">
                               <div className="w-1/3">
                                 <div className="w-auto">
                                   <svg
@@ -489,7 +489,7 @@ const ProductDetails = () => {
                                   >
                                     <path
                                       d="M44.0879 34.8453L39.6426 12.4H34C34 6.88631 29.5137 2.39999 24 2.39999C18.4864 2.39999 14 6.88631 14 12.4H8.35745L3.91213 34.8443C3.44337 37.2018 4.04885 39.6188 5.57423 41.4762C7.09964 43.3346 9.35354 44.4 11.7578 44.4H36.2422C38.6465 44.4 40.9004 43.3346 42.4258 41.4762C43.9512 39.6188 44.5567 37.2018 44.0879 34.8453ZM24 6.39999C27.3086 6.39999 30 9.09139 30 12.4H18C18 9.09139 20.6914 6.39999 24 6.39999ZM39.334 38.9381C38.5703 39.8668 37.4434 40.4 36.2422 40.4H11.7579C10.5567 40.4 9.42974 39.8668 8.66606 38.9381C7.90434 38.0094 7.60159 36.8014 7.83401 35.6227L11.6426 16.4H36.3575L40.1661 35.6236C40.3985 36.8014 40.0957 38.0094 39.334 38.9381ZM29.6314 20.4H33.7979C32.8687 24.9586 28.8289 28.4 24 28.4C19.1712 28.4 15.1314 24.9586 14.2022 20.4H18.3687C19.1968 22.723 21.396 24.4 24 24.4C26.604 24.4 28.8033 22.723 29.6314 20.4Z"
-                                      fill="#0B051D"
+                                      fill="rgb(168 85 247)"
                                     ></path>
                                   </svg>
                                 </div>
@@ -549,7 +549,7 @@ const ProductDetails = () => {
                                   >
                                     <path
                                       d="M21.9922 37C21.9922 35.281 22.7111 34.3475 23.988 34.3475C25.2649 34.3475 25.9922 35.281 25.9922 37C25.9922 38.719 25.2649 39.6525 23.988 39.6525C22.7111 39.6525 21.9922 38.719 21.9922 37ZM31.9922 46H15.9922C11.5801 46 7.99219 42.4121 7.99219 38V9.99999C7.99219 5.58789 11.5801 1.99998 15.9922 1.99998H31.9922C36.4043 1.99998 39.9922 5.58789 39.9922 9.99999V38C39.9922 42.4121 36.4043 46 31.9922 46ZM15.9922 5.99999C13.7871 5.99999 11.9922 7.79491 11.9922 9.99999V38C11.9922 40.2051 13.7871 42 15.9922 42H31.9922C34.1973 42 35.9922 40.2051 35.9922 38V9.99999C35.9922 7.79491 34.1973 5.99999 31.9922 5.99999H15.9922Z"
-                                      fill="#0B051D"
+                                      fill="rgb(168 85 247)"
                                     ></path>
                                   </svg>
                                 </div>
@@ -921,7 +921,7 @@ const ProductDetails = () => {
             <Dropdown
               arrowAgainstWord={true}
               title="Description"
-              className="text-gray-100 font-bold flex items-center justify-center w-full pt-6"
+              className="text-gray-100 font-semibold flex items-center justify-center w-full pt-6"
               answer={
                 <div className="py-3 text-gray-100">
                   <p className="mb-3">
