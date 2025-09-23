@@ -8,7 +8,7 @@ const MeAccountSection = () => {
     <div className="flex gap-6 flex-wrap md:flex-nowrap items-start">
       <div className="flex items-center justify-between w-full flex-wrap md:w-2/3">
         <div className="flex flex-col w-[100px] md:w-[150px]">
-          <div className="text-lg font-bold md:text-xl text-gray-100">
+          <div className="text-lg font-semibold md:text-xl text-gray-100">
             Account
           </div>
           <div className="w-full bg-gray-300 rounded-full h-2">
@@ -22,7 +22,7 @@ const MeAccountSection = () => {
             <div className="transition-all absolute top-[-70px] left-0 opacity-0 group-hover:opacity-100 z-[999] pointer-events-none">
               <div className="relative bg-white border-[2px] w-[80px] p-3 text-xs text-gray-100 border-brandLightBlue rounded-full before:content-[''] before:absolute before:top-[calc(100%-1px)] before:left-[23px] after:content-[''] after:absolute before:border-[12px] before:border-transparent after:border-[10px] after:border-transparent after:border-[10px] after:top-[calc(100%-1px)] after:left-[25px] after:border-t-white rotate-[10deg] before:!border-t-brandLightBlue">
                 <span className="block rotate-[-10deg] flex flex-col leading-[1.2]">
-                  <span className="font-bold">Kool Kid</span>
+                  <span className="font-semibold">Kool Kid</span>
                   <span className="text-[10px]">Buy hot or trending toys</span>
                 </span>
               </div>
@@ -33,7 +33,7 @@ const MeAccountSection = () => {
              <div className="transition-all absolute top-[-70px] left-0 opacity-0 group-hover:opacity-100 z-[999] pointer-events-none">
               <div className="relative bg-white border-[2px] w-[80px] p-3 text-xs text-gray-100 border-brandLightBlue rounded-full before:content-[''] before:absolute before:top-[calc(100%-1px)] before:left-[23px] after:content-[''] after:absolute before:border-[12px] before:border-transparent after:border-[10px] after:border-transparent after:border-[10px] after:top-[calc(100%-1px)] after:left-[25px] after:border-t-white rotate-[10deg] before:!border-t-brandLightBlue">
                 <span className="block rotate-[-10deg] flex flex-col leading-[1.2]">
-                  <span className="font-bold">Dreamer</span>
+                  <span className="font-semibold">Dreamer</span>
                   <span className="text-[10px]">Make 3 wishlists</span>
                 </span>
               </div>
@@ -44,7 +44,7 @@ const MeAccountSection = () => {
              <div className="transition-all absolute top-[-70px] left-0 opacity-0 group-hover:opacity-100 z-[999] pointer-events-none">
               <div className="relative bg-white border-[2px] w-[80px] p-3 text-xs text-gray-100 border-brandLightBlue rounded-full before:content-[''] before:absolute before:top-[calc(100%-1px)] before:left-[23px] after:content-[''] after:absolute before:border-[12px] before:border-transparent after:border-[10px] after:border-transparent after:border-[10px] after:top-[calc(100%-1px)] after:left-[25px] after:border-t-white rotate-[10deg] before:!border-t-brandLightBlue">
                 <span className="block rotate-[-10deg] flex flex-col leading-[1.2]">
-                  <span className="font-bold">Jacks Pack</span>
+                  <span className="font-semibold">Jacks Pack</span>
                   <span className="text-[10px]">Buy a full wishlist</span>
                 </span>
               </div>
@@ -56,7 +56,7 @@ const MeAccountSection = () => {
              <div className="transition-all absolute top-[-70px] left-0 opacity-0 group-hover:opacity-100 z-[999] pointer-events-none">
               <div className="relative bg-white border-[2px] w-[80px] p-3 text-xs text-gray-100 border-brandLightBlue rounded-full before:content-[''] before:absolute before:top-[calc(100%-1px)] before:left-[23px] after:content-[''] after:absolute before:border-[12px] before:border-transparent after:border-[10px] after:border-transparent after:border-[10px] after:top-[calc(100%-1px)] after:left-[25px] after:border-t-white rotate-[10deg] before:!border-t-brandLightBlue">
                 <span className="block rotate-[-10deg] flex flex-col leading-[1.2]">
-                  <span className="font-bold">Santa Squad</span>
+                  <span className="font-semibold">Santa Squad</span>
                   <span className="text-[10px]">Share an Xmas list</span>
                 </span>
               </div>
@@ -67,7 +67,7 @@ const MeAccountSection = () => {
           <div className={`flex h-[44px] px-3 rounded-lg border border-[3px] border-brandBlue relative`}>
             <span
               className="absolute left-[calc(20%-20px)] md:left-[calc(15%-10px)] z-[2] top-[14px] w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-t-[6px] border-gray-400 transition-all"></span>
-            <select className='relative w-[20%] appearance-none border-r-[3px] bg-black border-gray-400 pr-4 mr-2 text-gray-100 font-bold outline-none'>
+            <select className='relative w-[20%] appearance-none border-r-[3px] bg-black border-gray-400 pr-4 mr-2 text-gray-100 font-semibold outline-none'>
               <option>Mr</option>
             </select>
             <div className="relative w-full">
@@ -139,7 +139,7 @@ const MeAccountSection = () => {
             <div className={`flex mt-2 md:mt-5 h-[44px] px-3 rounded-lg w-full border border-[3px] border-brandBlue relative `}>
               <span
                 className="absolute left-[calc(20%-20px)] md:left-[calc(25%-10px)] lg:left-[calc(20%-10px)] z-[2] top-[14px] w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-t-[6px] border-gray-400 transition-all"></span>
-              <select className='relative w-[20%] md:w-[35%] lg:w-[25%] appearance-none border-r-[3px] bg-black border-gray-400 pr-4 mr-2 text-gray-100 font-bold outline-none'>
+              <select className='relative w-[20%] md:w-[35%] lg:w-[25%] appearance-none border-r-[3px] bg-transparent border-gray-400 pr-4 mr-2 text-gray-100 font-semibold outline-none'>
                 <option>+44</option>
               </select>
               <div className="relative w-full">
@@ -158,30 +158,29 @@ const MeAccountSection = () => {
       <div className="w-full md:w-1/3">
       <div className="flex items-end gap-3 md:flex-col">
         <div className="bg-brandNeonBlue bg-opacity-30 rounded-xl p-3">
-          <div className="text-brandBlue mb-3 font-semibold text-sm md:text-base">
+          <div className="text-gray-100 mb-3 font-semibold text-sm md:text-base">
             Send offers, new toys &amp; vouchers
           </div>
           <div className="flex justify-between">
-            <label className="relative flex items-center text-brandBlue text-sm md:text-base">
+            <label className="relative flex items-center text-gray-100 text-sm md:text-base">
               <input
                 type="checkbox"
-                className="relative mt-1 block size-[20px] appearance-none rounded-md border-[3px] border-gray-100 bg-white outline-none transition-all checked:bg-gray-100"
                 name="signup"
                 value="signup"
+                className="relative mt-1 block size-[20px] appearance-none rounded-md border-[3px] border-textBlue bg-transparent outline-none transition-all checked:border-purple-500 peer"
               />
-              <span className="absolute top-[3px]">
-                <svg viewBox="0 0 24 24" width="20px" height="20px" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <span className="absolute top-[5px] left-[-6px] text-transparent peer-checked:text-purple-500">
+                <svg viewBox="0 0 24 24" width="16px" height="16px" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                   <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
                   <g id="SVGRepo_iconCarrier">
-                    {' '}
                     <path
                       d="M4.89163 13.2687L9.16582 17.5427L18.7085 8"
-                      stroke="#ffffff"
+                      stroke="currentColor"
                       strokeWidth="2.5"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                    ></path>{' '}
+                    ></path>
                   </g>
                 </svg>
               </span>
@@ -189,26 +188,25 @@ const MeAccountSection = () => {
                 Email
               </span>
             </label>
-            <label className="relative flex items-center text-brandBlue text-sm md-text-base">
+            <label className="relative flex items-center text-gray-100 text-sm md-text-base">
               <input
                 type="checkbox"
-                className="relative mt-1 block size-[20px] appearance-none rounded-md border-[3px] border-gray-100 bg-white outline-none transition-all checked:bg-gray-100"
                 name="signup"
                 value="signup"
+                className="relative mt-1 block size-[20px] appearance-none rounded-md border-[3px] border-textBlue bg-transparent outline-none transition-all checked:border-purple-500 peer"
               />
-              <span className="absolute top-[3px]">
-                <svg viewBox="0 0 24 24" width="20px" height="20px" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <span className="absolute top-[5px] left-[-6px] text-transparent peer-checked:text-purple-500">
+                <svg viewBox="0 0 24 24" width="16px" height="16px" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                   <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
                   <g id="SVGRepo_iconCarrier">
-                    {' '}
                     <path
                       d="M4.89163 13.2687L9.16582 17.5427L18.7085 8"
-                      stroke="#ffffff"
+                      stroke="currentColor"
                       strokeWidth="2.5"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                    ></path>{' '}
+                    ></path>
                   </g>
                 </svg>
               </span>
@@ -220,9 +218,9 @@ const MeAccountSection = () => {
               onClick={() => setTermsOpen(!termsOpen)}
               className="flex items-center"
             >
-              <span className={`mr-2 flex text-brandBlue text-sm md:text-base`}>Terms</span>
+              <span className={`mr-2 flex text-gray-100 text-sm md:text-base`}>Terms</span>
               <span
-              className={`w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[8px] border-brandBlue transition-all ${
+              className={`w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-t-[8px] border-gray-100 transition-all ${
                   termsOpen && "rotate-180"
               }`}
               ></span>
@@ -234,20 +232,20 @@ const MeAccountSection = () => {
                 : "grid-rows-[0fr] opacity-0"
             }`}>
               <div className="overflow-hidden">
-                <div className="my-4 text-brandBlue">
+                <div className="my-4 text-gray-100">
                   Throw in some happy little things wherever you want them. Anything that happens here, you can work with it. You want to start in the center and work outward. They all hide here in your fan brush. You decide -- you have to make these big decisions. If there's a secret to anything, it's practice.
                 </div>
               </div>
             </div>
         </div>
-        <button className="text-white w-full font-bold mt-4 transition-all rounded-full bg-brandGreen py-2 px-4 hover:bg-brandLightGreen hover:scale-110">Save</button>
+        <button className="bg-gradient-to-br from-purple-700 via-purple-500 to-purple-700 text-white font-semibold py-1 px-8 text-lg rounded-full border-[3px] border-gray-300 shadow-md hover:shadow-text-blue hover:scale-[1.02] transition-all w-full">Save</button>
         </div>
-        <div className="text-lg text-gray-100 font-bold my-4">
+        <div className="text-lg text-gray-100 font-semibold my-4">
           Saved Addresses
         </div>
         <div className="space-y-3">
           <div className="text-gray-100 border-[3px] border-brandLightBlue rounded-xl p-3">
-            Mr. steven hoskins {defaultAddress === '1' && <span className="font-bold text-brandBlue)">(Default)</span>}<br />
+            Mr. steven hoskins {defaultAddress === '1' && <span className="font-semibold text-brandBlue)">(Default)</span>}<br />
             42 Lomond Road<br />
             Hemel Hempstead, Hertfordshire<br />
             United Kingdom HP2 6PA <br />
@@ -259,13 +257,13 @@ const MeAccountSection = () => {
                 </button>
               }
               
-              <button onClick={(e) => {e.target.closest('.border-brandLightBlue').remove()}} className="text-sm text-brandRed font-bold underline">
+              <button onClick={(e) => {e.target.closest('.border-brandLightBlue').remove()}} className="text-sm text-brandRed font-semibold underline">
                 remove
               </button>
             </div>
           </div>
           <div className="text-gray-100 border-[3px] border-brandLightBlue rounded-xl p-3">
-            Mr. steven hoskins {defaultAddress === '2' && <span className="font-bold text-brandBlue)">(Default)</span>}<br />
+            Mr. steven hoskins {defaultAddress === '2' && <span className="font-semibold text-brandBlue)">(Default)</span>}<br />
             42 Lomond Road<br />
             Hemel Hempstead, Hertfordshire<br />
             United Kingdom HP2 6PA <br />
@@ -277,7 +275,7 @@ const MeAccountSection = () => {
                 </button>
               }
               
-              <button onClick={(e) => {e.target.closest('.border-brandLightBlue').remove()}} className="text-sm text-brandRed font-bold underline">
+              <button onClick={(e) => {e.target.closest('.border-brandLightBlue').remove()}} className="text-sm text-brandRed font-semibold underline">
                 remove
               </button>
             </div>
