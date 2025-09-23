@@ -108,7 +108,7 @@ const HomePods= () => {
                     <span className="ml-2 text-gray-300">500 points</span>
                   </div>
                 </div>
-                <div className="text-white font-semibold text-lg leading-[1.2] md:text-xl lg:text-3xl lg:px-6">
+                <div className="text-white font-semibold text-lg leading-[1.2] md:text-xl lg:text-3xl lg:px-6 drop-shadow-md">
                   Pokemon statues - new this week
                 </div>
               </div>
@@ -198,7 +198,7 @@ const HomePods= () => {
                     <span className="ml-2 text-gray-300">500 points</span>
                   </div>
                 </div>
-                <div className="text-white font-semibold text-lg leading-[1.2] md:text-xl lg:text-3xl lg:px-6">
+                <div className="text-white font-semibold text-lg leading-[1.2] md:text-xl lg:text-3xl lg:px-6 drop-shadow-md">
                   Design your gaming room - delivered to your door
                 </div>
               </div>
@@ -288,7 +288,7 @@ const HomePods= () => {
                     <span className="ml-2 text-gray-300">500 points</span>
                   </div>
                 </div>
-                <div className="text-white font-semibold text-lg leading-[1.2] md:text-xl lg:text-3xl lg:px-6">
+                <div className="text-white font-semibold text-lg leading-[1.2] md:text-xl lg:text-3xl lg:px-6 drop-shadow-md">
                   E-scooters for city or offroad
                 </div>
               </div>
@@ -378,7 +378,7 @@ const HomePods= () => {
                     <span className="ml-2 text-gray-300">500 points</span>
                   </div>
                 </div>
-                <div className="text-white font-semibold text-lg leading-[1.2] md:text-xl lg:text-3xl lg:px-6">
+                <div className="text-white font-semibold text-lg leading-[1.2] md:text-xl lg:text-3xl lg:px-6 drop-shadow-md">
                   Pokemon statues - new this week
                 </div>
               </div>
@@ -468,7 +468,7 @@ const HomePods= () => {
                     <span className="ml-2 text-gray-300">500 points</span>
                   </div>
                 </div>
-                <div className="text-white font-semibold text-lg leading-[1.2] md:text-xl lg:text-3xl lg:px-6">
+                <div className="text-white font-semibold text-lg leading-[1.2] md:text-xl lg:text-3xl lg:px-6 drop-shadow-md">
                   Design your gaming room - delivered to your door
                 </div>
               </div>
@@ -558,7 +558,7 @@ const HomePods= () => {
                     <span className="ml-2 text-gray-300">500 points</span>
                   </div>
                 </div>
-                <div className="text-white font-semibold text-lg leading-[1.2] md:text-xl lg:text-3xl lg:px-6">
+                <div className="text-white font-semibold text-lg leading-[1.2] md:text-xl lg:text-3xl lg:px-6 drop-shadow-md">
                   E-scooters for city or offroad
                 </div>
               </div>
