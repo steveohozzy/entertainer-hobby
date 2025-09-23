@@ -91,14 +91,14 @@ const WishlistAccountProductCard = ({ product }) => {
       {/* Quick View Modal */}
       {quickViewProduct && (
         <div className="fixed inset-0 z-[700] bg-black/60">
-          <div ref={wrapperRef} className="fixed left-[50%] top-[50%] z-50 grid w-full translate-x-[-50%] translate-y-[-50%] gap-4 p-6 shadow-text-blue bg-gradient-to-br from-black via-gray-900 to-black sm:rounded-lg max-w-4xl max-h-[90vh] overflow-y-auto">
-            <div className="relative flex flex-col gap-4">
+          <div ref={wrapperRef} className="fixed left-[50%] top-[50%] z-50 grid w-full translate-x-[-50%] translate-y-[-50%] gap-4 shadow-text-blue bg-gradient-to-br from-black via-gray-900 to-black p-4 sm:rounded-lg max-w-[90vw] max-h-[90vh] overflow-y-auto">
+            <div className="relative w-full flex flex-col gap-4 drop-shadow-none">
               {quickViewProduct && (
                 <>
                   <button
                     name="Close quick view"
                     onClick={closeQuickView}
-                    className="absolute right-5 -top-4 text-purple-500 rounded-full border-[2px] border-purple-500 z-[2]"
+                    className="absolute right-0 -top-2 text-purple-500 rounded-full border-[2px] border-purple-500 z-[2]"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -120,7 +120,7 @@ const WishlistAccountProductCard = ({ product }) => {
 
                   <div className="grid md:grid-cols-2 gap-6">
                     {/* Product Images */}
-                    <div className="max-w-[calc(100vw-50px)]">
+                    <div className="max-w-[calc(90vw-37px)]">
                       <div className="relative">
                         <Swiper
                           modules={[Autoplay, Pagination]}
@@ -460,7 +460,7 @@ const WishlistAccountProductCard = ({ product }) => {
             </div>
           </div>
           <button
-            className='w-full bg-gradient-to-br from-purple-700 via-purple-500 to-purple-700 text-white font-semibold py-1 px-8 text-lg rounded-full border-[3px] border-gray-300 shadow-md hover:shadow-text-blue hover:scale-[1.02] transition-all'
+            className='w-full bg-gradient-to-br from-purple-700 via-purple-500 to-purple-700 text-white font-semibold py-1 px-2 rounded-full border-[3px] border-gray-300 shadow-md hover:shadow-text-blue hover:scale-[1.02] transition-all'
             onClick={() => {addProductToCart(product)}}>
               Buy
           </button>
