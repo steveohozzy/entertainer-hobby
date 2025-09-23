@@ -445,7 +445,7 @@ const ProductDetails = () => {
                       </span>
                     </p>
                     {klarnaOpen && (
-                      <div className="fixed inset-0 z-50 bg-brandBlue/60">
+                      <div className="fixed inset-0 z-50 bg-black/60">
                         <div
                           ref={wrapperRef}
                           className="fixed left-[50%] top-[50%] z-50 grid w-full translate-x-[-50%] translate-y-[-50%] gap-4 border bg-white p-6 shadow-lg sm:rounded-lg max-w-4xl max-h-[90vh] overflow-y-auto"
@@ -1074,7 +1074,7 @@ const ProductDetails = () => {
         {(offerOpen) && (
           <div
             onClick={() => {setOfferOpen(false)}}
-            className="fixed inset-0 z-[601] top-0 left-0 bg-brandBlue/60 w-screen h-screen"
+            className="fixed inset-0 z-[601] top-0 left-0 bg-black/60 w-screen h-screen"
           ></div>
         )}
 
@@ -1156,7 +1156,7 @@ const ProductDetails = () => {
         {(tabOpen) && (
           <div
             onClick={() => {setTabOpen(false)}}
-            className="fixed inset-0 z-[500] top-0 left-0 bg-brandBlue/60 w-screen h-screen"
+            className="fixed inset-0 z-[500] top-0 left-0 bg-black/60 w-screen h-screen"
           ></div>
         )}
         <div
