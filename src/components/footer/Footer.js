@@ -23,12 +23,12 @@ const Footer = () => {
                   <input
                     type="text"
                     placeholder="First Name*"
-                    className="h-[34px] w-full rounded-lg border-[3px] border-brandBlue bg-transparent px-3 text-textgray-100 transition-all placeholder:text-gray-100 placeholder:font-semibold  focus:outline-none"
+                    className="h-[34px] w-full rounded-lg border-[3px] border-brandBlue bg-transparent px-3 text-gray-100 transition-all placeholder:text-gray-100 placeholder:font-semibold  focus:outline-none"
                   />
                   <input
                     type="email"
                     placeholder="Email Address*"
-                    className="mt-4 h-[34px] w-full rounded-lg border-[3px] border-brandBlue bg-transparent px-3 text-textgray-100 transition-all placeholder:text-gray-100 placeholder:font-semibold  focus:outline-none"
+                    className="mt-4 h-[34px] w-full rounded-lg border-[3px] border-brandBlue bg-transparent px-3 text-gray-100 transition-all placeholder:text-gray-100 placeholder:font-semibold  focus:outline-none"
                   />
                 </div>
                 <div className="w-full px-4 md:w-1/2 md:pl-6">
