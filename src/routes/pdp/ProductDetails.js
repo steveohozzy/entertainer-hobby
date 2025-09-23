@@ -939,26 +939,26 @@ const ProductDetails = () => {
 
                   <p className="mb-2 font-semibold text-lg">Product features:</p>
                   <ul className="list-none">
-                    <li className="flex items-start mb-3 before:aspect-square before:mt-1.5 before:mr-2 before:block before:h-2.5 before:w-2.5 before:rounded-full before:bg-brandBlue">
+                    <li className="flex items-start mb-3 before:aspect-square before:mt-1.5 before:mr-2 before:block before:h-2.5 before:w-2.5 before:rounded-full before:bg-purple-500">
                       Includes: 1x Hot Wheels Monster Trucks Big Rigs Vehicle
                       (styles vary) Get the adventures movin' with a Hot Wheels
                       Monster Trucks Big Rig!
                     </li>
-                    <li className="flex items-start mb-3 before:aspect-square before:mt-1.5 before:mr-2 before:block before:h-2.5 before:w-2.5 before:rounded-full before:bg-brandBlue">
+                    <li className="flex items-start mb-3 before:aspect-square before:mt-1.5 before:mr-2 before:block before:h-2.5 before:w-2.5 before:rounded-full before:bg-purple-500">
                       These Big Rigs feature six wheels to go even bigger on the
                       Monster Truck action
                     </li>
-                    <li className="flex items-start mb-3 before:aspect-square before:mt-1.5 before:mr-2 before:block before:h-2.5 before:w-2.5 before:rounded-full before:bg-brandBlue">
+                    <li className="flex items-start mb-3 before:aspect-square before:mt-1.5 before:mr-2 before:block before:h-2.5 before:w-2.5 before:rounded-full before:bg-purple-500">
                       Each 1:64 scale die-cast vehicle captures the personality
                       of fan-favourite Monster Truck creatures and characters
                       with the eye-catching designs that fans love
                     </li>
-                    <li className="flex items-start mb-3 before:aspect-square before:mt-1.5 before:mr-2 before:block before:h-2.5 before:w-2.5 before:rounded-full before:bg-brandBlue">
+                    <li className="flex items-start mb-3 before:aspect-square before:mt-1.5 before:mr-2 before:block before:h-2.5 before:w-2.5 before:rounded-full before:bg-purple-500">
                       Kids can haul additional 1:64 scale vehicles on the
                       flatbed or with a tow hook on the Big Rig (sold
                       separately)
                     </li>
-                    <li className="flex items-start mb-3 before:aspect-square before:mt-1.5 before:mr-2 before:block before:h-2.5 before:w-2.5 before:rounded-full before:bg-brandBlue">
+                    <li className="flex items-start mb-3 before:aspect-square before:mt-1.5 before:mr-2 before:block before:h-2.5 before:w-2.5 before:rounded-full before:bg-purple-500">
                       Suitable for ages 3 years +
                     </li>
                   </ul>
