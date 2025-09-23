@@ -91,7 +91,7 @@ const WishlistAccountProductCard = ({ product }) => {
       {/* Quick View Modal */}
       {quickViewProduct && (
         <div className="fixed inset-0 z-[700] bg-black/60">
-          <div ref={wrapperRef} className="fixed left-[50%] top-[50%] z-50 grid w-full translate-x-[-50%] translate-y-[-50%] gap-4 p-6 shadow-text-blue bg-gradient-to-br from-black via-gray-900 to-black sm:rounded-lg max-w-4xl max-h-[90vh] max-w-[90vw] overflow-y-auto">
+          <div ref={wrapperRef} className="fixed left-[50%] top-[50%] z-50 grid w-full translate-x-[-50%] translate-y-[-50%] gap-4 p-6 shadow-text-blue bg-gradient-to-br from-black via-gray-900 to-black sm:rounded-lg max-w-4xl max-h-[90vh] overflow-y-auto">
             <div className="relative flex flex-col gap-4">
               {quickViewProduct && (
                 <>
