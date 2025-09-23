@@ -299,7 +299,7 @@ const Menu = () => {
                                         className="flex-1 p-2 transition-all duration-300 group"
                                       >
                                         <div className="flex items-center gap-2 mb-1">
-                                          <span className="flex font-semibold items-center text-sm text-white opacity-75 group-hover:opacity-100">
+                                          <span className="flex font-semibold items-center text-sm text-white opacity-75 group-hover:opacity-100 text-left">
                                             {subItem.name}
                                             <ChevronRight className="w-4 h-4 ml-2" />
                                           </span>
