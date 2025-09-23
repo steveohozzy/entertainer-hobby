@@ -252,7 +252,7 @@ export const products = [
     rating: 4.7,
     reviews: 234,
     image: "https://https-github-com-steveohozzy-kidult.vercel.app/vintage-robot-toy-collectible-premium-quality.jpg",
-    alternateImage: "/placeholder.sv",
+    alternateImage: "/placeholder.svg",
     images: [
       "https://https-github-com-steveohozzy-kidult.vercel.app/vintage-robot-toy-collectible-premium-quality.jpg",
       "https://https-github-com-steveohozzy-kidult.vercel.app/vintage-robot-toy-collectible-premium-quality.jpg",
