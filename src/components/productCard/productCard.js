@@ -202,7 +202,7 @@ const ProductCard = ({ product }) => {
                             <Heart
                               className={`h-6 md:h-10 w-6 md:w-10 ${
                                 wishlistItems.some(item => product.id === item.id)
-                                  ? "text-purple-500 animate-bigheart"
+                                  ? "text-purple-500 animate-bigheart shadow-text-purple"
                                   : "text-gray-100"
                               }`}
                               fill={
@@ -518,7 +518,7 @@ const ProductCard = ({ product }) => {
                 <Heart
                   className={`h-5 md:h-8 w-5 md:w-8 ${
                     wishlistItems.some(item => product.id === item.id)
-                      ? "text-purple-500 animate-bigheart"
+                      ? "text-purple-500 animate-bigheart shadow-text-purple"
                       : "text-gray-100"
                   }`}
                   fill={wishlistItems.some(item => product.id === item.id) ? "rgb(147 51 234)" : "transparent"}

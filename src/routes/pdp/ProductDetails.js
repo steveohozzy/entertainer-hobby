@@ -331,7 +331,7 @@ const ProductDetails = () => {
                 <Heart
                   className={`h-10 w-10 ${
                     wishlistItems.some((item) => product.id === item.id)
-                      ? "text-purple-500 animate-bigheart"
+                      ? "text-purple-500 animate-bigheart shadow-text-purple"
                       : "text-gray-100"
                   }`}
                   fill={
