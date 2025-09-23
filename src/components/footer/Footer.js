@@ -35,18 +35,18 @@ const Footer = () => {
                   <label className="relative mb-4 flex items-start text-xs font-semibold text-gray-100">
                     <input
                       type="checkbox"
-                      className="relative mt-1 block size-[20px] appearance-none rounded-md border-[3px] border-textBlue bg-white outline-none transition-all checked:bg-textBlue"
+                      className="relative mt-1 block size-[20px] appearance-none rounded-md border-[2px] border-textBlue bg-transparent outline-none transition-all checked:border-purple-500 peer"
                       name="signup"
                       value="signup"
                     />
-                    <span className="absolute top-[3px]">
-                      <svg viewBox="0 0 24 24" width="20px" height="20px" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <span className="absolute top-[5px] left-[2px] text-transparent peer-checked:text-purple-500">
+                      <svg viewBox="0 0 24 24" width="16px" height="16px" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                         <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
                         <g id="SVGRepo_iconCarrier">
                           <path
                             d="M4.89163 13.2687L9.16582 17.5427L18.7085 8"
-                            stroke="#ffffff"
+                            stroke="currentColor"
                             strokeWidth="2.5"
                             strokeLinecap="round"
                             strokeLinejoin="round"
