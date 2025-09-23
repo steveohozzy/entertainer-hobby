@@ -110,7 +110,8 @@ const ProductCard = ({ product }) => {
       {/* Quick View Modal */}
       {quickViewProduct && (
         <div className="fixed inset-0 z-[700] bg-black/60">
-          <div ref={wrapperRef} className="fixed left-[50%] top-[50%] z-50 grid w-full translate-x-[-50%] translate-y-[-50%] gap-4 shadow-text-blue bg-gradient-to-br from-black via-gray-900 to-black p-4 sm:rounded-lg max-w-[90vw] max-h-[90vh] overflow-y-auto">
+          <div ref={wrapperRef} className="fixed left-[50%] top-[50%] z-50 w-full translate-x-[-50%] translate-y-[-50%] sm:rounded-lg max-w-[90vw] max-h-[90vh]">
+            <div className="overflow-y-auto shadow-text-blue bg-gradient-to-br from-black via-gray-900 to-black h-full w-full gap-4 p-4 grid max-h-[90vh]">
             <div className="relative w-full flex flex-col gap-4 drop-shadow-none">
               {quickViewProduct && (
                 <>
@@ -475,6 +476,7 @@ const ProductCard = ({ product }) => {
                   </div>
                 </>
               )}
+            </div>
             </div>
           </div>
         </div>
