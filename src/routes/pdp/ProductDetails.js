@@ -894,12 +894,11 @@ const ProductDetails = () => {
                           ></span>
                       </button>
                       <button
-                        className={`bg-gradient-to-br from-purple-700 via-purple-500 to-purple-700 text-white font-semibold text-lg rounded-full border-[3px] border-gray-300 shadow-md hover:shadow-text-blue hover:scale-[1.02] transition-all ${!bundleExpanded && 'w-7 h-7'} flex justify-cener items-center p-1.5 ${bundleItemsCount === 0 && 'pointer-events-none bg-gray-400'}`}
-                        removeIcons={bundleExpanded ? false : true}
+                        className={`bg-gradient-to-br from-purple-700 via-purple-500 to-purple-700 text-white font-semibold text-lg rounded-full border-[3px] border-gray-300 shadow-md hover:shadow-text-blue hover:scale-[1.02] transition-all ${!bundleExpanded ? 'w-8 h-8' : 'px-4'} flex justify-cener items-center p-1.5 ${bundleItemsCount === 0 && 'pointer-events-none bg-gray-400'}`}
                         onClick={addBundleToCart}
                       >
                         <svg
-                          className="text-white"
+                          className={`text-white ${bundleExpanded && 'hidden'}`}
                             width="22"
                             height="18"
                             viewBox="0 0 22 18"
