@@ -111,7 +111,7 @@ const ProductCard = ({ product }) => {
       {quickViewProduct && (
         <div className="fixed inset-0 z-[700] bg-black/60">
           <div className="shadow-text-blue fixed left-[50%] top-[50%] z-50 grid w-full translate-x-[-50%] translate-y-[-50%] max-w-[90vw] max-h-[90vh] p-4">
-          <div ref={wrapperRef} className="fixed left-[50%] top-[50%] z-50 grid w-full translate-x-[-50%] translate-y-[-50%] gap-4 bg-gradient-to-br from-black via-gray-900 to-black p-4 sm:rounded-lg max-w-[90vw] max-h-[90vh] overflow-y-auto">
+          <div ref={wrapperRef} className="fixed left-[50%] top-[50%] z-50 grid w-full translate-x-[-50%] translate-y-[-50%] gap-4 bg-gradient-to-br from-black via-gray-900 to-black p-4 sm:rounded-lg max-w-[calc(90vw-20px)] max-h-[calc(90vh-20px)] overflow-y-auto">
             <div className="relative w-full flex flex-col gap-4 drop-shadow-none">
               {quickViewProduct && (
                 <>
@@ -140,7 +140,7 @@ const ProductCard = ({ product }) => {
 
                   <div className="grid md:grid-cols-2 gap-6">
                     {/* Product Images */}
-                    <div className="max-w-[calc(90vw-33px)]">
+                    <div className="max-w-[calc(90vw-53px)]">
                       <div className="relative">
                         <Swiper
                           modules={[Autoplay, Pagination]}
