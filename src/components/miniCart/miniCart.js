@@ -70,25 +70,25 @@ const MiniCart = () => {
                 />
               ))
             ) : (
-              <div className="py-3 text-brandBlue font-bold text-lg">
+              <div className="py-3 text-gray-100 font-semibold text-lg">
                 Your cart is empty
               </div>
             )}
           </div>
 
-          <div className="bg-black border-4 border-gray-400 py-3 px-4 rounded-md mt-2">
+          <div className="bg-black border-2 border-gray-400 py-3 px-4 rounded-md mt-2 mx-2">
             <Dropdown
               title="Use a promo code"
-              className="text-gray-100 font-bold flex items-center justify-center w-full"
+              className="text-gray-100 font-semibold flex items-center justify-center w-full"
               answer={
                 <form id="promo-form" className="flex items-center py-2">
                   <input
                     type="search"
                     placeholder="Add a promo code"
-                    className="outline-0 h-[44px] bg-black font-semibold px-3 rounded-3xl w-full border border-[3px] border-brandBlue text-gray-100 placeholder:text-gray-400 mr-2"
+                    className="outline-0 h-[44px] bg-black font-semibold px-3 rounded-3xl w-full border border-[3px] border-brandBlue text-gray-100 placeholder:text-gray-100 mr-2"
                   />
-                  <button className="group text-white font-bold bg-brandBlue rounded-[50px] px-5 h-[44px] transition-all hover:bg-blue-500 hover:scale-105">
-                    <span className="block transition-all group-hover:rotate-[10deg]">
+                  <button className="group text-white font-semibold border-purple-500 border-[2px] rounded-[50px] px-5 h-[44px] transition-all hover:shadow-text-purple hover:scale-105">
+                    <span className="block">
                       Apply
                     </span>
                   </button>
