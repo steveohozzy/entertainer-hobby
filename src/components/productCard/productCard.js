@@ -197,36 +197,36 @@ const ProductCard = ({ product }) => {
                           <button
                             onClick={wishlistItems.some(item => product.id === item.id) ? removeProductFromWishlist : addProductToWishlist}
                             name="Add to favourites"
-                            className={`relative inline-flex items-center justify-center gap-2 whitespace-nowrap text-lg  h-10  transition-all hover:scale-105 hover:text-brandPink`}
+                            className={`relative inline-flex items-center justify-center gap-2 whitespace-nowrap text-lg  h-10  transition-all hover:scale-105 hover:text-purple-500`}
                           >
                             <Heart
                               className={`h-6 md:h-10 w-6 md:w-10 ${
                                 wishlistItems.some(item => product.id === item.id)
-                                  ? "text-brandPink animate-bigheart"
+                                  ? "text-purple-500 animate-bigheart"
                                   : "text-gray-100"
                               }`}
                               fill={
-                                wishlistItems.some(item => product.id === item.id) ? "#FF7BAC" : "transparent"
+                                wishlistItems.some(item => product.id === item.id) ? "rgb(147 51 234)" : "transparent"
                               }
                             />
                             <Heart
                               className={`absolute bottom-0 left-[-6px] 0 h-[5px] md:h-[10px] w-[5px] md:w-[10px] opacity-0 text-transparent ${
                                 wishlistItems.some(item => product.id === item.id)
-                                  ? "animate-miniheartleft text-brandPink"
+                                  ? "animate-miniheartleft text-purple-500"
                                   : "text-gray-100"
                               }`}
                               fill={
-                                wishlistItems.some(item => product.id === item.id) ? "#FF7BAC" : "transparent"
+                                wishlistItems.some(item => product.id === item.id) ? "rgb(147 51 234)" : "transparent"
                               }
                             />
                             <Heart
                               className={`absolute bottom-0 right-[-4px] h-[5px] md:h-[10px] w-[5px] md:w-[10px] opacity-0 text-transparent ${
                                 wishlistItems.some(item => product.id === item.id)
-                                  ? "animate-miniheartright text-brandPink"
+                                  ? "animate-miniheartright text-purple-500"
                                   : "text-gray-100"
                               }`}
                               fill={
-                                wishlistItems.some(item => product.id === item.id) ? "#FF7BAC" : "transparent"
+                                wishlistItems.some(item => product.id === item.id) ? "rgb(147 51 234)" : "transparent"
                               }
                             />
                             <span className="sr-only">Add to favourites</span>
@@ -513,31 +513,31 @@ const ProductCard = ({ product }) => {
               <button
                 onClick={wishlistItems.some(item => product.id === item.id) ? removeProductFromWishlist : addProductToWishlist}
                 name="Add to favourites"
-                className={`relative inline-flex items-center justify-center md:gap-2 whitespace-nowrap text-lg h-4 md:h-9  transition-all hover:scale-105 hover:text-brandPink`}
+                className={`relative inline-flex items-center justify-center md:gap-2 whitespace-nowrap text-lg h-4 md:h-9  transition-all hover:scale-105 hover:text-purple-500`}
               >
                 <Heart
                   className={`h-5 md:h-8 w-5 md:w-8 ${
                     wishlistItems.some(item => product.id === item.id)
-                      ? "text-brandPink animate-bigheart"
+                      ? "text-purple-500 animate-bigheart"
                       : "text-gray-100"
                   }`}
-                  fill={wishlistItems.some(item => product.id === item.id) ? "#FF7BAC" : "transparent"}
+                  fill={wishlistItems.some(item => product.id === item.id) ? "rgb(147 51 234)" : "transparent"}
                 />
                 <Heart
                   className={`absolute bottom-0 left-1 h-2 w-2 opacity-0 text-transparent ${
                     wishlistItems.some(item => product.id === item.id)
-                      ? "animate-miniheartleft text-brandPink"
+                      ? "animate-miniheartleft text-purple-500"
                       : "text-gray-100"
                   }`}
-                  fill={wishlistItems.some(item => product.id === item.id) ? "#FF7BAC" : "transparent"}
+                  fill={wishlistItems.some(item => product.id === item.id) ? "rgb(147 51 234)" : "transparent"}
                 />
                 <Heart
                   className={`absolute bottom-0 right-2 h-2 w-2 opacity-0 text-transparent ${
                     wishlistItems.some(item => product.id === item.id)
-                      ? "animate-miniheartright text-brandPink"
+                      ? "animate-miniheartright text-purple-500"
                       : "text-gray-100"
                   }`}
-                  fill={wishlistItems.some(item => product.id === item.id) ? "#FF7BAC" : "transparent"}
+                  fill={wishlistItems.some(item => product.id === item.id) ? "rgb(147 51 234)" : "transparent"}
                 />
                 <span className="sr-only">Add to favourites</span>
               </button>

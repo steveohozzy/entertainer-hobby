@@ -326,41 +326,41 @@ const ProductDetails = () => {
                     : addProductToWishlist
                 }
                 name="Add to favourites"
-                className={`relative inline-flex items-center justify-center gap-2 whitespace-nowrap text-lg  h-10  transition-all hover:scale-105 hover:text-brandPink`}
+                className={`relative inline-flex items-center justify-center gap-2 whitespace-nowrap text-lg  h-10  transition-all hover:scale-105 hover:text-purple-500`}
               >
                 <Heart
                   className={`h-10 w-10 ${
                     wishlistItems.some((item) => product.id === item.id)
-                      ? "text-brandPink animate-bigheart"
+                      ? "text-purple-500 animate-bigheart"
                       : "text-gray-100"
                   }`}
                   fill={
                     wishlistItems.some((item) => product.id === item.id)
-                      ? "#FF7BAC"
+                      ? "rgb(147 51 234)"
                       : "transparent"
                   }
                 />
                 <Heart
                   className={`absolute bottom-0 left-[-6px] 0 h-[10px] w-[10px] opacity-0 text-transparent ${
                     wishlistItems.some((item) => product.id === item.id)
-                      ? "animate-miniheartleft text-brandPink"
+                      ? "animate-miniheartleft text-purple-500"
                       : "text-gray-100"
                   }`}
                   fill={
                     wishlistItems.some((item) => product.id === item.id)
-                      ? "#FF7BAC"
+                      ? "rgb(147 51 234)"
                       : "transparent"
                   }
                 />
                 <Heart
                   className={`absolute bottom-0 right-[-4px] h-[10px] w-[10px] opacity-0 text-transparent ${
                     wishlistItems.some((item) => product.id === item.id)
-                      ? "animate-miniheartright text-brandPink"
+                      ? "animate-miniheartright text-purple-500"
                       : "text-gray-100"
                   }`}
                   fill={
                     wishlistItems.some((item) => product.id === item.id)
-                      ? "#FF7BAC"
+                      ? "rgb(147 51 234)"
                       : "transparent"
                   }
                 />
