@@ -2,7 +2,6 @@ import { useState } from "react";
 
 import { useNavigate } from "react-router-dom";
 import { products } from "../../data/products";
-import Button from "../button/Button";
 import WishlistItemsList from "../wishlistItems/WishlistItems";
 import WishlistAccountProductCard from "../wishlistAccountProductTile/WishlistAccountProductCard";
 
@@ -55,7 +54,7 @@ const WishlistContainer = () => {
           <div className="flex gap-4 justify-center mt-4">
             <div className="w-2/3 md:w-1/2">
               <button 
-                className='w-full bg-gradient-to-br from-purple-700 via-purple-500 to-purple-700 text-white font-semibold py-1 px-8 text-lg rounded-full border-[3px] border-gray-300 shadow-md hover:shadow-text-blue hover:scale-[1.02] transition-all'
+                className='w-full bg-gradient-to-br from-purple-700 via-purple-500 to-purple-700 text-white font-semibold py-1 px-8 text-lg rounded-full border-[3px] border-gray-300 shadow-md hover:shadow-text-blue hover:scale-[1.02] transition-all block'
                 onClick={addAllToBasket}
               >
                     Buy this list
@@ -96,7 +95,7 @@ const WishlistContainer = () => {
         <div className="border-[3px] border-purple-500 p-3 md:p-5 rounded-xl">
           <div className="flex items-end justify-between">
             <div className="text-xl font-bold text-purple-500 flex items-center">
-              <input className="outline-0" type="text" size={wishlistName.length > 4 ? wishlistName.length-1 : 4} value={wishlistName} onChange={(e) => setWishlistName(e.target.value)} />
+              <input className="outline-0 bg-transparent" type="text" size={wishlistName.length > 4 ? wishlistName.length-1 : 4} value={wishlistName} onChange={(e) => setWishlistName(e.target.value)} />
               <span>
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" viewBox="0 0 24 24" fill="none">
                   <path d="M17.0671 2.27157C17.5 2.09228 17.9639 2 18.4324 2C18.9009 2 19.3648 2.09228 19.7977 2.27157C20.2305 2.45086 20.6238 2.71365 20.9551 3.04493C21.2864 3.37621 21.5492 3.7695 21.7285 4.20235C21.9077 4.63519 22 5.09911 22 5.56761C22 6.03611 21.9077 6.50003 21.7285 6.93288C21.5492 7.36572 21.2864 7.75901 20.9551 8.09029L20.4369 8.60845L15.3916 3.56308L15.9097 3.04493C16.241 2.71365 16.6343 2.45086 17.0671 2.27157Z" fill="currentColor"/>
@@ -153,17 +152,12 @@ const WishlistContainer = () => {
     </div>
           <div className="flex gap-4 justify-center mt-4">
             <div className="w-2/3 md:w-1/2">
-              <Button 
-                className='shadow-md hover:shadow-lg w-full group inline-flex items-center justify-center font-bold text-sm md:text-lg rounded-[30px] bg-brandGreen text-white py-2 px-4 pl-2 transition-all hover:bg-brandLightGreen hover:scale-105'
+              <button 
+                className='w-full bg-gradient-to-br from-purple-700 via-purple-500 to-purple-700 text-white font-semibold py-1 px-8 text-lg rounded-full border-[3px] border-gray-300 shadow-md hover:shadow-text-blue hover:scale-[1.02] transition-all block'
                 onClick={addAllToBasket}
-                iconpath={
-                    <svg width="22" height="18" viewBox="0 0 22 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M21.2401 7.57V8.14C21.2401 8.38 21.1601 8.58 20.9901 8.75C20.8201 8.92 20.6201 9 20.3801 9H20.0901L19.1601 15.57C19.0901 16 18.8901 16.35 18.5701 16.63C18.2501 16.9 17.8701 17.04 17.4401 17.04H4.36006C3.93006 17.04 3.55006 16.9 3.23006 16.63C2.91006 16.35 2.71006 16 2.64006 15.57L1.71006 9H1.42006C1.18006 9 0.980059 8.92 0.810059 8.75C0.640059 8.58 0.560059 8.38 0.560059 8.14V7.57C0.560059 7.33 0.640059 7.13 0.810059 6.96C0.980059 6.79 1.18006 6.71 1.42006 6.71H3.83006L7.67006 1.43C7.86006 1.17 8.11006 1.01 8.42006 0.960001C8.73006 0.910001 9.02006 0.980002 9.28006 1.18C9.54006 1.37 9.70006 1.62 9.75006 1.93C9.80006 2.24 9.73006 2.53 9.53006 2.79L6.66006 6.71H15.1401L12.2701 2.79C12.0801 2.53 12.0101 2.24 12.0501 1.93C12.1001 1.62 12.2501 1.37 12.5201 1.18C12.7801 0.990002 13.0701 0.920001 13.3801 0.960001C13.6901 1.01 13.9401 1.16 14.1301 1.43L17.9701 6.71H20.3801C20.6201 6.71 20.8201 6.79 20.9901 6.96C21.1601 7.13 21.2401 7.33 21.2401 7.57ZM7.73006 13.89V9.87C7.73006 9.63 7.65006 9.43 7.48006 9.26C7.31006 9.09 7.11006 9.01 6.87006 9.01C6.63006 9.01 6.43006 9.09 6.26006 9.26C6.09006 9.43 6.01006 9.63 6.01006 9.87V13.89C6.01006 14.13 6.09006 14.33 6.26006 14.5C6.43006 14.67 6.63006 14.75 6.87006 14.75C7.11006 14.75 7.31006 14.67 7.48006 14.5C7.65006 14.33 7.73006 14.13 7.73006 13.89ZM11.7501 13.89V9.87C11.7501 9.63 11.6701 9.43 11.5001 9.26C11.3301 9.09 11.1301 9.01 10.8901 9.01C10.6501 9.01 10.4501 9.09 10.2801 9.26C10.1101 9.43 10.0301 9.63 10.0301 9.87V13.89C10.0301 14.13 10.1101 14.33 10.2801 14.5C10.4501 14.67 10.6501 14.75 10.8901 14.75C11.1301 14.75 11.3301 14.67 11.5001 14.5C11.6701 14.33 11.7501 14.13 11.7501 13.89ZM15.7701 13.89V9.87C15.7701 9.63 15.6901 9.43 15.5201 9.26C15.3501 9.09 15.1501 9.01 14.9101 9.01C14.6701 9.01 14.4701 9.09 14.3001 9.26C14.1301 9.43 14.0501 9.63 14.0501 9.87V13.89C14.0501 14.13 14.1301 14.33 14.3001 14.5C14.4701 14.67 14.6701 14.75 14.9101 14.75C15.1501 14.75 15.3501 14.67 15.5201 14.5C15.6901 14.33 15.7701 14.13 15.7701 13.89Z"/>
-                    </svg>
-                }
               >
                     Buy this list
-              </Button>
+              </button>
             </div>
               <button className="transition-all border-[3px] border-purple-500 rounded-full w-9 h-9 md:w-12 md:h-12 p-2 flex items-center justify-center hover:rotate-[45deg]">
                 <span className="flex items-center w-9 h-9 text-purple-500">
@@ -200,14 +194,14 @@ const WishlistContainer = () => {
         <div className="w-1/2 md:w-1/3">
           <input
             placeholder="Date needed for"
-            className="outline-0 border-[3px] border-gray-300 text-brandBlue focus:border-brandBlue rounded-md w-full px-2 py-1 h-[44px]"
+            className="outline-0 bg-transparent border-[3px] border-purple-500 text-gray-100 rounded-md w-full px-2 py-1 h-[44px]"
             type={dateType}
             onFocus={() => setDateType('date')}
             onBlur={() => setDateType('text')}
             id="date" />
           <div className="flex mt-2">
             <div className="w-full flex items-center">
-              <span className="text-textBlue text-xs md:text-sm mr-2"
+              <span className="text-gray-100 text-xs md:text-sm mr-2"
               >
                 Reminder
               </span>
