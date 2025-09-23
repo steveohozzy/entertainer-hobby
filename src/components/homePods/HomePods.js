@@ -51,7 +51,7 @@ const HomePods= () => {
                   </span>
                 </div>
                 <div className="absolute top-6 md:top-7 right-3 md:right-6">
-                  <div className="flex items-center text-sm md:text-base">
+                  <div className="flex items-center text-sm md:text-base drop-shadow-md">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="22" viewBox="0 0 18 22" fill="none">
                       <path d="M9.53992 9.87H8.18994V11.22H9.53992V9.87Z" fill="white"/>
                       <path d="M8.18982 9.87H6.83984V11.22H8.18982V9.87Z" fill="white"/>
@@ -141,7 +141,7 @@ const HomePods= () => {
                   </span>
                 </div>
                 <div className="absolute top-6 md:top-7 right-3 md:right-6">
-                  <div className="flex items-center text-sm md:text-base">
+                  <div className="flex items-center text-sm md:text-base drop-shadow-md">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="22" viewBox="0 0 18 22" fill="none">
                       <path d="M9.53992 9.87H8.18994V11.22H9.53992V9.87Z" fill="white"/>
                       <path d="M8.18982 9.87H6.83984V11.22H8.18982V9.87Z" fill="white"/>
@@ -231,7 +231,7 @@ const HomePods= () => {
                   </span>
                 </div>
                 <div className="absolute top-6 md:top-7 right-3 md:right-6">
-                  <div className="flex items-center text-sm md:text-base">
+                  <div className="flex items-center text-sm md:text-base drop-shadow-md">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="22" viewBox="0 0 18 22" fill="none">
                       <path d="M9.53992 9.87H8.18994V11.22H9.53992V9.87Z" fill="white"/>
                       <path d="M8.18982 9.87H6.83984V11.22H8.18982V9.87Z" fill="white"/>
@@ -321,7 +321,7 @@ const HomePods= () => {
                   </span>
                 </div>
                 <div className="absolute top-6 md:top-7 right-3 md:right-6">
-                  <div className="flex items-center text-sm md:text-base">
+                  <div className="flex items-center text-sm md:text-base drop-shadow-md">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="22" viewBox="0 0 18 22" fill="none">
                       <path d="M9.53992 9.87H8.18994V11.22H9.53992V9.87Z" fill="white"/>
                       <path d="M8.18982 9.87H6.83984V11.22H8.18982V9.87Z" fill="white"/>
@@ -411,7 +411,7 @@ const HomePods= () => {
                   </span>
                 </div>
                 <div className="absolute top-6 md:top-7 right-3 md:right-6">
-                  <div className="flex items-center text-sm md:text-base">
+                  <div className="flex items-center text-sm md:text-base drop-shadow-md">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="22" viewBox="0 0 18 22" fill="none">
                       <path d="M9.53992 9.87H8.18994V11.22H9.53992V9.87Z" fill="white"/>
                       <path d="M8.18982 9.87H6.83984V11.22H8.18982V9.87Z" fill="white"/>
@@ -501,7 +501,7 @@ const HomePods= () => {
                   </span>
                 </div>
                 <div className="absolute top-6 md:top-7 right-3 md:right-6">
-                  <div className="flex items-center text-sm md:text-base">
+                  <div className="flex items-center text-sm md:text-base drop-shadow-md">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="22" viewBox="0 0 18 22" fill="none">
                       <path d="M9.53992 9.87H8.18994V11.22H9.53992V9.87Z" fill="white"/>
                       <path d="M8.18982 9.87H6.83984V11.22H8.18982V9.87Z" fill="white"/>
