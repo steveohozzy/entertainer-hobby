@@ -17,6 +17,7 @@ import Brands from "./routes/brandsPage/Brands";
 import PresentFinder from "./routes/presentFinder/PresentFinder";
 import Confirmation from "./routes/confirmation/Confirmation";
 import StoreFinderPage from "./routes/storeFinder/StoreFinder";
+import Hotspot from "./routes/hotspot/Hotspot";
 
 const App = () => {
 
@@ -37,6 +38,7 @@ const App = () => {
         <Route path="/present-finder/*" element={<PresentFinder />} />
         <Route path="/confirmation/" element={<Confirmation />} />
         <Route path="/store-finder" element={<StoreFinderPage />} />
+        <Route path="/hotspot" element={<Hotspot />} />
       </Route>
       <Route path="/" element={<CheckoutLayout />}>
         <Route path="/checkout" element={<Checkout />} />
