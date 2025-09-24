@@ -732,9 +732,9 @@ const SearchResults = () => {
                                 priceRange[1],
                               ])
                             }
-                            className="flex h-10 rounded-md border border-input bg-background px-3 py-2 placeholder:text-muted-foreground text-brandBlue w-20 text-sm"
+                            className="flex bg-transparent h-10 rounded-md border border-[2px] border-brandBlue bg-background px-3 py-2 placeholder:text-muted-foreground text-gray-100 w-20 text-sm"
                           />
-                          <span className="text-brandBlue">-</span>
+                          <span className="text-gray-100">-</span>
                           <input
                             id="maxPrice"
                             type="number"
@@ -746,10 +746,10 @@ const SearchResults = () => {
                                 Number(e.target.value),
                               ])
                             }
-                            className="flex h-10 rounded-md border border-input bg-background px-3 py-2 placeholder:text-muted-foreground text-brandBlue w-20 text-sm"
+                            className="flex bg-transparent h-10 rounded-md border border-[2px] border-brandBlue bg-background px-3 py-2 placeholder:text-muted-foreground text-gray-100 w-20 text-sm"
                           />
                         </div>
-                        <div className="text-sm text-white">
+                        <div className="text-sm text-gray-100">
                           £{priceRange[0]} - £{priceRange[1]}
                         </div>
                       </div>
