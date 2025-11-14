@@ -482,7 +482,7 @@ const ProductCard = ({ product }) => {
 
       <div className="rounded-3xl p-[2px] relative overflow-hidden after:absolute after:block after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-br after:from-gray-100 after:via-black  after:to-gray-100  hover:after:animate-borderGradient after:z-0">
         <div className="h-full bg-gradient-to-br from-black via-gray-900 to-black p-2 rounded-[calc(1.5rem-1px)] cursor-pointer flex flex-wrap transition-all z-[1] relative flex flex-col">
-          <div className="relative group rounded-[calc(1.5rem-1px)]">
+          <div className="relative group rounded-[calc(1.5rem-1px)] overflow-hidden">
             <button onClick={goToLinkHandler}>
               <img
                 src={image || "/placeholder.svg"}
