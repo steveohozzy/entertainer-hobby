@@ -582,7 +582,7 @@ const ProductCard = ({ product }) => {
             </button>
             <div className="flex items-center justify-center">
               <button
-                className="bg-gradient-to-br from-purple-700 via-purple-500 to-purple-700 text-white font-semibold py-1 px-8 text-lg rounded-full border-[3px] border-gray-300 shadow-md hover:shadow-text-blue hover:scale-[1.02] hover:from-purple-500 hover:via-purple-700 hover:to-purple-500 transition-all"
+                className="bg-gradient-to-br from-purple-700 via-purple-500 to-purple-700 text-white font-semibold py-1 px-8 text-lg rounded-full border-[3px] border-gray-300 shadow-md hover:shadow-text-blue hover:scale-[1.02] transition-all"
                 onClick={addProductToCart}
               >
                 Buy
